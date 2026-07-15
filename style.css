@@ -53,7 +53,7 @@ footer .ftag .tm{font-size:.72em;color:var(--muted);margin-left:.12em;font-weigh
 .hero{padding:64px 0 30px}
 .kicker{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;
   text-transform:uppercase;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.03;letter-spacing:-.03em;
+.hero h1{font-size:clamp(1.5rem,8vw,3.8rem);line-height:1.03;letter-spacing:-.03em;white-space:nowrap;
   margin:0 0 18px;font-weight:800}
 .hero p.sub{font-size:clamp(1.05rem,2.4vw,1.35rem);color:#2c2e33;max-width:58ch;margin:0}
 .hero .tags{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap}
