@@ -136,3 +136,9 @@ footer .fcopy{color:var(--muted);font-size:.84rem}
     gap:8px 16px;padding-top:7px;padding-bottom:7px}
   html{scroll-padding-top:150px}
 }
+
+footer .fshare{display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap;max-width:1080px;margin:0 auto;padding:6px 20px 12px;font-size:.85rem;color:var(--muted)}
+footer .fshare .fshare-l{color:var(--muted)}
+footer .fshare .sh{color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:4px 10px;background:transparent;cursor:pointer;font:inherit}
+footer .fshare .sh:hover{border-color:var(--accent);color:var(--accent)}
+footer .fshare .sh-msg{color:var(--safe);font-family:var(--mono);font-size:.8rem}
