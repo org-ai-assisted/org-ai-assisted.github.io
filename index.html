@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>org-ai-assisted</title>
+<meta name="description" content="How AI-assisted contributions to Kicksecure and Whonix are handled. A machine account operated by adrelanos.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --line: #d8d8d8;
+    --accent: #0b6bcb;
+    --card: #f6f7f9;
+    --code: #eceef1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --fg: #e6e6e6;
+      --muted: #9aa0a6;
+      --line: #2a2f37;
+      --accent: #5aa9ff;
+      --card: #161a20;
+      --code: #1d222a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+  }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  h1 { font-size: 1.7rem; margin: 0 0 0.25rem; letter-spacing: -0.01em; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 0.75rem; letter-spacing: -0.01em; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
+  p { margin: 0.75rem 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .lede { color: var(--muted); font-size: 1.05rem; }
+  .tag {
+    display: inline-block; font-size: 0.75rem; font-weight: 600;
+    color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
+    padding: 0.1rem 0.6rem; margin-right: 0.4rem; vertical-align: middle;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0;
+  }
+  code {
+    background: var(--code); border-radius: 4px; padding: 0.1rem 0.35rem;
+    font: 0.85em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.35rem 0; }
+  .q { font-weight: 600; margin-bottom: 0.15rem; }
+  .a { color: var(--muted); margin-top: 0; }
+  footer {
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="tag">machine account</span><span class="tag">AI-assisted</span>
+    <h1>org-ai-assisted</h1>
+    <p class="lede">
+      A machine account operated by
+      <a href="https://github.com/adrelanos">adrelanos</a>. Repositories here are
+      maintained with AI assistance, and all AI-generated content is marked as
+      such. This org hosts code, not discussion.
+    </p>
+  </header>
+
+  <h2>Is Kicksecure / Whonix "vibecoded" now?</h2>
+  <p>
+    No. This page is the durable answer to that recurring question. The short
+    version: AI never has write access to the trusted projects, and code that
+    could reach them is treated as hostile until a human proves otherwise.
+  </p>
+
+  <div class="card">
+    <h3>AI has no write access to Kicksecure or Whonix</h3>
+    <p>
+      Code that could reach those projects is treated as untrusted: assumed
+      malicious until proven otherwise, and reviewed in depth by a human before
+      a human integrates it. This is deliberately deeper scrutiny than trusted
+      developers apply to each other's code. AI has attempted a malicious change
+      before, which is exactly why it is treated this way. A large amount of
+      human-written code continues to go into these projects; AI does not
+      replace human development.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>This org is the sandbox where AI does have write access</h3>
+    <p>
+      Some repositories here, for example
+      <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>,
+      are the AI's own tooling and tests. They are minimally reviewed by design,
+      because they never ship to users, never enter Kicksecure or Whonix, and run
+      only on disposable, untrusted CI systems. Treat them the way you would
+      treat any untrusted analysis tool such as Coverity Scan: something that
+      runs, not output to trust.
+    </p>
+  </div>
+
+  <h2>Concerns, answered</h2>
+  <p class="q">"Is a human reviewing this, with real care?"</p>
+  <p class="a">
+    Yes, for anything that could reach Kicksecure or Whonix. That review costs
+    many hours and lands as human fixup commits on top of AI-generated code.
+  </p>
+  <p class="q">"The docs say content is too high-volume for human review, so nobody reviews it."</p>
+  <p class="a">
+    That applies only to this sandbox org, not to code entering Kicksecure or
+    Whonix. High-volume, minimally-reviewed code stays here and never ships.
+  </p>
+  <p class="q">"What stops a malicious AI commit from reaching users?"</p>
+  <p class="a">
+    The write-access boundary. No AI agent can push to a Kicksecure or Whonix
+    repository, so nothing an AI writes reaches users without passing through
+    human review first.
+  </p>
+
+  <h2>What is here</h2>
+  <p>Two kinds of repository:</p>
+  <ul>
+    <li>
+      <strong>Mirrors</strong> of Kicksecure and Whonix components. The canonical
+      source and issue tracker for these live upstream, under
+      <a href="https://github.com/Kicksecure">Kicksecure</a> and
+      <a href="https://github.com/Whonix">Whonix</a>. Go there.
+    </li>
+    <li>
+      <strong>Origin repositories</strong> native to this org, with no upstream
+      mirror:
+      <ul>
+        <li>
+          <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>,
+          the AI test, reproduction, and fuzzing tooling.
+        </li>
+        <li>
+          Self-contained reproducers and bug reports:
+          <a href="https://github.com/org-ai-assisted/onion-client-refetch-stall-arti"><code>onion-client-refetch-stall-arti</code></a>,
+          <a href="https://github.com/org-ai-assisted/onion-client-refetch-stall-tor"><code>onion-client-refetch-stall-tor</code></a>,
+          <a href="https://github.com/org-ai-assisted/onion-grater-bugs"><code>onion-grater-bugs</code></a>,
+          <a href="https://github.com/org-ai-assisted/qemu-x86_64-aes-gcm-miscompile-ppc64el"><code>qemu-x86_64-aes-gcm-miscompile-ppc64el</code></a>.
+        </li>
+        <li>
+          <a href="https://github.com/org-ai-assisted/Git-Mediawiki"><code>Git-Mediawiki</code></a>,
+          a patched fork.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Where discussion belongs</h2>
+  <p>
+    Not here. File issues and start discussions on the relevant upstream: the
+    matching Kicksecure or Whonix repository, or the upstream bug tracker a
+    reproducer targets. This org has issues and discussions closed by intent.
+  </p>
+
+  <footer>
+    <p>
+      <a href="https://github.com/org-ai-assisted">GitHub org</a> &middot;
+      <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">Whonix AI policy discussion</a> &middot;
+      <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a>
+    </p>
+  </footer>
+</main>
+</body>
+</html>
