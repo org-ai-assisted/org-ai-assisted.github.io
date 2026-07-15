@@ -1,170 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!--
+  org-ai-assisted: organisation landing / trust page. AI-Assisted.
+  Sibling of output-lies.github.io (shared design system).
+  Source: https://github.com/org-ai-assisted/org-ai-assisted.github.io
+-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>org-ai-assisted</title>
-<meta name="description" content="How AI-assisted contributions to Kicksecure and Whonix are handled. A bot and machine organisation operated by @adrelanos.">
-<style>
-  :root {
-    --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #5a5a5a;
-    --line: #d8d8d8;
-    --accent: #0b6bcb;
-    --card: #f6f7f9;
-    --code: #eceef1;
-    --notice-bg: #fff8e6;
-    --notice-line: #e6c65c;
-    --notice-fg: #6b5300;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1115;
-      --fg: #e6e6e6;
-      --muted: #9aa0a6;
-      --line: #2a2f37;
-      --accent: #5aa9ff;
-      --card: #161a20;
-      --code: #1d222a;
-      --notice-bg: #2a2410;
-      --notice-line: #6b5a1e;
-      --notice-fg: #e8d68a;
-    }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  main {
-    max-width: 46rem;
-    margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
-  }
-  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2rem; }
-  h1 { font-size: 1.7rem; margin: 0 0 0.25rem; letter-spacing: -0.01em; }
-  h2 { font-size: 1.2rem; margin: 2.5rem 0 0.75rem; letter-spacing: -0.01em; }
-  h3 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
-  p { margin: 0.75rem 0; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .lede { color: var(--muted); font-size: 1.05rem; }
-  .tag {
-    display: inline-block; font-size: 0.75rem; font-weight: 600;
-    color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
-    padding: 0.1rem 0.6rem; margin-right: 0.4rem; vertical-align: middle;
-  }
-  .card {
-    background: var(--card); border: 1px solid var(--line);
-    border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0;
-  }
-  code {
-    background: var(--code); border-radius: 4px; padding: 0.1rem 0.35rem;
-    font: 0.85em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  }
-  ul { padding-left: 1.25rem; }
-  li { margin: 0.35rem 0; }
-  .q { font-weight: 600; margin-bottom: 0.15rem; }
-  .a { color: var(--muted); margin-top: 0; }
-  .notice {
-    background: var(--notice-bg); border: 1px solid var(--notice-line);
-    color: var(--notice-fg); border-radius: 8px;
-    padding: 0.6rem 0.9rem; margin: 0 0 1.75rem;
-    font-size: 0.9rem; line-height: 1.5;
-  }
-  .notice strong { font-weight: 700; }
-  footer {
-    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
-    color: var(--muted); font-size: 0.9rem;
-  }
-</style>
-</head>
-<body>
-<main>
-  <div class="notice">
-    <strong>Unreviewed draft, work in progress.</strong> This page is
-    AI-generated and pending human review.
+<meta name="ai-disclosure" content="ai-assisted">
+<title>org-ai-assisted: how AI-assisted contributions are handled</title>
+<meta name="description" content="A bot and machine organisation operated by adrelanos. How AI-assisted contributions to Kicksecure and Whonix are handled, and why AI-written code is trusted less than human-written code.">
+<link rel="canonical" href="https://org-ai-assisted.github.io/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="org-ai-assisted">
+<meta property="og:title" content="org-ai-assisted: how AI-assisted contributions are handled">
+<meta property="og:description" content="How AI-assisted contributions to Kicksecure and Whonix are handled, and why AI-written code is trusted less than human-written code.">
+<meta property="og:url" content="https://org-ai-assisted.github.io/">
+<meta property="og:image" content="https://org-ai-assisted.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="org-ai-assisted: how AI-assisted contributions to Kicksecure and Whonix are handled">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="org-ai-assisted: how AI-assisted contributions are handled">
+<meta name="twitter:description" content="How AI-assisted contributions to Kicksecure and Whonix are handled, and why AI-written code is trusted less than human-written code.">
+<meta name="twitter:image" content="https://org-ai-assisted.github.io/og.png">
+<meta name="theme-color" content="#f3f2ee">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><svg class="logo" width="24" height="24" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><rect x="1.5" y="3" width="23" height="20" rx="4.5" fill="#14161b"/><path d="M6 9.5 L9.6 13 L6 16.5" fill="none" stroke="#cfd3da" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><rect x="11.6" y="14.9" width="7.4" height="2.3" rx="1.1" fill="#d83933"/></svg>org-ai-assisted</a>
+    <span class="status" title="This page is AI-generated and pending human review">needs human review</span>
+    <nav>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+    </nav>
   </div>
-  <header>
-    <span class="tag">bot org</span><span class="tag">machine org</span><span class="tag">AI-assisted</span>
-    <h1>org-ai-assisted</h1>
-    <p class="lede">
-      A bot and machine organisation operated by
-      <a href="https://github.com/adrelanos">@adrelanos</a>. Repositories here are
-      maintained with AI assistance, and all AI-generated content is marked as
-      such. This org hosts code, not discussion.
-    </p>
-  </header>
+  <div class="subnav"><div class="wrap">
+    <a href="#trust">Trust model</a>
+    <a href="#concerns">Concerns</a>
+    <a href="#repos">Repositories</a>
+    <a href="#discussion">Discussion</a>
+  </div></div>
+</header>
 
-  <h2>Is Kicksecure / Whonix "vibecoded" now?</h2>
-  <p>
-    No. This page is the answer to
-    <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">that question</a>. The short
-    version: AI never has write access to the trusted projects, and code that
-    could reach them is treated as hostile until a human proves otherwise.
+<div class="notice"><div class="wrap">
+  <b>Unreviewed draft, work in progress.</b> This page is AI-generated and
+  pending human review.
+</div></div>
+
+<section class="hero"><div class="wrap">
+  <p class="kicker">Bot / machine organisation &middot; AI-assisted</p>
+  <h1>org-ai-assisted</h1>
+  <p class="sub">
+    A bot and machine organisation operated by
+    <a href="https://github.com/adrelanos">@adrelanos</a>. Repositories here are
+    maintained with AI assistance, and all AI-generated content is marked as
+    such. This org hosts code, not discussion.
   </p>
+  <div class="tags">
+    <span class="tag">bot org</span>
+    <span class="tag">machine org</span>
+    <span class="tag">AI-assisted</span>
+  </div>
+</div></section>
 
-  <div class="card">
+<div class="whatis"><div class="wrap">
+  <p>
+    <b>Is Kicksecure / Whonix "vibecoded" now?</b> No. This page is the answer to
+    <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">that question</a>.
+    AI never has write access to the trusted projects, and code that could reach
+    them is treated as hostile until a human proves otherwise.
+  </p>
+</div></div>
+
+<section class="cat" id="trust"><div class="wrap">
+  <h2 class="catname">The trust model</h2>
+  <p class="catdesc">Two tiers, divided by one line: can this code reach Kicksecure or Whonix.</p>
+
+  <div class="issue">
     <h3>AI has no write access to Kicksecure or Whonix</h3>
     <p>
       Code that could reach those projects is treated as untrusted: assumed
-      malicious until proven otherwise, and reviewed in depth by a human before
-      a human integrates it. All code is reviewed, human-written and AI-written
+      malicious until proven otherwise, and reviewed in depth by a human before a
+      human integrates it. All code is reviewed, human-written and AI-written
       alike; AI-written code is simply trusted less than a human's. AI has
       attempted a malicious change before, which is exactly why it is treated
-      this way. A large amount of
-      human-written code continues to go into these projects; AI does not
-      replace human development.
+      this way. A large amount of human-written code continues to go into these
+      projects; AI does not replace human development.
     </p>
   </div>
 
-  <div class="card">
+  <div class="issue">
     <h3>This org is the sandbox where AI does have write access</h3>
     <p>
       Some repositories here, for example
       <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>,
       are the AI's own tooling and tests. They are minimally reviewed by design,
       because they never ship to users, never enter Kicksecure or Whonix, and run
-      only on disposable, untrusted CI systems. Treat them the way you would
-      treat any untrusted analysis tool such as Coverity Scan: something that
-      runs, not output to trust.
+      only on disposable, untrusted CI systems. Treat them the way you would treat
+      any untrusted analysis tool such as Coverity Scan: something that runs, not
+      output to trust.
     </p>
   </div>
+</div></section>
 
-  <h2>Concerns, answered</h2>
-  <p class="q">"Is a human reviewing this, with real care?"</p>
-  <p class="a">
-    Yes, for anything that could reach Kicksecure or Whonix. That review costs
-    many hours and lands as human fixup commits on top of AI-generated code.
-  </p>
-  <p class="q">"The docs say content is too high-volume for human review, so nobody reviews it."</p>
-  <p class="a">
-    That applies only to this sandbox org, not to code entering Kicksecure or
-    Whonix. High-volume, minimally-reviewed code stays here and never ships.
-  </p>
-  <p class="q">"What stops a malicious AI commit from reaching users?"</p>
-  <p class="a">
-    The write-access boundary. No AI agent can push to a Kicksecure or Whonix
-    repository, so nothing an AI writes reaches users without passing through
-    human review first.
-  </p>
+<section class="cat" id="concerns"><div class="wrap">
+  <h2 class="catname">Concerns, answered</h2>
 
-  <h2>What is here</h2>
-  <p>Two kinds of repository:</p>
-  <ul>
+  <div class="qa">
+    <h4>"Is a human reviewing this, with real care?"</h4>
+    <p>
+      Yes, for anything that could reach Kicksecure or Whonix. That review costs
+      many hours and lands as human fixup commits on top of AI-generated code.
+    </p>
+  </div>
+  <div class="qa">
+    <h4>"The docs say content is too high-volume for human review, so nobody reviews it."</h4>
+    <p>
+      That applies only to this sandbox org, not to code entering Kicksecure or
+      Whonix. High-volume, minimally-reviewed code stays here and never ships.
+    </p>
+  </div>
+  <div class="qa">
+    <h4>"What stops a malicious AI commit from reaching users?"</h4>
+    <p>
+      The write-access boundary. No AI agent can push to a Kicksecure or Whonix
+      repository, so nothing an AI writes reaches users without passing through
+      human review first.
+    </p>
+  </div>
+</div></section>
+
+<section class="cat" id="repos"><div class="wrap">
+  <h2 class="catname">What is here</h2>
+  <p class="catdesc">Two kinds of repository.</p>
+  <ul class="repos">
     <li>
-      <strong>Mirrors</strong> of Kicksecure and Whonix components. The canonical
-      source and issue tracker for these live upstream, under
+      <b>Mirrors</b> of Kicksecure and Whonix components. The canonical source and
+      issue tracker for these live upstream, under
       <a href="https://github.com/Kicksecure">@Kicksecure</a> and
       <a href="https://github.com/Whonix">@Whonix</a>. Go there.
     </li>
     <li>
-      <strong>Origin repositories</strong> native to this org, with no upstream
-      mirror:
+      <b>Origin repositories</b> native to this org, with no upstream mirror:
       <ul>
         <li>
           <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>,
@@ -184,33 +163,53 @@
       </ul>
     </li>
   </ul>
+</div></section>
 
+<section class="outro" id="discussion"><div class="wrap">
   <h2>Where discussion belongs</h2>
   <p>
     Not here. File issues and start discussions on the relevant upstream: the
     matching Kicksecure or Whonix repository, or the upstream bug tracker a
     reproducer targets. This org has issues and discussions closed by intent.
   </p>
+</div></section>
 
-  <footer>
-    <p>
-      <a href="https://github.com/org-ai-assisted">GitHub org</a> &middot;
-      <a href="https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence">Kicksecure AI policy</a> &middot;
-      <a href="https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence">Whonix AI policy</a> &middot;
-      <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">Whonix AI policy discussion</a> &middot;
-      <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a>
-    </p>
-    <p>
-      Source:
-      <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">org-ai-assisted.github.io</a> (this page) &middot;
-      <a href="https://github.com/org-ai-assisted/.github">.github</a> (org profile)
-    </p>
-    <p>
-      Related:
-      <a href="https://output-lies.github.io">output lies</a>, a sibling
-      AI-assisted project (safe text-rendering tools and demos).
-    </p>
-  </footer>
-</main>
-</body>
-</html>
+<footer>
+  <div class="ftop">
+    <div class="fbrand">
+      <span class="ftag"><svg class="logo" width="22" height="22" viewBox="0 0 26 26" aria-hidden="true" focusable="false"><rect x="1.5" y="3" width="23" height="20" rx="4.5" fill="#14161b"/><path d="M6 9.5 L9.6 13 L6 16.5" fill="none" stroke="#cfd3da" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><rect x="11.6" y="14.9" width="7.4" height="2.3" rx="1.1" fill="#d83933"/></svg>org-ai-assisted</span>
+      <p>Code, not discussion. Go upstream.</p>
+    </div>
+    <nav class="fcols">
+      <div class="fcol">
+        <h4>Navigate</h4>
+        <a href="#trust">Trust model</a>
+        <a href="#concerns">Concerns</a>
+        <a href="#repos">Repositories</a>
+        <a href="#discussion">Discussion</a>
+      </div>
+      <div class="fcol">
+        <h4>Source</h4>
+        <a href="https://github.com/org-ai-assisted">organisation</a>
+        <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">this page</a>
+        <a href="https://github.com/org-ai-assisted/.github">org profile</a>
+      </div>
+      <div class="fcol">
+        <h4>Policy &amp; references</h4>
+        <a href="https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence">Kicksecure AI policy</a><a class="arch" href="https://web.archive.org/web/20260418141613/https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence" title="Archived copy (Wayback Machine)" aria-label="Archived copy"></a>
+        <a href="https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence">Whonix AI policy</a><a class="arch" href="https://web.archive.org/web/20260604004341/https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence" title="Archived copy (Wayback Machine)" aria-label="Archived copy"></a>
+        <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">Forum discussion</a><a class="arch" href="https://web.archive.org/web/20260715060626/https://forums.whonix.org/t/is-whonix-vibecoded-now/23405" title="Archived copy (Wayback Machine)" aria-label="Archived copy"></a>
+        <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a><a class="arch" href="https://web.archive.org/web/20260515195725/https://www.kicksecure.com/wiki/Dev/Build_Documentation" title="Archived copy (Wayback Machine)" aria-label="Archived copy"></a>
+      </div>
+      <div class="fcol">
+        <h4>Related</h4>
+        <a href="https://output-lies.github.io">output lies</a>
+        <a href="https://github.com/output-lies">output-lies org</a>
+      </div>
+    </nav>
+  </div>
+  <div class="fbot">
+    <span class="fcopy">Operated by @adrelanos</span>
+    <span class="fcopy sp">AI-assisted &middot; pending human review</span>
+  </div>
+</footer>
