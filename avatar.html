@@ -1,13 +1,18 @@
 <!--
   Org avatar source for org-ai-assisted. AI-Assisted.
-  Rendered headless at 1024x1024 to avatar.png (upload as the GitHub org profile image).
+  Wordmark lockup rendered headless at 1024x1024 to avatar.png (GitHub org profile image).
 -->
 <meta charset="utf-8">
 <style>
   html,body{margin:0;width:1024px;height:1024px}
-  body{background:#f3f2ee;display:flex;align-items:center;justify-content:center}
-  svg{width:640px;height:640px}
+  body{background:#f3f2ee;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:"DejaVu Sans Mono","Cascadia Code",monospace;font-weight:700;color:#14161b;
+    letter-spacing:-6px;line-height:1.02}
+  .l{font-size:168px}
+  .r{color:#d83933}
+  .cur{display:inline-block;width:58px;height:132px;background:#d83933;vertical-align:-14px;margin-left:10px}
 </style>
 <body>
-<svg viewBox="0 -2 26 26" xmlns="http://www.w3.org/2000/svg"><line x1="13" y1="6" x2="13" y2="3.2" stroke="#14161b" stroke-width="1.8" stroke-linecap="round"/><circle cx="13" cy="2.4" r="1.7" fill="#d83933"/><rect x="3.5" y="6" width="19" height="15" rx="4.2" fill="#14161b"/><circle cx="9.2" cy="13.2" r="2" fill="#cfd3da"/><circle cx="16.8" cy="13.2" r="2" fill="#cfd3da"/><rect x="9" y="17.2" width="8" height="1.8" rx="0.9" fill="#5b6270"/></svg>
+  <div class="l">org-<span class="r">ai</span>-</div>
+  <div class="l">assisted<span class="cur"></span></div>
 </body>
