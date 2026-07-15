@@ -14,6 +14,9 @@
     --accent: #0b6bcb;
     --card: #f6f7f9;
     --code: #eceef1;
+    --notice-bg: #fff8e6;
+    --notice-line: #e6c65c;
+    --notice-fg: #6b5300;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -24,6 +27,9 @@
       --accent: #5aa9ff;
       --card: #161a20;
       --code: #1d222a;
+      --notice-bg: #2a2410;
+      --notice-line: #6b5a1e;
+      --notice-fg: #e8d68a;
     }
   }
   * { box-sizing: border-box; }
@@ -64,6 +70,13 @@
   li { margin: 0.35rem 0; }
   .q { font-weight: 600; margin-bottom: 0.15rem; }
   .a { color: var(--muted); margin-top: 0; }
+  .notice {
+    background: var(--notice-bg); border: 1px solid var(--notice-line);
+    color: var(--notice-fg); border-radius: 8px;
+    padding: 0.6rem 0.9rem; margin: 0 0 1.75rem;
+    font-size: 0.9rem; line-height: 1.5;
+  }
+  .notice strong { font-weight: 700; }
   footer {
     margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
     color: var(--muted); font-size: 0.9rem;
@@ -72,6 +85,10 @@
 </head>
 <body>
 <main>
+  <div class="notice">
+    <strong>Unreviewed draft, work in progress.</strong> This page is
+    AI-generated and pending human review.
+  </div>
   <header>
     <span class="tag">bot org</span><span class="tag">machine org</span><span class="tag">AI-assisted</span>
     <h1>org-ai-assisted</h1>
@@ -142,8 +159,8 @@
     <li>
       <strong>Mirrors</strong> of Kicksecure and Whonix components. The canonical
       source and issue tracker for these live upstream, under
-      <a href="https://github.com/Kicksecure">Kicksecure</a> and
-      <a href="https://github.com/Whonix">Whonix</a>. Go there.
+      <a href="https://github.com/Kicksecure">@Kicksecure</a> and
+      <a href="https://github.com/Whonix">@Whonix</a>. Go there.
     </li>
     <li>
       <strong>Origin repositories</strong> native to this org, with no upstream
@@ -187,6 +204,11 @@
       Source:
       <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">org-ai-assisted.github.io</a> (this page) &middot;
       <a href="https://github.com/org-ai-assisted/.github">.github</a> (org profile)
+    </p>
+    <p>
+      Related:
+      <a href="https://output-lies.github.io">output lies</a>, a sibling
+      AI-assisted project (safe text-rendering tools and demos).
     </p>
   </footer>
 </main>
