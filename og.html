@@ -15,7 +15,8 @@
   body{background:var(--bg);color:var(--ink);font-family:var(--sans);
     padding:72px 76px;display:flex;flex-direction:column;justify-content:space-between}
   .brand{font-family:var(--mono);font-weight:700;font-size:32px;letter-spacing:-.02em;
-    display:flex;align-items:baseline}
+    display:flex;align-items:center;gap:16px}
+  .brand svg{width:46px;height:46px;flex:0 0 auto}
   .brand b{color:var(--accent)}
   .brand .tm{font-size:16px;color:var(--muted);margin-left:6px;font-weight:600;align-self:flex-start}
   .kicker{font-family:var(--mono);font-size:22px;letter-spacing:.14em;
@@ -30,7 +31,7 @@
 </style>
 <body>
   <div class="brand">
-    org-<b>ai</b>-assisted<span class="tm">&trade;</span>
+    <svg viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="2" width="22" height="22" rx="6" fill="#14161b"/><path d="M7.3 13 L11 16.8 L18.7 9" fill="none" stroke="#d83933" stroke-width="2.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span>org-<b>ai</b>-assisted<span class="tm">&trade;</span></span>
   </div>
   <div>
     <div class="kicker">Bot / machine organisation &middot; AI-assisted</div>
