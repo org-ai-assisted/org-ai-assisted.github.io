@@ -111,6 +111,10 @@ footer .fcol h4{margin:0 0 3px;font-family:var(--mono);font-size:.7rem;letter-sp
   text-transform:uppercase;color:var(--muted);font-weight:600}
 footer .fcol a{color:var(--ink);text-decoration:none;font-size:.88rem}
 footer .fcol a:hover{color:var(--accent)}
+/* self-link: the current site appears in the uniform Family list but is not
+   clickable and is marked as the current page. */
+footer .fcol a.self{color:var(--muted);pointer-events:none;cursor:default;text-decoration:none}
+footer .fcol a.self::after{content:" (this site)";font-size:.8em;opacity:.7}
 footer .fbot{display:flex;gap:20px;flex-wrap:wrap;padding:16px 20px 44px;
   border-top:1px solid var(--line);align-items:center;max-width:1080px;margin:0 auto}
 footer .fbot .sp{margin-left:auto}
