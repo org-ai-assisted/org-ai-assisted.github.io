@@ -58,12 +58,17 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           path: org-ai-assisted-site
+          ## The next step executes dist-ai's code in this workspace. Checkout
+          ## otherwise leaves this repo's GITHUB_TOKEN in .git/config, where
+          ## that foreign code can read it. Nothing here pushes.
+          persist-credentials: false
 
       - name: Check out dist-ai (test suite)
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           repository: org-ai-assisted/dist-ai
           path: dist-ai
+          persist-credentials: false
 
       - name: Run website-tests
         run: ORG_AI_ASSISTED_REPO="${GITHUB_WORKSPACE}/org-ai-assisted-site" bash dist-ai/usr/bin/website-tests
