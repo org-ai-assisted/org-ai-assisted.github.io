@@ -10,7 +10,7 @@
   --archmask:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23000'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M3%207.8%2012%203.2%2021%207.8'/%3E%3Cpath%20d='M4%2020.4h16'/%3E%3Cpath%20d='M6.5%2010.6v8M10.5%2010.6v8M14.5%2010.6v8M18.5%2010.6v8'/%3E%3C/svg%3E");
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:112px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:76px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
   line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -22,18 +22,40 @@ code{font-family:var(--mono);font-size:.88em;background:#dfe3e9;border:1px solid
 /* sticky masthead */
 header.nav{position:sticky;top:0;z-index:10;background:rgba(233,235,239,.92);
   backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav > .wrap{display:flex;align-items:center;gap:18px;height:58px}
+.nav > .wrap{display:flex;align-items:center;gap:12px;min-height:58px;position:relative}
 .brand{display:inline-flex;align-items:center;text-decoration:none}
 .brand .brandmark{height:20px;width:auto;display:block}
-.nav nav{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap;
-  font:600 .82rem/1 var(--mono);letter-spacing:.02em}
-.nav nav a{color:var(--muted);text-decoration:none}
+/* menu toggle: CSS-only hidden checkbox + label; nav inline on desktop */
+.nav .navtoggle{position:absolute;opacity:0;width:0;height:0;pointer-events:none}
+.nav .menubtn{margin-left:auto;display:inline-block;cursor:pointer;user-select:none;
+  font:600 .82rem/1 var(--mono);color:var(--ink);border:1px solid var(--line);
+  border-radius:8px;padding:8px 10px}
+.nav .menubtn::before{content:"";display:inline-block;width:15px;height:11px;
+  vertical-align:-1px;background:linear-gradient(currentColor 0 2px,transparent 2px 4.5px,
+  currentColor 4.5px 6.5px,transparent 6.5px 9px,currentColor 9px 11px)}
+.nav .navtoggle:focus-visible + .menubtn{outline:2px solid var(--deny);outline-offset:2px}
+.nav nav{font:600 .82rem/1 var(--mono);letter-spacing:.02em}
+.nav nav a{color:var(--muted);text-decoration:none;white-space:nowrap}
 .nav nav a:hover{color:var(--ink)}
-.nav .subnav{border-top:1px solid var(--line)}
-.nav .subnav .wrap{display:flex;gap:24px;height:40px;align-items:center;
-  overflow-x:auto;white-space:nowrap}
-.nav .subnav a{font:600 .74rem/1 var(--mono);letter-spacing:.04em;color:var(--muted);text-decoration:none}
-.nav .subnav a:hover{color:var(--deny)}
+.nav nav{display:none}
+.nav .navtoggle:checked ~ nav{position:absolute;left:0;right:0;top:100%;display:flex;
+  flex-direction:column;align-items:stretch;gap:0;background:var(--paper);
+  border-bottom:1px solid var(--line);padding:2px 20px 10px;box-shadow:0 12px 26px rgba(0,0,0,.10)}
+.nav .navtoggle:checked ~ nav a{padding:11px 2px;border-top:1px solid var(--line);
+  font-size:1rem;white-space:normal;color:var(--ink)}
+@media(min-width:721px){
+  .nav .menubtn{display:none}
+  .nav nav{display:flex;gap:20px;align-items:center;position:static;flex-wrap:wrap}
+}
+/* inline "on this page" table of contents (replaces the old second sticky bar) */
+.toc{margin:0 0 6px;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:13px 16px}
+.toc .toch{margin:0 0 9px;font:600 .66rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.toc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 22px}
+.toc li{margin:0}
+.toc a{font:600 .78rem/1 var(--mono);letter-spacing:.02em;color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+.toc a::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--deny);display:inline-block;flex:0 0 auto;opacity:.55}
+.toc a:hover{color:var(--deny)}
+.toc a:hover::before{opacity:1}
 
 /* hero */
 .hero{padding:52px 0 38px}
@@ -145,10 +167,7 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
 @media (max-width:720px){
   .nav > .wrap{gap:10px}
   .brand .brandmark{height:16px}
-  .nav nav{gap:12px;font-size:.72rem;flex-shrink:0}
-  .nav .subnav .wrap{flex-wrap:wrap;white-space:normal;overflow-x:visible;height:auto;
-    gap:8px 16px;padding-top:8px;padding-bottom:8px}
-  html{scroll-padding-top:150px}
+  html{scroll-padding-top:76px}
   .boundary{grid-template-columns:1fr}
   .divider{height:3px;width:auto;transform-origin:left;animation:drawx .55s ease-out both}
   @keyframes drawx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
