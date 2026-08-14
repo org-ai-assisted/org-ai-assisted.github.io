@@ -39,10 +39,13 @@ header.nav{position:sticky;top:0;z-index:10;background:rgba(233,235,239,.92);
 .nav nav a:hover{color:var(--ink)}
 .nav nav{display:none}
 .nav .navtoggle:checked ~ nav{position:absolute;left:0;right:0;top:100%;display:flex;
-  flex-direction:column;align-items:stretch;gap:0;background:var(--paper);
+  flex-direction:column;align-items:stretch;gap:0;background:var(--paper);z-index:2;
   border-bottom:1px solid var(--line);padding:2px 20px 10px;box-shadow:0 12px 26px rgba(0,0,0,.10)}
 .nav .navtoggle:checked ~ nav a{padding:11px 2px;border-top:1px solid var(--line);
   font-size:1rem;white-space:normal;color:var(--ink)}
+/* click-outside-to-close: invisible full-viewport label under the panel (no JS) */
+.nav .navscrim{display:none}
+.nav .navtoggle:checked ~ .navscrim{display:block;position:fixed;inset:0;z-index:1}
 @media(min-width:721px){
   .nav .menubtn{display:none}
   .nav nav{display:flex;gap:20px;align-items:center;position:static;flex-wrap:wrap}
@@ -168,6 +171,10 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
   .nav > .wrap{gap:10px}
   .brand .brandmark{height:16px}
   html{scroll-padding-top:76px}
+  /* icon-only toggle on mobile: hides the "Menu" label (it had no gap and ran
+     into the hamburger); the centered icon reads clearly on its own */
+  .nav .menubtn{font-size:0;padding:9px 10px}
+  .nav .menubtn::before{margin-right:0}
   .boundary{grid-template-columns:1fr}
   .divider{height:3px;width:auto;transform-origin:left;animation:drawx .55s ease-out both}
   @keyframes drawx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
