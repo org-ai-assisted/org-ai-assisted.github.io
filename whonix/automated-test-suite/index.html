@@ -49,8 +49,8 @@
 
 <section class="hero"><div class="wrap">
   <p class="kicker">Automated release testing &middot; <b>Whonix</b></p>
-  <h1>Whonix release-test suite</h1>
-  <p class="line">Boot the pair, then prove the Workstation can only reach the internet through Tor.</p>
+  <h1>Leak tests</h1>
+  <p class="line">Boot the Whonix pair, then prove the Workstation can only reach the internet through Tor.</p>
   <p class="sub">
     The suite imports a published Whonix Gateway and Workstation pair, boots both headless
     on an isolated virtual network, and runs a fail-closed probe battery that asserts the
@@ -99,24 +99,26 @@
 
 <section class="cat" id="topology"><div class="wrap">
   <h2 class="catname">The topology</h2>
-  <div class="qa">
-    <h4>Isolated by construction</h4>
-    <p>
-      The pair boots on a private VirtualBox internal network. The Workstation has a
-      single interface on that network and no direct route to the host or the internet,
-      so its only possible path out is Workstation to Gateway to Tor. The test proves the
-      property the topology is designed to enforce.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Driven in-guest</h4>
-    <p>
-      Shipped Whonix images carry a guest agent, so the battery is delivered over a
-      read-only shared folder and run inside the guests through guestcontrol, rather than
-      by reading the screen. The Workstation runs the probes in its maintenance session,
-      which has the privileges the raw-packet probes need; the Gateway routes in its
-      normal session.
-    </p>
+  <div class="fg">
+    <div class="issue">
+      <h3>Isolated by construction</h3>
+      <p>
+        The pair boots on a private VirtualBox internal network. The Workstation has a
+        single interface on that network and no direct route to the host or the internet,
+        so its only possible path out is Workstation to Gateway to Tor. The test proves the
+        property the topology is designed to enforce.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Driven in-guest</h3>
+      <p>
+        Shipped Whonix images carry a guest agent, so the battery is delivered over a
+        read-only shared folder and run inside the guests through guestcontrol, rather than
+        by reading the screen. The Workstation runs the probes in its maintenance session,
+        which has the privileges the raw-packet probes need; the Gateway routes in its
+        normal session.
+      </p>
+    </div>
   </div>
 </div></section>
 
@@ -170,31 +172,33 @@
 
 <section class="cat" id="verdict"><div class="wrap">
   <h2 class="catname">Accounts, verdicts, evidence</h2>
-  <div class="qa">
-    <h4>A dedicated, persistent account</h4>
-    <p>
-      The leak lane always runs in its own dedicated Linux account, never shared with the
-      install lanes. Isolation, not disposability, is the point: each run restores both
-      virtual machines to a committed clean snapshot first, and the account is kept
-      unprivileged and covered by a host firewall drop as a backstop.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Version attribution, fail-closed</h4>
-    <p>
-      Both machines carry a pinned version marker. Before a run, both markers must match
-      the requested version, or the run is reported as a setup problem rather than a leak,
-      so a stale image can never be mistaken for a leaking release.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Three outcomes and evidence</h4>
-    <p>
-      A run reports pass, fail, or inconclusive, where inconclusive marks a provisioning
-      gap rather than a product defect. Results are published to a read-only area so a
-      person can check the machine's verdict; the machine runs the test, a human still
-      decides what to trust.
-    </p>
+  <div class="fg">
+    <div class="issue">
+      <h3>A dedicated, persistent account</h3>
+      <p>
+        The leak lane always runs in its own dedicated Linux account, never shared with the
+        install lanes. Isolation, not disposability, is the point: each run restores both
+        virtual machines to a committed clean snapshot first, and the account is kept
+        unprivileged and covered by a host firewall drop as a backstop.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Version attribution, fail-closed</h3>
+      <p>
+        Both machines carry a pinned version marker. Before a run, both markers must match
+        the requested version, or the run is reported as a setup problem rather than a leak,
+        so a stale image can never be mistaken for a leaking release.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Three outcomes and evidence</h3>
+      <p>
+        A run reports pass, fail, or inconclusive, where inconclusive marks a provisioning
+        gap rather than a product defect. Results are published to a read-only area so a
+        person can check the machine's verdict; the machine runs the test, a human still
+        decides what to trust.
+      </p>
+    </div>
   </div>
 </div></section>
 

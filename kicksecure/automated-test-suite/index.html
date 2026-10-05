@@ -49,8 +49,8 @@
 
 <section class="hero"><div class="wrap">
   <p class="kicker">Automated release testing &middot; <b>Kicksecure</b></p>
-  <h1>Kicksecure release-test suite</h1>
-  <p class="line">Install a candidate release the way a user would, unattended, and prove it boots.</p>
+  <h1>Install tests</h1>
+  <p class="line">Install a Kicksecure release the way a user would, unattended, and prove it boots.</p>
   <p class="sub">
     The suite takes a published Kicksecure image and runs an unattended, full-disk
     encrypted installation under VirtualBox, then boots the installed system and runs a
@@ -103,40 +103,42 @@
     The live installer has no automation agent for its GUI, so the suite drives it from
     the host the way a person would: it reads the screen and moves the mouse and keyboard.
   </p>
-  <div class="qa">
-    <h4>Located by on-screen text</h4>
-    <p>
-      Each installer page is found by optical character recognition (OCR) of a
-      screenshot, then confirmed by its own content text before the suite acts. Because
-      targets are located by text rather than fixed pixels, the same drive works across
-      display resolutions and firmware modes.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Boot role, then launch</h4>
-    <p>
-      The suite waits for the GRUB menu, selects the unrestricted install session (the
-      default session refuses to install), and launches the installer through VirtualBox
-      guestcontrol rather than a blind-typed terminal line, so the launch has a real
-      success signal.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Through the pages</h4>
-    <p>
-      Welcome, Location, Keyboard, then Partitions, where the suite selects erase disk,
-      which turns on system encryption. It enters the LUKS passphrase twice, never
-      placing it on a command line. On the Summary page it triggers Install by the
-      keyboard accelerator, a deterministic action rather than a click on a button
-      caption that reads unreliably, and waits for completion.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Unlock and boot</h4>
-    <p>
-      On reboot the suite enters the passphrase at the LUKS prompt and waits for the
-      installed system to come up, closing the R3 and R4 goals.
-    </p>
+  <div class="fg">
+    <div class="issue">
+      <h3>Located by on-screen text</h3>
+      <p>
+        Each installer page is found by optical character recognition (OCR) of a
+        screenshot, then confirmed by its own content text before the suite acts. Because
+        targets are located by text rather than fixed pixels, the same drive works across
+        display resolutions and firmware modes.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Boot role, then launch</h3>
+      <p>
+        The suite waits for the GRUB menu, selects the unrestricted install session (the
+        default session refuses to install), and launches the installer through VirtualBox
+        guestcontrol rather than a blind-typed terminal line, so the launch has a real
+        success signal.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Through the pages</h3>
+      <p>
+        Welcome, Location, Keyboard, then Partitions, where the suite selects erase disk,
+        which turns on system encryption. It enters the LUKS passphrase twice, never
+        placing it on a command line. On the Summary page it triggers Install by the
+        keyboard accelerator, a deterministic action rather than a click on a button
+        caption that reads unreliably, and waits for completion.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Unlock and boot</h3>
+      <p>
+        On reboot the suite enters the passphrase at the LUKS prompt and waits for the
+        installed system to come up, closing the R3 and R4 goals.
+      </p>
+    </div>
   </div>
 </div></section>
 
@@ -185,33 +187,35 @@
 
 <section class="cat" id="verdict"><div class="wrap">
   <h2 class="catname">Accounts, verdicts, evidence</h2>
-  <div class="qa">
-    <h4>Isolation by account</h4>
-    <p>
-      VirtualBox state lives per home directory, so the Linux user account is the
-      isolation boundary. A candidate that is not yet the blessed stable version runs in
-      a disposable, version-named account that is removed afterwards; the blessed stable
-      version runs in a long-lived golden account for longitudinal comparison. Test
-      accounts are forced unprivileged, with no passwordless administration, checked and
-      failing closed.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Three outcomes, never a false green</h4>
-    <p>
-      A run reports pass, fail, or inconclusive. Inconclusive marks a provisioning or
-      infrastructure gap rather than a product defect, so a setup problem is never
-      recorded as a passing or failing release.
-    </p>
-  </div>
-  <div class="qa">
-    <h4>Evidence for a human</h4>
-    <p>
-      Each run captures a screenshot and a machine-readable result and publishes them to
-      a read-only results area. Screenshots make the automated verdict checkable by a
-      person, which is the point: the machine runs the test, a human still decides what
-      to trust.
-    </p>
+  <div class="fg">
+    <div class="issue">
+      <h3>Isolation by account</h3>
+      <p>
+        VirtualBox state lives per home directory, so the Linux user account is the
+        isolation boundary. A candidate that is not yet the blessed stable version runs in
+        a disposable, version-named account that is removed afterwards; the blessed stable
+        version runs in a long-lived golden account for longitudinal comparison. Test
+        accounts are forced unprivileged, with no passwordless administration, checked and
+        failing closed.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Three outcomes, never a false green</h3>
+      <p>
+        A run reports pass, fail, or inconclusive. Inconclusive marks a provisioning or
+        infrastructure gap rather than a product defect, so a setup problem is never
+        recorded as a passing or failing release.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Evidence for a human</h3>
+      <p>
+        Each run captures a screenshot and a machine-readable result and publishes them to
+        a read-only results area. Screenshots make the automated verdict checkable by a
+        person, which is the point: the machine runs the test, a human still decides what
+        to trust.
+      </p>
+    </div>
   </div>
 </div></section>
 
