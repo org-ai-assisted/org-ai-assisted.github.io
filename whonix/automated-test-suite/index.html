@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  org-ai-assisted: Whonix automated release-test suite. AI-Assisted.
+  Describes the method the suite uses; it does not claim release results.
+  Source: https://github.com/org-ai-assisted/org-ai-assisted.github.io
+-->
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ai-disclosure" content="ai-assisted">
+<title>Whonix automated release-test suite</title>
+<meta name="description" content="How the automated release-test suite leak-tests a Whonix release: a Gateway and Workstation pair booted on an isolated network, with a fail-closed probe battery proving the Workstation reaches the internet only through Tor.">
+<link rel="canonical" href="https://org-ai-assisted.github.io/whonix/automated-test-suite/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="org-ai-assisted">
+<meta property="og:title" content="Whonix automated release-test suite">
+<meta property="og:description" content="A Gateway and Workstation pair on an isolated network, with a fail-closed probe battery proving the Workstation egresses only through Tor.">
+<meta property="og:url" content="https://org-ai-assisted.github.io/whonix/automated-test-suite/">
+<meta property="og:image" content="https://org-ai-assisted.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Whonix automated release-test suite">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Whonix automated release-test suite">
+<meta name="twitter:description" content="A Gateway and Workstation pair on an isolated network, with a fail-closed probe battery proving the Workstation egresses only through Tor.">
+<meta name="twitter:image" content="https://org-ai-assisted.github.io/og.png">
+<meta name="twitter:image:alt" content="Whonix automated release-test suite">
+<meta name="theme-color" content="#e9ebef">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="stylesheet" href="/style.css?v=2">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
+    <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
+    <label class="menubtn" for="navtoggle">Menu</label>
+    <nav>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+      <a href="https://secure-terminal.github.io">secure-terminal</a>
+    </nav>
+    <label class="navscrim" for="navtoggle" aria-hidden="true"></label>
+  </div>
+</header>
+
+<section class="hero"><div class="wrap">
+  <p class="kicker">Automated release testing &middot; <b>Whonix</b></p>
+  <h1>Whonix release-test suite</h1>
+  <p class="line">Boot the pair, then prove the Workstation can only reach the internet through Tor.</p>
+  <p class="sub">
+    The suite imports a published Whonix Gateway and Workstation pair, boots both headless
+    on an isolated virtual network, and runs a fail-closed probe battery that asserts the
+    Workstation's only path out is through the Gateway's Tor. It is part of
+    <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>, the
+    sandbox tooling: it never ships to users and is not a trust signal, it is a machine
+    that exercises a release. The matching lane for Kicksecure is the
+    <a href="/kicksecure/automated-test-suite/">Kicksecure test suite</a>.
+  </p>
+</div></section>
+
+<div class="wrap"><nav class="toc" aria-label="On this page">
+  <p class="toch">On this page</p>
+  <ul>
+    <li><a href="#overview">What it tests</a></li>
+    <li><a href="#topology">The topology</a></li>
+    <li><a href="#probes">The probe battery</a></li>
+    <li><a href="#canary">No silent green</a></li>
+    <li><a href="#verdict">Accounts, verdicts, evidence</a></li>
+  </ul>
+</nav></div>
+
+<section class="cat" id="overview"><div class="wrap">
+  <h2 class="catname">What it tests</h2>
+  <p class="catdesc">The core Whonix guarantee, exercised, not assumed.</p>
+  <div class="fg">
+    <div class="issue">
+      <h3>Tor-only egress</h3>
+      <p>
+        Whonix routes all Workstation traffic through the Gateway's Tor. The suite boots
+        the actual Gateway and Workstation images as a pair and tries, from inside the
+        Workstation, to reach the clear internet by every path it can, then confirms none
+        of it escaped.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>The real check, not a slogan</h3>
+      <p>
+        The authority is the full leak-test probe battery run inside the Workstation, not
+        a single "is Tor working" string. Every probe fails closed, so a probe that
+        cannot run counts against the release rather than passing by default.
+      </p>
+    </div>
+  </div>
+</div></section>
+
+<section class="cat" id="topology"><div class="wrap">
+  <h2 class="catname">The topology</h2>
+  <div class="qa">
+    <h4>Isolated by construction</h4>
+    <p>
+      The pair boots on a private VirtualBox internal network. The Workstation has a
+      single interface on that network and no direct route to the host or the internet,
+      so its only possible path out is Workstation to Gateway to Tor. The test proves the
+      property the topology is designed to enforce.
+    </p>
+  </div>
+  <div class="qa">
+    <h4>Driven in-guest</h4>
+    <p>
+      Shipped Whonix images carry a guest agent, so the battery is delivered over a
+      read-only shared folder and run inside the guests through guestcontrol, rather than
+      by reading the screen. The Workstation runs the probes in its maintenance session,
+      which has the privileges the raw-packet probes need; the Gateway routes in its
+      normal session.
+    </p>
+  </div>
+</div></section>
+
+<section class="cat" id="probes"><div class="wrap">
+  <h2 class="catname">The probe battery</h2>
+  <p class="catdesc">
+    A set of probes, each trying a different way to leak, all fail-closed.
+  </p>
+  <ul class="repos">
+    <li><b>Enumerate</b>: inventory the Workstation's interfaces and routes.</li>
+    <li><b>ICMP</b>: attempt a direct ping to a clearnet address.</li>
+    <li><b>UDP</b>: attempt a direct UDP packet, such as clearnet NTP.</li>
+    <li><b>IPv6</b>: attempt direct IPv6 egress, including a forged source.</li>
+    <li><b>Tor confirm</b>: confirm the Workstation's traffic is actually going over Tor.</li>
+    <li><b>Gateway craft</b>: emit deliberately crafted direct-egress packets while the Gateway's external link is watched.</li>
+  </ul>
+  <div class="qa">
+    <h4>A live positive control</h4>
+    <p>
+      The confined built-in system check is used as the positive control: it proves the
+      expected Tor path is live, so a quiet result means "nothing leaked", not "nothing
+      was tested".
+    </p>
+  </div>
+</div></section>
+
+<section class="cat" id="canary"><div class="wrap">
+  <h2 class="catname">No silent green</h2>
+  <div class="fg">
+    <div class="issue">
+      <h3>Watch the wire</h3>
+      <p>
+        While the Workstation emits crafted packets aimed at tagged clear-internet
+        addresses, the Gateway's external interface is captured to a passive trace on the
+        host. A pass requires that the tagged destinations never appear leaving the
+        Gateway.
+      </p>
+    </div>
+    <div class="issue">
+      <h3>Prove the tap was not blind</h3>
+      <p>
+        An empty trace could mean "no leak" or "the capture was broken". So a pass also
+        requires the capture to be non-empty, the Tor-confirm probe to have passed, and a
+        floor of genuine Tor guard packets to have been seen. The Gateway is pinned to a
+        small fixed set of Tor entry guards, and a reserved address is excluded from that
+        set so every packet to it is an unambiguous test emission.
+      </p>
+    </div>
+  </div>
+</div></section>
+
+<section class="cat" id="verdict"><div class="wrap">
+  <h2 class="catname">Accounts, verdicts, evidence</h2>
+  <div class="qa">
+    <h4>A dedicated, persistent account</h4>
+    <p>
+      The leak lane always runs in its own dedicated Linux account, never shared with the
+      install lanes. Isolation, not disposability, is the point: each run restores both
+      virtual machines to a committed clean snapshot first, and the account is kept
+      unprivileged and covered by a host firewall drop as a backstop.
+    </p>
+  </div>
+  <div class="qa">
+    <h4>Version attribution, fail-closed</h4>
+    <p>
+      Both machines carry a pinned version marker. Before a run, both markers must match
+      the requested version, or the run is reported as a setup problem rather than a leak,
+      so a stale image can never be mistaken for a leaking release.
+    </p>
+  </div>
+  <div class="qa">
+    <h4>Three outcomes and evidence</h4>
+    <p>
+      A run reports pass, fail, or inconclusive, where inconclusive marks a provisioning
+      gap rather than a product defect. Results are published to a read-only area so a
+      person can check the machine's verdict; the machine runs the test, a human still
+      decides what to trust.
+    </p>
+  </div>
+</div></section>
+
+<section class="outro" id="more"><div class="wrap">
+  <h2>Where this sits</h2>
+  <p>
+    This suite is tooling in
+    <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a> and
+    follows the boundary described on the
+    <a href="/">org-ai-assisted</a> page: it runs on disposable systems, never ships, and
+    is not a substitute for human review. See also the
+    <a href="/kicksecure/automated-test-suite/">Kicksecure test suite</a>.
+  </p>
+</div></section>
+
+<footer>
+  <div class="ftop">
+    <div class="fbrand">
+      <span class="ftag"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></span>
+      <p>Code, not discussion. Go upstream.</p>
+    </div>
+    <nav class="fcols">
+      <div class="fcol">
+        <h4>Navigate</h4>
+        <a href="#overview">What it tests</a>
+        <a href="#topology">The topology</a>
+        <a href="#probes">The probe battery</a>
+        <a href="#canary">No silent green</a>
+        <a href="#verdict">Accounts and verdicts</a>
+      </div>
+      <div class="fcol">
+        <h4>Source</h4>
+        <a href="https://github.com/org-ai-assisted">organisation</a>
+        <a href="https://github.com/org-ai-assisted/dist-ai">dist-ai</a>
+        <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">this page</a>
+      </div>
+      <div class="fcol">
+        <h4>Policy &amp; references</h4>
+        <a href="https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence">Whonix AI policy</a><a class="arch" href="https://web.archive.org/web/20260604004341/https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence" title="Archived copy (Wayback Machine)" aria-label="Archived copy"></a>
+        <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a><a class="arch" href="https://web.archive.org/web/20260515195725/https://www.kicksecure.com/wiki/Dev/Build_Documentation" title="Archived copy (Wayback Machine)" aria-label="Archived copy"></a>
+      </div>
+      <div class="fcol">
+        <h4>Family</h4>
+        <a href="https://output-lies.github.io">output lies</a>
+        <a href="https://secure-terminal.github.io">secure-terminal</a>
+        <a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a>
+      </div>
+    </nav>
+  </div>
+  <div class="fshare">
+    <span class="fshare-l">Share:</span>
+    <a class="sh" data-net="x" rel="nofollow noopener">X</a>
+    <a class="sh" data-net="facebook" rel="nofollow noopener">Facebook</a>
+    <a class="sh" data-net="telegram" rel="nofollow noopener">Telegram</a>
+    <a class="sh" data-net="reddit" rel="nofollow noopener">Reddit</a>
+    <a class="sh" data-net="whatsapp" rel="nofollow noopener">WhatsApp</a>
+    <a class="sh" data-net="linkedin" rel="nofollow noopener">LinkedIn</a>
+    <a class="sh" data-net="hn" rel="nofollow noopener">Hacker News</a>
+    <a class="sh" data-net="mastodon" href="#" rel="nofollow noopener">Mastodon</a>
+    <a class="sh" data-net="email">Email</a>
+    <button class="sh" data-net="copy" type="button">Copy link</button>
+    <button class="sh" data-net="md" type="button">Copy as Markdown</button>
+    <span class="sh-msg" aria-live="polite"></span>
+  </div>
+  <script src="/share.js"></script>
+  <div class="fbot">
+    <span class="fcopy">&copy; 2026 <a href="https://www.encrypted-support.com">ENCRYPTED SUPPORT LLC</a></span>
+    <span class="fcopy sp"><a href="/">Built with AI assistance</a></span>
+  </div>
+</footer>
