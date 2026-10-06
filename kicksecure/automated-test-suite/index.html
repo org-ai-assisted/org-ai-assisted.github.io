@@ -86,7 +86,8 @@
       <h3>R4: installed boot</h3>
       <p>
         Detach the ISO, boot the installed disk, and confirm it reaches the first-boot
-        desktop. The release-check battery runs inside the installed system.
+        desktop. With <code>--checks</code>, the release-check battery then runs inside
+        the installed system.
       </p>
     </div>
   </div>
@@ -137,8 +138,9 @@
   <h2 class="catname">The check battery</h2>
   <p class="catdesc">
     One table (<code>release-checks.bsh</code>), shared with the upgrade-regression gate,
-    run inside the installed system in a fixed order. Each check runs a visual OCR
-    cross-check before its functional probe; both must agree.
+    run inside the installed system in a fixed order when enabled (<code>--checks</code>).
+    The graphical-login check adds a render-first visual OCR cross-check (the painted
+    desktop and the functional probe must agree); the rest are functional probes.
   </p>
   <ul class="repos">
     <li><b>Install completion</b>: installer reaches its done state.</li>
@@ -197,9 +199,10 @@
     <div class="issue">
       <h3>Results plane</h3>
       <p>
-        Each run writes <code>result.json</code> and a screenshot to a per-run directory
-        under a read-only nginx results plane (onion-fronted) and repoints
-        <code>&lt;name&gt;/latest</code>.
+        Each run writes <code>result.json</code> to a per-run directory under a read-only
+        nginx results plane (onion-fronted) and repoints <code>&lt;name&gt;/latest</code>;
+        a run that reaches first boot also captures a screenshot (best-effort -- an earlier
+        failure has none).
       </p>
     </div>
   </div>
@@ -246,7 +249,7 @@
         <h4>Family</h4>
         <a href="https://output-lies.github.io">output lies</a>
         <a href="https://secure-terminal.github.io">secure-terminal</a>
-        <a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a>
+        <a class="self" href="https://org-ai-assisted.github.io">org-ai-assisted</a>
       </div>
     </nav>
   </div>
