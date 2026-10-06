@@ -2,7 +2,7 @@
 <html lang="en">
 <!--
   org-ai-assisted: Kicksecure automated release-test suite. AI-Assisted.
-  Describes the method the suite uses; it does not claim release results.
+  Technical description of the suite's mechanism; it does not claim release results.
   Source: https://github.com/org-ai-assisted/org-ai-assisted.github.io
 -->
 <meta charset="utf-8">
@@ -10,13 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="ai-disclosure" content="ai-assisted">
 <title>Kicksecure automated release-test suite</title>
-<meta name="description" content="How the automated release-test suite installs and boot-tests a Kicksecure release: an unattended encrypted Calamares install under VirtualBox, driven by OCR and guestcontrol, with a release-critical check battery.">
+<meta name="description" content="Mechanism of the Kicksecure release-test lane: an unattended LUKS Calamares install under VirtualBox, driven by OCR and guestcontrol, followed by a boot and a release-check battery.">
 <link rel="canonical" href="https://org-ai-assisted.github.io/kicksecure/automated-test-suite/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="org-ai-assisted">
 <meta property="og:title" content="Kicksecure automated release-test suite">
-<meta property="og:description" content="An unattended encrypted Calamares install under VirtualBox, driven by OCR and guestcontrol, plus a release-critical check battery.">
+<meta property="og:description" content="Unattended LUKS Calamares install under VirtualBox, driven by OCR and guestcontrol, plus a release-check battery.">
 <meta property="og:url" content="https://org-ai-assisted.github.io/kicksecure/automated-test-suite/">
 <meta property="og:image" content="https://org-ai-assisted.github.io/og.png">
 <meta property="og:image:width" content="1200">
@@ -24,7 +24,7 @@
 <meta property="og:image:alt" content="Kicksecure automated release-test suite">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kicksecure automated release-test suite">
-<meta name="twitter:description" content="An unattended encrypted Calamares install under VirtualBox, driven by OCR and guestcontrol, plus a release-critical check battery.">
+<meta name="twitter:description" content="Unattended LUKS Calamares install under VirtualBox, driven by OCR and guestcontrol, plus a release-check battery.">
 <meta name="twitter:image" content="https://org-ai-assisted.github.io/og.png">
 <meta name="twitter:image:alt" content="Kicksecure automated release-test suite">
 <meta name="theme-color" content="#e9ebef">
@@ -50,14 +50,11 @@
 <section class="hero"><div class="wrap">
   <p class="kicker">Automated release testing &middot; <b>Kicksecure</b></p>
   <h1>Install tests</h1>
-  <p class="line">Install a Kicksecure release the way a user would, unattended, and prove it boots.</p>
+  <p class="line">Unattended LUKS Calamares install of a Kicksecure release under VirtualBox, then boot and check.</p>
   <p class="sub">
-    The suite takes a published Kicksecure image and runs an unattended, full-disk
-    encrypted installation under VirtualBox, then boots the installed system and runs a
-    battery of release-critical checks. It is part of
-    <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>, the
-    sandbox tooling. It never ships to users and is not a trust signal; it is a machine
-    that exercises a release. The matching lane for Whonix is the
+    Tooling in
+    <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>; runs on
+    disposable CI, does not ship. Companion lane:
     <a href="/whonix/automated-test-suite/">Whonix test suite</a>.
   </p>
 </div></section>
@@ -75,23 +72,21 @@
 
 <section class="cat" id="overview"><div class="wrap">
   <h2 class="catname">What it tests</h2>
-  <p class="catdesc">An end-to-end install and first boot, not a smoke test.</p>
+  <p class="catdesc">Two goal states, R3 and R4.</p>
   <div class="fg">
     <div class="issue">
-      <h3>A real encrypted install</h3>
+      <h3>R3: encrypted install</h3>
       <p>
-        The orchestrator downloads and signature-verifies the release ISO, then drives
-        the stock Calamares installer through an "erase disk" installation with LUKS full
-        disk encryption, exactly as a user would. The goal state is R3: the install
-        completes and the LUKS volume unlocks at the next boot.
+        Download and signature-verify the release ISO, drive the stock Calamares installer
+        through an erase-disk install with LUKS full-disk encryption, and confirm the LUKS
+        volume unlocks at the next boot.
       </p>
     </div>
     <div class="issue">
-      <h3>A verified first boot</h3>
+      <h3>R4: installed boot</h3>
       <p>
-        After the install the ISO is detached and the installed disk is booted on its
-        own. The suite confirms the installed system reaches its first-boot desktop
-        (R4), then can run the release-critical checks inside it.
+        Detach the ISO, boot the installed disk, and confirm it reaches the first-boot
+        desktop. The release-check battery runs inside the installed system.
       </p>
     </div>
   </div>
@@ -100,43 +95,39 @@
 <section class="cat" id="drive"><div class="wrap">
   <h2 class="catname">How the install is driven</h2>
   <p class="catdesc">
-    The live installer has no automation agent for its GUI, so the suite drives it from
-    the host the way a person would: it reads the screen and moves the mouse and keyboard.
+    The live installer exposes no GUI automation interface. The host drives it by screen
+    OCR, synthetic keyboard and mouse input, and VirtualBox guestcontrol.
   </p>
   <div class="fg">
     <div class="issue">
-      <h3>Located by on-screen text</h3>
+      <h3>OCR location</h3>
       <p>
-        Each installer page is found by optical character recognition (OCR) of a
-        screenshot, then confirmed by its own content text before the suite acts. Because
-        targets are located by text rather than fixed pixels, the same drive works across
-        display resolutions and firmware modes.
+        Screenshots are read with tesseract; each installer page is matched by its content
+        text rather than fixed pixel coordinates, so the drive is independent of display
+        resolution and firmware mode.
       </p>
     </div>
     <div class="issue">
-      <h3>Boot role, then launch</h3>
+      <h3>Launch</h3>
       <p>
-        The suite waits for the GRUB menu, selects the unrestricted install session (the
-        default session refuses to install), and launches the installer through VirtualBox
-        guestcontrol rather than a blind-typed terminal line, so the launch has a real
-        success signal.
+        The GRUB unrestricted-install entry is selected by OCR (the default session refuses
+        to install). install-host is started through VirtualBox guestcontrol, which returns
+        an exit status, rather than a blind-typed terminal line.
       </p>
     </div>
     <div class="issue">
-      <h3>Through the pages</h3>
+      <h3>Configuration pages</h3>
       <p>
-        Welcome, Location, Keyboard, then Partitions, where the suite selects erase disk,
-        which turns on system encryption. It enters the LUKS passphrase twice, never
-        placing it on a command line. On the Summary page it triggers Install by the
-        keyboard accelerator, a deterministic action rather than a click on a button
-        caption that reads unreliably, and waits for completion.
+        Welcome, Location, Keyboard, Partitions (erase disk, which enables encryption), the
+        LUKS passphrase entered twice over stdin rather than argv, then Summary. Install is
+        triggered with the Alt+I accelerator; the button caption OCRs unreliably.
       </p>
     </div>
     <div class="issue">
       <h3>Unlock and boot</h3>
       <p>
-        On reboot the suite enters the passphrase at the LUKS prompt and waits for the
-        installed system to come up, closing the R3 and R4 goals.
+        The passphrase is entered at the boot-time LUKS prompt. The suite then waits for
+        the installed system to reach first boot.
       </p>
     </div>
   </div>
@@ -145,20 +136,19 @@
 <section class="cat" id="checks"><div class="wrap">
   <h2 class="catname">The check battery</h2>
   <p class="catdesc">
-    One shared table of numbered, release-critical checks, run inside the installed
-    system. The same table drives the upgrade-regression gate, so the two can never
-    disagree about what a check is. Every check is cross-checked visually before its
-    functional probe counts, so a green result needs both to agree.
+    One table (<code>release-checks.bsh</code>), shared with the upgrade-regression gate,
+    run inside the installed system in a fixed order. Each check runs a visual OCR
+    cross-check before its functional probe; both must agree.
   </p>
   <ul class="repos">
-    <li><b>Install completion</b>: the installer reaches its done state.</li>
-    <li><b>User session boots</b>: the default, non-maintenance boot role comes up.</li>
-    <li><b>Command-line login</b>: a shell session works.</li>
-    <li><b>Graphical login</b>: the desktop compositor is running.</li>
-    <li><b>Networking</b>: the system can reach the package mirror.</li>
-    <li><b>System check with leak tests</b>: the built-in health and leak checks pass, retried to absorb first-boot settling.</li>
-    <li><b>Maintenance session boots</b>: the suite reboots into the maintenance boot role and confirms it.</li>
-    <li><b>Unprivileged upgrade</b>: a full upgrade runs to completion in the maintenance session.</li>
+    <li><b>Install completion</b>: installer reaches its done state.</li>
+    <li><b>User session</b>: default, non-maintenance boot role.</li>
+    <li><b>Command-line login</b>: shell session.</li>
+    <li><b>Graphical login</b>: compositor running.</li>
+    <li><b>Networking</b>: package mirror reachable.</li>
+    <li><b>systemcheck</b>: <code>systemcheck --cli --leak-tests --ci</code>, retried.</li>
+    <li><b>Maintenance session</b>: reboot into the maintenance boot role.</li>
+    <li><b>Upgrade</b>: unprivileged full upgrade to completion.</li>
   </ul>
 </div></section>
 
@@ -166,20 +156,19 @@
   <h2 class="catname">Firmware and Secure Boot</h2>
   <div class="fg">
     <div class="issue">
-      <h3>Three firmware modes</h3>
+      <h3>Modes</h3>
       <p>
-        The install is exercised under legacy BIOS, UEFI, and UEFI with Secure Boot. A
-        reinstall-over-encryption chain covers installing onto a disk that already holds
-        an encrypted system.
+        Legacy BIOS, UEFI, and UEFI with Secure Boot. A reinstall-over-encryption chain
+        covers installing onto a disk that already holds an encrypted system.
       </p>
     </div>
     <div class="issue">
-      <h3>Module signing under Secure Boot</h3>
+      <h3>Module signing</h3>
       <p>
-        An opt-in path runs the installer's Secure Boot key enrollment, reads the
-        per-machine certificate off the encrypted disk read-only from the host, enrolls
-        it, and reboots so a signed out-of-tree kernel module loads under Secure Boot,
-        making that check green for the right reason rather than merely tolerated.
+        Optional: run the installer MOK enrollment, read the per-machine certificate off
+        the encrypted disk read-only from the host, enroll it (<code>VBoxManage
+        modifynvram</code>), and reboot so a signed out-of-tree module loads under Secure
+        Boot.
       </p>
     </div>
   </div>
@@ -189,44 +178,40 @@
   <h2 class="catname">Accounts, verdicts, evidence</h2>
   <div class="fg">
     <div class="issue">
-      <h3>Isolation by account</h3>
+      <h3>Accounts</h3>
       <p>
-        VirtualBox state lives per home directory, so the Linux user account is the
-        isolation boundary. A candidate that is not yet the blessed stable version runs in
-        a disposable, version-named account that is removed afterwards; the blessed stable
-        version runs in a long-lived golden account for longitudinal comparison. Test
-        accounts are forced unprivileged, with no passwordless administration, checked and
-        failing closed.
+        VirtualBox state is per home directory, so the Linux account is the isolation
+        boundary. A pre-bless version runs in a disposable per-version account
+        (<code>eph-run-&lt;guest&gt;-&lt;version&gt;</code>); the blessed stable version runs in
+        <code>persist-stable-&lt;guest&gt;</code>. Accounts are forced unprivileged with no
+        passwordless sudo, checked fail-closed.
       </p>
     </div>
     <div class="issue">
-      <h3>Three outcomes, never a false green</h3>
+      <h3>Verdict</h3>
       <p>
-        A run reports pass, fail, or inconclusive. Inconclusive marks a provisioning or
-        infrastructure gap rather than a product defect, so a setup problem is never
-        recorded as a passing or failing release.
+        rc 0 pass; rc 2 inconclusive (provisioning or infrastructure gap, not a product
+        defect); any other non-zero is a fail.
       </p>
     </div>
     <div class="issue">
-      <h3>Evidence for a human</h3>
+      <h3>Results plane</h3>
       <p>
-        Each run captures a screenshot and a machine-readable result and publishes them to
-        a read-only results area. Screenshots make the automated verdict checkable by a
-        person, which is the point: the machine runs the test, a human still decides what
-        to trust.
+        Each run writes <code>result.json</code> and a screenshot to a per-run directory
+        under a read-only nginx results plane (onion-fronted) and repoints
+        <code>&lt;name&gt;/latest</code>.
       </p>
     </div>
   </div>
 </div></section>
 
 <section class="outro" id="more"><div class="wrap">
-  <h2>Where this sits</h2>
+  <h2>Scope</h2>
   <p>
-    This suite is tooling in
-    <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a> and
-    follows the boundary described on the
-    <a href="/">org-ai-assisted</a> page: it runs on disposable systems, never ships, and
-    is not a substitute for human review. See also the
+    Tooling in
+    <a href="https://github.com/org-ai-assisted/dist-ai"><code>dist-ai</code></a>; runs on
+    disposable systems and does not ship. Trust boundary:
+    <a href="/">org-ai-assisted</a>. Companion lane:
     <a href="/whonix/automated-test-suite/">Whonix test suite</a>.
   </p>
 </div></section>
