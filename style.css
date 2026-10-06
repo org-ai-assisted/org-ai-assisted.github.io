@@ -109,7 +109,7 @@ section.cat{padding:46px 0 6px}
   text-transform:uppercase;color:var(--deny);margin:0 0 6px}
 .cat > .wrap > p.catdesc{margin:0 0 20px;color:var(--muted);max-width:66ch}
 
-.issue{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+.issue{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}
 .issue h3{margin:0 0 8px;font-size:1.16rem;letter-spacing:-.01em}
 .issue p{margin:0;color:var(--ink2);max-width:76ch;font-size:.97rem}
 .fg{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:6px 0 0}
