@@ -199,6 +199,14 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
 .matrix th,.matrix td{border:1px solid var(--line);padding:7px 10px;text-align:left}
 .matrix thead th{background:var(--panel)}
 .matrix td a{word-break:normal}
+/* On phones, let the long version cell (a 50-char git-describe token) WRAP instead of
+   staying nowrap -- a single unshrinkable cell otherwise leaks past the scroll container
+   and widens the body. The table gets taller but fits the viewport. */
+@media (max-width:480px){
+  .matrix th,.matrix td{white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+  .matrix td a{word-break:break-word}
+  .matrix{font-size:.84rem}
+}
 .legend{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
 .chip{display:inline-block;padding:1px 9px;border-radius:999px;font-size:.82em;
   font-weight:600;border:1px solid transparent}
