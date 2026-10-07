@@ -203,9 +203,14 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
    staying nowrap -- a single unshrinkable cell otherwise leaks past the scroll container
    and widens the body. The table gets taller but fits the viewport. */
 @media (max-width:480px){
-  .matrix th,.matrix td{white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+  .matrix th,.matrix td{white-space:normal;overflow-wrap:anywhere;word-break:break-word;padding:5px 6px}
   .matrix td a{word-break:break-word}
-  .matrix{font-size:.84rem}
+  .matrix{font-size:.8rem}
+  /* hide secondary columns on phones (builder, provenance, age) so the matrix fits the
+     viewport; they remain on each run's own page. */
+  .matrix th:nth-child(3),.matrix td:nth-child(3),
+  .matrix th:nth-child(4),.matrix td:nth-child(4),
+  .matrix th:nth-child(6),.matrix td:nth-child(6){display:none}
 }
 .legend{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
 .chip{display:inline-block;padding:1px 9px;border-radius:999px;font-size:.82em;
