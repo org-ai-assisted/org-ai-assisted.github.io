@@ -213,6 +213,9 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
   .matrix th:nth-child(6),.matrix td:nth-child(6){display:none}
 }
 .legend{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+/* Needs-approval list: each item carries a long unbreakable shot-id token; wrap it so
+   it does not widen the page on phones. */
+#needs-approval li{overflow-wrap:anywhere;word-break:break-word}
 .chip{display:inline-block;padding:1px 9px;border-radius:999px;font-size:.82em;
   font-weight:600;border:1px solid transparent}
 .chip.st-pass{background:#d6ecdd;color:#17552f;border-color:#a9d3b8}
