@@ -1,0 +1,10 @@
+{
+  "shots": [
+    {
+      "bucket": "NEW",
+      "needs_approval": true,
+      "sid": "kicksecure-lxqt/calamares-install",
+      "webp": "kicksecure-lxqt__calamares-install.webp"
+    }
+  ]
+}
