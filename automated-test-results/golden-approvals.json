@@ -1,0 +1,40 @@
+{
+  "approvals": {
+    "kicksecure-lxqt/calamares-install/first-boot": {
+      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
+      "approved_utc": "2026-10-08T12:58:45Z",
+      "approver": "dev965-claude",
+      "golden_sha256": "cda3a0127636f8d500230967c3b7d6c47736f7a9de1d549bf0b550740d0a4c07",
+      "status": "approved"
+    },
+    "kicksecure-lxqt/calamares-install/install-done": {
+      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
+      "approved_utc": "2026-10-08T12:58:45Z",
+      "approver": "dev965-claude",
+      "golden_sha256": "7e7503eca49c26b96dfcfecd429764ae1a4f046c9b54e78cd7390edfbbb8e9e9",
+      "status": "approved"
+    },
+    "kicksecure-lxqt/calamares-install/partitions": {
+      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
+      "approved_utc": "2026-10-08T12:58:45Z",
+      "approver": "dev965-claude",
+      "golden_sha256": "cd2a5364ab1b3293abf2c4d31ee5a19914146639bed17557df5d11c2102b6d9f",
+      "status": "approved"
+    },
+    "kicksecure-lxqt/calamares-install/summary": {
+      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
+      "approved_utc": "2026-10-08T12:58:45Z",
+      "approver": "dev965-claude",
+      "golden_sha256": "f6d15505ea0cf20f7039a23d823120f3e7eff1a8dcee7625837711fce9f65d4d",
+      "status": "approved"
+    },
+    "kicksecure-lxqt/calamares-install/welcome": {
+      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
+      "approved_utc": "2026-10-08T12:58:45Z",
+      "approver": "dev965-claude",
+      "golden_sha256": "a10f2e42306e5a83f159fbfc710fb987d6a64a39afaf7ea0b974b755bfeea9be",
+      "status": "approved"
+    }
+  },
+  "schema": "golden-approvals/v1"
+}
