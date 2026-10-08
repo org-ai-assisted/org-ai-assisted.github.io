@@ -8,24 +8,24 @@
       "status": "approved"
     },
     "kicksecure-lxqt/calamares-install/install-done": {
-      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
-      "approved_utc": "2026-10-08T12:58:45Z",
+      "approved_commit": "852f0ddf8dec7c03ab8cce69156a23720cc1e6f4",
+      "approved_utc": "2026-10-08T15:38:34Z",
       "approver": "dev965-claude",
-      "golden_sha256": "7e7503eca49c26b96dfcfecd429764ae1a4f046c9b54e78cd7390edfbbb8e9e9",
+      "golden_sha256": "a1ebcf4dc5926b2873aaebb21a9e1fd332c3eca2de0886a71421af1fe5ac152b",
       "status": "approved"
     },
     "kicksecure-lxqt/calamares-install/partitions": {
-      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
-      "approved_utc": "2026-10-08T12:58:45Z",
+      "approved_commit": "852f0ddf8dec7c03ab8cce69156a23720cc1e6f4",
+      "approved_utc": "2026-10-08T15:38:34Z",
       "approver": "dev965-claude",
-      "golden_sha256": "cd2a5364ab1b3293abf2c4d31ee5a19914146639bed17557df5d11c2102b6d9f",
+      "golden_sha256": "0448d5fdd96e3660b6604e49e654a6f2ec4d9aadc02337dddba36f55eabd294c",
       "status": "approved"
     },
     "kicksecure-lxqt/calamares-install/summary": {
-      "approved_commit": "e096a663b6d331d6f0234c3011d25b1ae8061284",
-      "approved_utc": "2026-10-08T12:58:45Z",
+      "approved_commit": "852f0ddf8dec7c03ab8cce69156a23720cc1e6f4",
+      "approved_utc": "2026-10-08T15:38:34Z",
       "approver": "dev965-claude",
-      "golden_sha256": "f6d15505ea0cf20f7039a23d823120f3e7eff1a8dcee7625837711fce9f65d4d",
+      "golden_sha256": "beb71dc1e37901a149ebbb247136ed8723e288a120c896796b5a0580d6fd40b1",
       "status": "approved"
     },
     "kicksecure-lxqt/calamares-install/welcome": {
