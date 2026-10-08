@@ -1,0 +1,34 @@
+{
+  "shots": [
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi/calamares-install/first-boot",
+      "webp": "kicksecure-lxqt-efi__calamares-install__first-boot.webp"
+    },
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi/calamares-install/install-done",
+      "webp": "kicksecure-lxqt-efi__calamares-install__install-done.webp"
+    },
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi/calamares-install/partitions",
+      "webp": "kicksecure-lxqt-efi__calamares-install__partitions.webp"
+    },
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi/calamares-install/summary",
+      "webp": "kicksecure-lxqt-efi__calamares-install__summary.webp"
+    },
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi/calamares-install/welcome",
+      "webp": "kicksecure-lxqt-efi__calamares-install__welcome.webp"
+    }
+  ]
+}

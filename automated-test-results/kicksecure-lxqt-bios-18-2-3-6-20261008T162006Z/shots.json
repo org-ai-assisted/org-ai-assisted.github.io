@@ -1,0 +1,28 @@
+{
+  "shots": [
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-bios/calamares-install/failure",
+      "webp": "kicksecure-lxqt-bios__calamares-install__failure.webp"
+    },
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-bios/calamares-install/partitions",
+      "webp": "kicksecure-lxqt-bios__calamares-install__partitions.webp"
+    },
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-bios/calamares-install/summary",
+      "webp": "kicksecure-lxqt-bios__calamares-install__summary.webp"
+    },
+    {
+      "bucket": "MATCH",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-bios/calamares-install/welcome",
+      "webp": "kicksecure-lxqt-bios__calamares-install__welcome.webp"
+    }
+  ]
+}

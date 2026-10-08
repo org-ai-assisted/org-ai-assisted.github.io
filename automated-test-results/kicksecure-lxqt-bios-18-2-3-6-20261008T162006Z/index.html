@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ai-disclosure" content="ai-assisted">
+<meta name="robots" content="noindex">
+<title>Run kicksecure-lxqt-bios-18-2-3-6-20261008T162006Z</title>
+<meta name="description" content="Test run kicksecure-lxqt-bios-18-2-3-6-20261008T162006Z">
+<link rel="stylesheet" href="/style.css">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
+    <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
+    <label class="menubtn" for="navtoggle">Menu</label>
+    <nav>
+      <a href="/automated-test-results/">Test results</a>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+      <a href="https://secure-terminal.github.io">secure-terminal</a>
+    </nav>
+    <label class="navscrim" for="navtoggle" aria-hidden="true"></label>
+  </div>
+</header>
+<section class="hero"><div class="wrap"><p class="kicker">kicksecure-lxqt-bios</p><h1 class="runid">kicksecure-lxqt-bios-18-2-3-6-20261008T162006Z</h1><p class="line">kicksecure-lxqt-bios 18.2.3.6 &middot; builder dm-release-test &middot; provenance downloaded &middot; <span class="chip st-fail">fail</span> &middot; 19m ago</p><p class="sub"><a href="../">back to all results</a></p></div></section><section class="cat"><div class="wrap"><div class="fg"><div class="issue"><h3>calamares-install <span class="chip st-fail">fail</span></h3><p>exit 5</p><pre></pre><pre>...d an error code (1)&quot;
+[PYTHON JOB]: &quot;stderr:None&quot;
+12:20:04 [6]: virtual void Calamares::JobThread::run()
+    Skipping non-emergency job &quot;Running shell processes...&quot;
+    ..  Skipping non-emergency job &quot;dracut&quot;
+    ..  Skipping non-emergency job &quot;Unmounting file systems...&quot;
+    ..  Skipping non-emergency job &quot;Running shell processes...&quot;
+12:20:05 [1]: void Calamares::ViewManager::onInstallationFailed(const QString&amp;, const QString&amp;)
+    ERROR: Installation failed: &quot;Package Manager error&quot;
+    .. - message: &quot;Package Manager error&quot;
+    .. - details: The package manager could not make changes to the installed system. The command &lt;pre&gt;apt-get --purge -q -y remove calamares calamares-settings-debian live-config-dist&lt;/pre&gt; returned error code 100.
+12:20:05 [6]: void Calamares::ViewManager::onInstallationFailed(const QString&amp;, const QString&amp;)
+    Calamares will quit when the dialog closes.
+12:20:05 [6]: void Calamares::callQmlFunction(QQuickItem*, const char*)
+    QML &quot;onLeave()&quot; is missing.
+12:20:05 [6]: void Config::doNotify(bool, bool)
+    Notification not sent; completion: failed
+12:20:05 [6]: void {anonymous}::PowerManagementInterface::uninhibitSleep()
+    Sleep was never inhibited.
+</pre><p><span class="chip st-pass">pass</span> -- within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__welcome.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__welcome.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/welcome"></a><p><span class="chip st-pass">pass</span> -- within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__partitions.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__partitions.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/partitions"></a><p><span class="chip st-pass">pass</span> -- within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__summary.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__summary.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/summary"></a><p><span class="chip st-pass">pass</span> -- within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__failure.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__failure.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/failure"></a></div></div></div></section>
+<footer><div class="ftop"><nav class="fcols"><div class="fcol"><h4>Family</h4><a href="https://output-lies.github.io">output lies</a><a href="https://secure-terminal.github.io">secure-terminal</a><a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a></div></nav></div><div class="fbot"><span class="fcopy">AI-assisted. Automated OS-image test results.</span></div></footer>
+</html>
