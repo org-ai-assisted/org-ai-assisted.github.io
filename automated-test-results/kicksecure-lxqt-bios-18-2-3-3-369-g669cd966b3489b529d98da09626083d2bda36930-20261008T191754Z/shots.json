@@ -5,30 +5,6 @@
       "needs_approval": true,
       "sid": "kicksecure-lxqt-bios/calamares-install",
       "webp": "kicksecure-lxqt-bios__calamares-install.webp"
-    },
-    {
-      "bucket": "UNKNOWN",
-      "needs_approval": false,
-      "sid": "kicksecure-lxqt-bios/calamares-install/failure",
-      "webp": null
-    },
-    {
-      "bucket": "UNKNOWN",
-      "needs_approval": false,
-      "sid": "kicksecure-lxqt-bios/calamares-install/partitions",
-      "webp": null
-    },
-    {
-      "bucket": "UNKNOWN",
-      "needs_approval": false,
-      "sid": "kicksecure-lxqt-bios/calamares-install/summary",
-      "webp": null
-    },
-    {
-      "bucket": "UNKNOWN",
-      "needs_approval": false,
-      "sid": "kicksecure-lxqt-bios/calamares-install/welcome",
-      "webp": null
     }
   ]
 }

@@ -1,32 +1,32 @@
 {
   "shots": [
     {
-      "bucket": "MATCH",
-      "needs_approval": false,
+      "bucket": "NEW",
+      "needs_approval": true,
       "sid": "kicksecure-lxqt/calamares-install/first-boot",
       "webp": "kicksecure-lxqt__calamares-install__first-boot.webp"
     },
     {
-      "bucket": "CHANGED",
+      "bucket": "NEW",
       "needs_approval": true,
       "sid": "kicksecure-lxqt/calamares-install/install-done",
       "webp": "kicksecure-lxqt__calamares-install__install-done.webp"
     },
     {
-      "bucket": "CHANGED",
+      "bucket": "NEW",
       "needs_approval": true,
       "sid": "kicksecure-lxqt/calamares-install/partitions",
       "webp": "kicksecure-lxqt__calamares-install__partitions.webp"
     },
     {
-      "bucket": "CHANGED",
+      "bucket": "NEW",
       "needs_approval": true,
       "sid": "kicksecure-lxqt/calamares-install/summary",
       "webp": "kicksecure-lxqt__calamares-install__summary.webp"
     },
     {
-      "bucket": "MATCH",
-      "needs_approval": false,
+      "bucket": "NEW",
+      "needs_approval": true,
       "sid": "kicksecure-lxqt/calamares-install/welcome",
       "webp": "kicksecure-lxqt__calamares-install__welcome.webp"
     }
