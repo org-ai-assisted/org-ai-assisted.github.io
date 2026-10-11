@@ -1,0 +1,34 @@
+{
+  "shots": [
+    {
+      "bucket": "UNKNOWN",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/first-boot",
+      "webp": null
+    },
+    {
+      "bucket": "UNKNOWN",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/install-done",
+      "webp": null
+    },
+    {
+      "bucket": "UNKNOWN",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/partitions",
+      "webp": null
+    },
+    {
+      "bucket": "UNKNOWN",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/summary",
+      "webp": null
+    },
+    {
+      "bucket": "UNKNOWN",
+      "needs_approval": false,
+      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/welcome",
+      "webp": null
+    }
+  ]
+}
