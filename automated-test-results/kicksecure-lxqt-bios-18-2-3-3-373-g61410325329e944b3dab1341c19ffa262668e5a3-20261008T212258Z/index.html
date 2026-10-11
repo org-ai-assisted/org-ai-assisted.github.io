@@ -8,13 +8,53 @@
 <title>Run kicksecure-lxqt-bios-18-2-3-3-373-g61410325329e944b3dab1341c19ffa262668e5a3-20261008T212258Z</title>
 <meta name="description" content="Test run kicksecure-lxqt-bios-18-2-3-3-373-g61410325329e944b3dab1341c19ffa262668e5a3-20261008T212258Z">
 <link rel="stylesheet" href="/style.css">
-<header class="nav"><div class="wrap"><a class="brand" href="/">org-ai-assisted</a><nav><a href="https://github.com/org-ai-assisted">GitHub</a><a href="https://output-lies.github.io">output lies</a><a href="https://secure-terminal.github.io">secure-terminal</a></nav></div></header>
-<section class="hero"><div class="wrap"><p class="kicker">kicksecure-lxqt-bios</p><h1 class="runid">kicksecure-lxqt-bios-18-2-3-3-373-g61410325329e944b3dab1341c19ffa262668e5a3-20261008T212258Z</h1><p class="line">kicksecure-lxqt-bios 18.2.3.3-373-g61410325329e944b3dab1341c19ffa262668e5a3 &middot; builder dm-release-test &middot; provenance built &middot; <span class="chip st-fail">fail</span> &middot; 2d 17h ago</p><p class="sub"><a href="../">back to all results</a></p></div></section><section class="cat"><div class="wrap"><div class="fg"><div class="issue"><h3>calamares-install <span class="chip st-fail">fail</span></h3><p>exit 5</p><pre></pre><pre>...g non-emergency job &quot;Running shell processes...&quot;
+<header class="nav"><div class="wrap"><a class="brand" href="/">org-ai-assisted</a><nav><a href="/automated-test-results/">Test results</a><a href="https://github.com/org-ai-assisted">GitHub</a><a href="https://output-lies.github.io">output lies</a><a href="https://secure-terminal.github.io">secure-terminal</a></nav></div></header>
+<section class="hero"><div class="wrap"><p class="kicker">kicksecure-lxqt-bios</p><h1 class="runid">kicksecure-lxqt-bios-18-2-3-3-373-g61410325329e944b3dab1341c19ffa262668e5a3-20261008T212258Z</h1><p class="line">kicksecure-lxqt-bios 18.2.3.3-373-g61410325329e944b3dab1341c19ffa262668e5a3 &middot; builder dm-release-test &middot; provenance built &middot; <span class="chip st-fail">fail</span> &middot; 2d 18h ago</p><p class="sub"><a href="../">back to all results</a></p></div></section><section class="cat"><div class="wrap"><div class="fg"><div class="issue"><h3>calamares-install <span class="chip st-fail">fail</span></h3><p>exit 5</p><pre class="steplog"></pre><pre class="steplog">/ 30 )
+/usr/lib/x86_64-linux-gnu/calamares/modules/bootloader/main.py:392: SyntaxWarning: invalid escape sequence &#x27;\$&#x27;
+  prefix, generator_name = re.match(&quot;(.*)\${([^}]*)}$&quot;, name).groups()
+[PYTHON JOB]: Found gettext &quot;en_US&quot; in &quot;/usr/share/locale/en_US&quot;
+[PYTHON JOB]: &quot;Bootloader: grub (bios)&quot;
+    .. Running QList(&quot;grub-install&quot;, &quot;--target=i386-pc&quot;, &quot;--recheck&quot;, &quot;--force&quot;, &quot;/dev/sda&quot;)
+    .. Running QList(&quot;grub-mkconfig&quot;, &quot;-o&quot;, &quot;/boot/grub/grub.cfg&quot;)
+17:22:50 [6]: virtual void Calamares::JobThread::run()
+    Starting job &quot;Running shell processes&#8230;&quot; ( 19 / 30 )
+    .. Running QList(&quot;/bin/sh&quot;, &quot;-c&quot;, &quot;/usr/libexec/live-config-dist/fixkblayout-part1 /tmp/calamares-root-a3smooxf&quot;)
+17:22:50 [6]: virtual void Calamares::JobThread::run()
+    Starting job &quot;Running shell processes&#8230;&quot; ( 20 / 30 )
+    .. Running QList(&quot;/bin/sh&quot;, &quot;-c&quot;, &quot;/usr/libexec/live-config-dist/fixkblayout-part2&quot;)
+17:22:52 [6]: virtual void Calamares::JobThread::run()
+    Starting job &quot;grubcfg&quot; ( 21 / 30 )
+[PYTHON JOB]: Found gettext &quot;en_US&quot; in &quot;/usr/share/locale/en_US&quot;
+    .. Running QList(&quot;sh&quot;, &quot;-c&quot;, &quot;which dracut&quot;)
+    .. Running QList(&quot;sh&quot;, &quot;-c&quot;, &quot;which plymouth&quot;)
+    .. Target cmd: QList(&quot;sh&quot;, &quot;-c&quot;, &quot;which plymouth&quot;) Exit code: 1 (no output)
+    .. Running QList(&quot;sh&quot;, &quot;-c&quot;, &quot;grep -q \&quot;^HOOKS.*systemd\&quot; /etc/mkinitcpio.conf&quot;)
+    .. Target cmd: QList(&quot;sh&quot;, &quot;-c&quot;, &quot;grep -q \&quot;^HOOKS.*systemd\&quot; /etc/mkinitcpio.conf&quot;) Exit code: 2 output:
+grep: /etc/mkinitcpio.conf: No such file or directory
+17:22:52 [6]: virtual void Calamares::JobThread::run()
+    Starting job &quot;Configuring LUKS key file.&quot; ( 22 / 30 )
+17:22:52 [6]: virtual Calamares::JobResult LuksBootKeyFileJob::exec()
+    There are 1 LUKS partitions
+    .. root &quot;/dev/sda2&quot; passphrase? true
+    .. /boot partition is not encrypted, skipping keyfile creation.
+17:22:52 [6]: virtual void Calamares::JobThread::run()
+    Starting job &quot;Writing LUKS configuration for Dracut to /etc/dracut.conf.d/calamares-luks.conf&#8230;&quot; ( 23 / 30 )
+17:22:52 [6]: virtual Calamares::JobResult DracutLuksCfgJob::exec()
+    [DRACUTLUKSCFG]: Writing &quot;/tmp/calamares-root-a3smooxf/etc/dracut.conf.d/calamares-luks.conf&quot;
+17:22:52 [6]: virtual Calamares::JobResult DracutLuksCfgJob::exec()
+    [DRACUTLUKSCFG]: Wrote config to &quot;/tmp/calamares-root-a3smooxf/etc/dracut.conf.d/calamares-luks.conf&quot;
+17:22:52 [6]: virtual void Calamares::JobThread::run()
+    Starting job &quot;Running shell processes&#8230;&quot; ( 24 / 30 )
+    .. Running QList(&quot;/bin/sh&quot;, &quot;-c&quot;, &quot;/usr/libexec/live-config-dist/grub-fallback-install&quot;)
+    .. Target cmd: QList(&quot;/bin/sh&quot;, &quot;-c&quot;, &quot;/usr/libexec/live-config-dist/grub-fallback-install&quot;) Exit code: 1 output:
+/usr/sbin/dpkg-reconfigure: grub-pc is broken or not fully installed
+17:22:52 [6]: virtual void Calamares::JobThread::run()
+    Skipping non-emergency job &quot;Running shell processes&#8230;&quot;
     ..  Skipping non-emergency job &quot;packages&quot;
-    ..  Skipping non-emergency job &quot;Running shell processes...&quot;
+    ..  Skipping non-emergency job &quot;Running shell processes&#8230;&quot;
     ..  Skipping non-emergency job &quot;dracut&quot;
-    ..  Skipping non-emergency job &quot;Unmounting file systems...&quot;
-    ..  Skipping non-emergency job &quot;Running shell processes...&quot;
+    ..  Skipping non-emergency job &quot;Unmounting file systems&#8230;&quot;
+    ..  Skipping non-emergency job &quot;Running shell processes&#8230;&quot;
 17:22:52 [1]: void Calamares::ViewManager::onInstallationFailed(const QString&amp;, const QString&amp;)
     ERROR: Installation failed: &quot;External command finished with errors.&quot;
     .. - message: &quot;External command finished with errors.&quot;
@@ -29,6 +69,6 @@ Output:
     Notification not sent; completion: failed
 17:22:52 [6]: void {anonymous}::PowerManagementInterface::uninhibitSleep()
     Sleep was never inhibited.
-</pre><p><span class="chip st-fail">fail</span> <strong>welcome</strong> -- differs beyond tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__welcome.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__welcome.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/welcome"></a><p>approved golden (before):</p><a href="kicksecure-lxqt-bios__calamares-install__welcome-golden.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__welcome-golden.webp" alt="golden kicksecure-lxqt-bios/calamares-install/welcome"></a><p><span class="chip st-fail">fail</span> <strong>partitions</strong> -- within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__partitions.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__partitions.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/partitions"></a><p><span class="chip st-fail">fail</span> <strong>summary</strong> -- within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__summary.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__summary.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/summary"></a><p><span class="chip st-fail">fail</span> <strong>failure</strong> -- differs beyond tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__failure.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__failure.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/failure"></a><p>approved golden (before):</p><a href="kicksecure-lxqt-bios__calamares-install__failure-golden.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__failure-golden.webp" alt="golden kicksecure-lxqt-bios/calamares-install/failure"></a></div></div></div></section>
+</pre><p><span class="chip st-fail">fail</span> <strong>welcome</strong> &mdash; differs beyond tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__welcome.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__welcome.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/welcome"></a><p>approved golden (before):</p><a href="kicksecure-lxqt-bios__calamares-install__welcome-golden.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__welcome-golden.webp" alt="golden kicksecure-lxqt-bios/calamares-install/welcome"></a><p><span class="chip st-fail">fail</span> <strong>partitions</strong> &mdash; within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__partitions.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__partitions.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/partitions"></a><p><span class="chip st-fail">fail</span> <strong>summary</strong> &mdash; within tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__summary.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__summary.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/summary"></a><p><span class="chip st-fail">fail</span> <strong>failure</strong> &mdash; differs beyond tolerance</p><a href="kicksecure-lxqt-bios__calamares-install__failure.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__failure.webp" alt="screenshot kicksecure-lxqt-bios/calamares-install/failure"></a><p>approved golden (before):</p><a href="kicksecure-lxqt-bios__calamares-install__failure-golden.webp"><img loading="lazy" src="kicksecure-lxqt-bios__calamares-install__failure-golden.webp" alt="golden kicksecure-lxqt-bios/calamares-install/failure"></a></div></div></div></section>
 <footer><div class="ftop"><nav class="fcols"><div class="fcol"><h4>Family</h4><a href="https://output-lies.github.io">output lies</a><a href="https://secure-terminal.github.io">secure-terminal</a><a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a></div></nav></div><div class="fbot"><span class="fcopy">AI-assisted. Automated OS-image test results.</span></div></footer>
 </html>
