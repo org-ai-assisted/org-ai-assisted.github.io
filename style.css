@@ -227,4 +227,7 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
 .issue pre,.fg pre{white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere;
   max-width:100%;background:var(--panel);
   border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.82em;margin:6px 0 0}
+/* Step logs (full systemcheck / check-battery output) scroll within a bounded box so a long
+   log is shown IN FULL without blowing out the page. */
+.issue pre.steplog{max-height:60vh;overflow:auto}
 .issue img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;margin-top:8px}
