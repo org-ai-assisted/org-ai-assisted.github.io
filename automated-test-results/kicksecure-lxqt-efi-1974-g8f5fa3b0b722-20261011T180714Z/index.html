@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ai-disclosure" content="ai-assisted">
+<meta name="robots" content="noindex">
+<title>Run kicksecure-lxqt-efi-1974-g8f5fa3b0b722-20261011T180714Z</title>
+<meta name="description" content="Test run kicksecure-lxqt-efi-1974-g8f5fa3b0b722-20261011T180714Z">
+<link rel="stylesheet" href="/style.css">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
+    <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
+    <label class="menubtn" for="navtoggle">Menu</label>
+    <nav>
+      <a href="/automated-test-results/">Test results</a>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+      <a href="https://secure-terminal.github.io">secure-terminal</a>
+    </nav>
+    <label class="navscrim" for="navtoggle" aria-hidden="true"></label>
+  </div>
+</header>
+<section class="hero"><div class="wrap"><p class="kicker">kicksecure-lxqt-efi</p><h1 class="runid">kicksecure-lxqt-efi-1974-g8f5fa3b0b722-20261011T180714Z</h1><p class="line">kicksecure-lxqt-efi 1974-g8f5fa3b0b722 &middot; builder dm-release-test &middot; provenance built &middot; <span class="chip st-fail">fail</span> &middot; 8m ago</p><p class="line">sha256 <code class="runid">19ae41836a6a15c829967781f84e97644b6226930583a2a82ea2a13202d6854e</code></p><p class="sub"><a href="../">back to all results</a></p></div></section><section class="cat"><div class="wrap"><div class="fg"><div class="issue"><h3>Firmware lane <span class="chip st-pass">pass</span></h3><p>declared <code>efi</code> &middot; detected <code>UEFI</code> &middot; verified against the declared lane</p><pre class="steplog">[ -d /sys/firmware/efi ] -&gt; UEFI
+mokutil --sb-state -&gt; SecureBoot disabled
+Platform is in Setup Mode</pre></div><div class="issue"><h3>calamares-install <span class="chip st-fail">fail</span></h3><p>exit 5</p><pre class="steplog"></pre><pre class="steplog">check 8 (systemcheck) FAILED:
+command: systemcheck --cli --ci
+exit: 1
+
+output:
+[WARNING] [systemcheck] systemd journal check result: Could not read the systemd journal (read failed with exit code 1).
+
+Some journal-based checks could not be completed, so this is NOT a clean result. A denied privilege (privleap), a broken journalctl, or a corrupted journal can cause this. Any messages still detected are shown below.
+[INFO] [systemcheck] Connected to Tor.
+[INFO] [systemcheck] Kicksecure[1] is a research project.
+
+Links:
+[1] https://www.kicksecure.com
+[INFO] [systemcheck] user-sysmaint-split installation check[1]: Installed
+
+Links:
+[1] https://www.kicksecure.com/wiki/sysmaint
+[INFO] [systemcheck] user-sysmaint-split session detection result: USER Session.
+[INFO] [systemcheck] Kicksecure Login[1] Security Check (Colors[2])
+:
++----------+--------------------------------------+
+| Users    | Password               GUI Autologin |
++----------+--------------------------------------+
+| root     | Locked (Present)       Disabled      |
+| user     | Absent                 Enabled       |
+| sysmaint | Absent                 Enabled       |
++----------+--------------------------------------+
+
+You can adjust these settings using &quot;Manage Passwords&quot; and &quot;Manage GUI Autologin&quot;
+in the System Maintenance Panel.
+See also: Physical Security[3].
+
+Links:
+[1] https://www.kicksecure.com/wiki/Login
+[2] https://www.kicksecure.com/wiki/Systemcheck#Login_Security_Check_-_Meaning_of_Colors
+[3] https://www.kicksecure.com/wiki/Systemcheck#Physical_Security_Check
+[INFO] [systemcheck] Secure Boot[1]: Disabled
+
+Links:
+[1] https://www.kicksecure.com/wiki/Secure_Boot
+[INFO] [systemcheck] Kicksecure APT Repository: Enabled.
+When the Kicksecure team releases TRIXIE updates,
+they will be AUTOMATICALLY installed (when you run apt-get dist-upgrade)
+along with updated packages from the Debian team. Please read https://www.kicksecure.com/wiki/Trust to understand the risk.
+If you want to change this, use:
+    sudo repository-dist
+[INFO] [systemcheck] Debian Package Update Check: Checking for software updates via apt-get... ( Documentation: https://www.kicksecure.com/wiki/Update )
+[WARNING] [systemcheck] Debian Package Update[1] Check Result: apt-get reports that packages can be updated.
+Please update this machine:
+Reboot into PERSISTENT Mode | SYSMAINT Session | system maintenance tasks and click &quot;Install Updates&quot; in the System Maintenance Panel.
+
+Links:
+[1] https://www.kicksecure.com/wiki/Update
+[INFO] [systemcheck] Please donate!
+   See: https://www.kicksecure.com/wiki/Donate
+</pre><p><span class="chip st-fail">fail</span> <strong>welcome</strong> &mdash; no approved golden yet</p><a href="kicksecure-lxqt-efi__calamares-install__welcome.webp"><img loading="lazy" src="kicksecure-lxqt-efi__calamares-install__welcome.webp" alt="screenshot kicksecure-lxqt-efi/calamares-install/welcome"></a><p><span class="chip st-fail">fail</span> <strong>partitions</strong> &mdash; no approved golden yet</p><a href="kicksecure-lxqt-efi__calamares-install__partitions.webp"><img loading="lazy" src="kicksecure-lxqt-efi__calamares-install__partitions.webp" alt="screenshot kicksecure-lxqt-efi/calamares-install/partitions"></a><p><span class="chip st-fail">fail</span> <strong>summary</strong> &mdash; no approved golden yet</p><a href="kicksecure-lxqt-efi__calamares-install__summary.webp"><img loading="lazy" src="kicksecure-lxqt-efi__calamares-install__summary.webp" alt="screenshot kicksecure-lxqt-efi/calamares-install/summary"></a><p><span class="chip st-fail">fail</span> <strong>install-done</strong> &mdash; no approved golden yet</p><a href="kicksecure-lxqt-efi__calamares-install__install-done.webp"><img loading="lazy" src="kicksecure-lxqt-efi__calamares-install__install-done.webp" alt="screenshot kicksecure-lxqt-efi/calamares-install/install-done"></a><p><span class="chip st-fail">fail</span> <strong>first-boot</strong> &mdash; no approved golden yet</p><a href="kicksecure-lxqt-efi__calamares-install__first-boot.webp"><img loading="lazy" src="kicksecure-lxqt-efi__calamares-install__first-boot.webp" alt="screenshot kicksecure-lxqt-efi/calamares-install/first-boot"></a></div></div></div></section>
+<footer><div class="ftop"><nav class="fcols"><div class="fcol"><h4>Family</h4><a href="https://output-lies.github.io">output lies</a><a href="https://secure-terminal.github.io">secure-terminal</a><a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a></div></nav></div><div class="fbot"><span class="fcopy">AI-assisted. Automated OS-image test results.</span></div></footer>
+</html>
