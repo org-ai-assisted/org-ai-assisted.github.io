@@ -196,6 +196,12 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
 .matrix-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;min-width:0}
 .matrix{width:100%;border-collapse:collapse;font-size:.92rem;margin:4px 0}
 .matrix th,.matrix td{white-space:nowrap}
+/* Keep the short columns on one line, but let the two wide columns -- lane (a long
+   hyphenated name) and version (a ~50-char git-describe token with no break points) --
+   wrap at EVERY width. Otherwise nowrap pushes the table far past the viewport and, on a
+   tall table, strands the overflow-x scrollbar below the fold (drag-to-pan the only way). */
+.matrix th:nth-child(1),.matrix td:nth-child(1),
+.matrix th:nth-child(2),.matrix td:nth-child(2){white-space:normal;overflow-wrap:anywhere;word-break:break-word}
 .matrix th,.matrix td{border:1px solid var(--line);padding:7px 10px;text-align:left}
 .matrix thead th{background:var(--panel)}
 .matrix td a{word-break:normal}
