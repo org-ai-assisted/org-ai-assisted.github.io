@@ -9,12 +9,6 @@
     {
       "bucket": "NEW",
       "needs_approval": true,
-      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/firmware-logo",
-      "webp": "kicksecure-lxqt-efi-secureboot__calamares-install__firmware-logo.webp"
-    },
-    {
-      "bucket": "NEW",
-      "needs_approval": true,
       "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/firmware-state",
       "webp": "kicksecure-lxqt-efi-secureboot__calamares-install__firmware-state.webp"
     },
@@ -45,12 +39,6 @@
     {
       "bucket": "NEW",
       "needs_approval": true,
-      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/installed-firmware-logo",
-      "webp": "kicksecure-lxqt-efi-secureboot__calamares-install__installed-firmware-logo.webp"
-    },
-    {
-      "bucket": "NEW",
-      "needs_approval": true,
       "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/installed-grub-menu",
       "webp": "kicksecure-lxqt-efi-secureboot__calamares-install__installed-grub-menu.webp"
     },
@@ -59,12 +47,6 @@
       "needs_approval": true,
       "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/keyboard",
       "webp": "kicksecure-lxqt-efi-secureboot__calamares-install__keyboard.webp"
-    },
-    {
-      "bucket": "NEW",
-      "needs_approval": true,
-      "sid": "kicksecure-lxqt-efi-secureboot/calamares-install/live-desktop-ready",
-      "webp": "kicksecure-lxqt-efi-secureboot__calamares-install__live-desktop-ready.webp"
     },
     {
       "bucket": "NEW",
