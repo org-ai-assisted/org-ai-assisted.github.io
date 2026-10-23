@@ -230,6 +230,9 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
 .chip.st-new{background:#d9e4f5;color:#123a73;border-color:#a7c0e6}
 .chip.st-stale,.chip.st-nodata,.chip.st-unknown,.chip.st-incomplete{
   background:#e3e6eb;color:#3d434b;border-color:#c8ccd3}
+/* Boot-phase caption after a milestone screenshot label (generator emits
+   <span class="stage">(...)</span>); inherits the surrounding text colour. */
+.stage{font-size:.85em}
 .issue pre,.fg pre{white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere;
   max-width:100%;background:var(--panel);
   border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:.82em;margin:6px 0 0}
