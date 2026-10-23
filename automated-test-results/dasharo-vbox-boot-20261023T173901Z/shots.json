@@ -1,0 +1,22 @@
+{
+  "shots": [
+    {
+      "bucket": "NEW",
+      "needs_approval": true,
+      "sid": "dasharo-coreboot-uefi-vbox/boot-uefi-shell-and-acpi-s5/firmware-console",
+      "webp": "dasharo-coreboot-uefi-vbox__boot-uefi-shell-and-acpi-s5__firmware-console.webp"
+    },
+    {
+      "bucket": "NEW",
+      "needs_approval": true,
+      "sid": "dasharo-coreboot-uefi-vbox/boot-uefi-shell-and-acpi-s5/firmware-early",
+      "webp": "dasharo-coreboot-uefi-vbox__boot-uefi-shell-and-acpi-s5__firmware-early.webp"
+    },
+    {
+      "bucket": "NEW",
+      "needs_approval": true,
+      "sid": "dasharo-coreboot-uefi-vbox/boot-uefi-shell-and-acpi-s5/uefi-shell",
+      "webp": "dasharo-coreboot-uefi-vbox__boot-uefi-shell-and-acpi-s5__uefi-shell.webp"
+    }
+  ]
+}
