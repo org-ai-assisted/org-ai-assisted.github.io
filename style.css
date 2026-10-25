@@ -118,7 +118,7 @@ section.cat{padding:46px 0 6px}
 
 .qa{border-top:1px solid var(--line);padding:18px 2px}
 .qa:last-of-type{border-bottom:1px solid var(--line)}
-.qa h4{margin:0 0 6px;font-size:1.02rem}
+.qa h3{margin:0 0 6px;font-size:1.02rem}
 .qa p{margin:0;color:var(--ink2);max-width:76ch;font-size:.97rem}
 
 .repos{list-style:none;padding:0;margin:6px 0 0}
@@ -142,7 +142,7 @@ footer .fbrand p{margin:12px 0 0;max-width:26ch;color:var(--muted);
   font:600 .82rem/1.5 var(--mono)}
 footer .fcols{display:flex;gap:48px;flex-wrap:wrap}
 footer .fcol{display:flex;flex-direction:column;gap:8px}
-footer .fcol h4{margin:0 0 3px;font:600 .68rem/1 var(--mono);letter-spacing:.1em;
+footer .fcol h3{margin:0 0 3px;font:600 .68rem/1 var(--mono);letter-spacing:.1em;
   text-transform:uppercase;color:var(--muted)}
 footer .fcol a{color:var(--ink2);text-decoration:none;font-size:.87rem}
 footer .fcol a:hover{color:var(--ink)}
