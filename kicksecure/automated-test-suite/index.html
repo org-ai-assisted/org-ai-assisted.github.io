@@ -38,7 +38,7 @@
     <a class="brand" href="/"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
     <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
     <label class="menubtn" for="navtoggle">Menu</label>
-    <nav>
+    <nav aria-label="Primary">
       <a href="/automated-test-results/">Test results</a>
       <a href="https://github.com/org-ai-assisted">GitHub</a>
       <a href="https://output-lies.github.io">output lies</a>
@@ -47,6 +47,8 @@
     <label class="navscrim" for="navtoggle"></label>
   </div>
 </header>
+
+<main>
 
 <section class="hero"><div class="wrap">
   <p class="kicker">Automated release testing &middot; <b>Kicksecure</b></p>
@@ -220,13 +222,15 @@
   </p>
 </div></section>
 
+</main>
+
 <footer>
   <div class="ftop">
     <div class="fbrand">
       <span class="ftag"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></span>
       <p>Code, not discussion. Go upstream.</p>
     </div>
-    <nav class="fcols">
+    <nav class="fcols" aria-label="Footer">
       <div class="fcol">
         <h3>Navigate</h3>
         <a href="#overview">What it tests</a>
