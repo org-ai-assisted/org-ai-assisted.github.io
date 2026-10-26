@@ -1,0 +1,11 @@
+# AI-Assisted.
+# pages.yml is owner-gated (github.repository_owner == 'org-ai-assisted'), NOT gated
+# on the org-ai-assisted CI var: the deploy job must run on every owning-org master
+# push regardless of that var, and gating on it would couple the live deploy to a CI
+# toggle. The owner-gate gives the same fork/upstream protection (a foreign owner
+# skips the jobs).
+owner-gate-exempt:
+  .github/workflows/pages.yml:static: "Owner-gated for the org-ai-assisted Pages deploy; deploy must not be coupled to the CI toggle."
+  .github/workflows/pages.yml:mobile: "Owner-gated for the org-ai-assisted Pages deploy; deploy must not be coupled to the CI toggle."
+  .github/workflows/pages.yml:width: "Owner-gated for the org-ai-assisted Pages deploy; deploy must not be coupled to the CI toggle."
+  .github/workflows/pages.yml:deploy: "Owner-gated for the org-ai-assisted Pages deploy; deploy must not be coupled to the CI toggle."
