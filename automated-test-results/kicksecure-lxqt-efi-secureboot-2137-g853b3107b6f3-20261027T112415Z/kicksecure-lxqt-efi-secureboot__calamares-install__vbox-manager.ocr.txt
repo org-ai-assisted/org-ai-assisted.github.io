@@ -1,0 +1,39 @@
+te Oracle VirtualBox Manager - 0 x
+File Machine Help
+12 - @ >.
+=) New, Open Settings Discard Start
+Ai =) Details @ ao
+& General & Preview
+fa] Name: Kicksecure-release-2137-9853b3107b6f3 od
+a Operating System: Debian (64-bit)
+f=] System Kicksecure-
+A Base M : 4096 MB release-2137-
+re 9853b3107b6f3
+(ad Boot Order: —_ Floppy, Optical, Hard Disk
+EFI: Enabled
+Acceleration: Nested Paging, KVM Paravirtualization
+© Display
+Video Memory: 128 MB
+Graphics Controller: VMSVGA
+Remote Desktop Server: Disabled
+Recording: Disabled
+@ Storage
+Controller: SATA
+SATA Port 0: Kicksecure-release-2137-g853b3107b6f3.pD6qLO.vdi (Normal, 25.00 GB)
+Controller: IDE
+IDE Primary Device 0: [Optical Drive] Kicksecure-LXQt-
+adrelanos_f65a6f9f513e60777ed356d7de9032de652e6b91-2137-
+9853b3107b6f3f36f01fd078a5f727721ce617a61.Intel AMD64.iso (1.37 GB)
+(® Audio
+Host Driver: Null Audio
+Controller: ICH AC97
+@ Network
+Adapter 1: Intel PRO/1000 MT Desktop (NAT)
+© USB
+USB Controller: OHCI
+Device Filters: 0 (0 active)
+( Shared folders
+None
+® Description
+None
+[3

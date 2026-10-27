@@ -1,0 +1,26 @@
+G Kicksecure-release-2137-g853b3107b6f3-blackfix [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+@ @ {.Kicksecure installer 2 A © B @ 9:40:29
+
+cu ® EFI Select storage device: | © VBOX HARDDISK - 25.00 GiB (/dev/sda) -| @ 7
+
+= © Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome
+ext ~
+Location
+Manual partitioning
+
+Keyboard You can create or resize partitions yourself.
+
+Partitions
+
+Summary
+
+Install
+Finish
+@ Unpartitioned space or unknown partition table
+After: x =iessi—s—
+@ EFI system @ boot D rootfs
+Back Next Cancel
+BOL 2&6 (BH GOH Right ctri

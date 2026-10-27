@@ -1,0 +1,19 @@
+iV} Kicksecure-release-2137-g853b3107b6f3 [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+Ls
+a Kicksecure Live ISO adrelanos_f65a6f9f
+
+LIVE Mode | USER Session | disposable use
+
+LIVE Mode | SYSMAINT Session | system maintenance, install
+
+LIVE Mode | UNRESTRICTED Session | system recovery, install
+
+Persistent (Advanced Users Only)...
+
+Utilities...
+
+Keyboard layout options
+
+Booting the highlighted entry automatically in 29 s.
+BOv&C BHM. ORight ctri

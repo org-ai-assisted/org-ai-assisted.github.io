@@ -1,0 +1,13 @@
+a Kicksecure-release-2137-g853b3107b6f3 [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+Ls
+Choose boot mode
+System will start in 2 seconds
+@ PERSISTENT Mode | USER Session | daily activities
+PERSISTENT Mode | SYSMAINT Session | system maintenance tasks
+LIVE Mode | USER Session | disposable use
+LIVE Made | SYSMAINT Session | maintenance testing
+REMOVE user-sysmaint-split | enable unrestricted admin mode
+Use up and down keys to select a boot mode and then press ENTER. To edit commands before booting,
+press 'e'. To access a command line, press 'c'. To leave a submenu, press 'Esc'.
+@0 EO @A— Right ctri

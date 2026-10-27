@@ -1,0 +1,17 @@
+G Kicksecure-release-2137-g853b3107b6f3 [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+@ @ {.Kicksecure installer 2 A © B 7:20:07
+cu ® EFI Select storage device: | © VBOX HARDDISK - 25.00 GiB (/dev/sda) ~ ?
+= Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome Manual partitioning
+You can create or resize partitions yourself.
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+@ Unpartitioned space or unknown partition table
+Back Cancel
+BO 2&8 HGH Right ctri

@@ -1,0 +1,17 @@
+G Kicksecure-release-2137-g853b3107b6f3 [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+GB Akicksecure installer mA © B #111933
+las
+= : .
+Welcome to the Calamares installer for Kicksecure 18
+Welcome This program will ask you some questions and set up Kicksecure on your computer.
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+K i k
+Bal ‘American English ~
+Next Cancel
+BOee GOB LWMSORight ctri

@@ -1,0 +1,18 @@
+G Kicksecure-release-2137-g853b3107b6f3-blackfix [Running] - Oracle VirtualBox - 8 x
+File Machine View Input Devices Help
+@ BE kicksecure installer OA & B 9:40:41
+las
+“
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+CS Kicksecu
+@ Kicksecure
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+Creating new rootfs partition on /dev/sda...
+BOL &C BH BGO Right ctri

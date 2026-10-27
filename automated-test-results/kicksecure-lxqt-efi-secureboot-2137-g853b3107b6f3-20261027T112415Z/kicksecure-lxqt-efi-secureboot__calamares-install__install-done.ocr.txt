@@ -1,0 +1,17 @@
+G Kicksecure-release-2137-g853b3107b6f3 [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+@ @ {.Kicksecure installer OA © B @ 7:22:35
+las
+m
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+All done.
+Kicksecure 18 has been installed on your computer.
+You may now restart into your new system, or continue using the Kicksecure Live environment.
+V| Restart now
+BOv&C (BH GH Right ctri

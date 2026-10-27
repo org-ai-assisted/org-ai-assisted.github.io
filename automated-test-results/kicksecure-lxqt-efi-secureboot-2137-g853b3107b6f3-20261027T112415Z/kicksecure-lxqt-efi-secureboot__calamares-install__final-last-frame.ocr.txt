@@ -1,0 +1,8 @@
+Kicksecure-release-2137-g853b3107b6f3 [Running] - Oracle VirtualBox - 8 x
+File Machine View Input Devices Help
+§B Akicksecure Setup Wizard | fill user@localhost:~ [pts/0] OA @ B 7:21:24
+P- | user@localhost:~ [pts/0]
+File Action Edit View Help
+user@localhost:~ [pts/0]
+u
+e Bea Right Ctrl

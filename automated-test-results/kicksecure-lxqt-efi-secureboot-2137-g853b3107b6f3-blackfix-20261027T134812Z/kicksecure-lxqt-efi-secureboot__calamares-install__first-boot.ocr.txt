@@ -1,0 +1,22 @@
+G Kicksecure-release-2137-g853b3107b6f3-blackfix [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+BB ABkicksecure Setup Wizard | 2 6 @B @ 9:48::*
+Computer
+Trash
+(Empty)
+user
+2 Kicksecure Setup Wizard - ox
+The setup-wizard-dist has been successfully completed.
+Please note the following default credentials:
+* Default username: user
+* Default password: No password required. (Passwordless login.)
++ Autologin: Enabled by default for account user
+No browser is installed by default, You may install one of several popular,
+‘open-source browsers by booting into "PERSISTENT Mode | SYSMAINT
+Session" and clicking "Install a Browser”.
+You can set a password and disable autologin by booting into "PERSISTENT
+Mode | SYSMAINT Session". See https://www.kicksecure.com/wiki/Sysmaint
+for more information.
+Click the "OK" button to run systemcheck.
+< >
+8B © &C EB BMASGSGRight ctri
