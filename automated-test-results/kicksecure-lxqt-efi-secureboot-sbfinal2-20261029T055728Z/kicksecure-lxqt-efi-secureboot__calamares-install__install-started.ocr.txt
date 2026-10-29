@@ -1,0 +1,58 @@
+File Machine View
+@ BE kicksecure installer
+
+lar
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+Input Devices Help
+
+Creating new roots partition on /dev/sda...
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+
+Kicksecure
+
+Welcome!
+
+‘The rest of the installation is automated and should complete in a few minutes.
+
+5%
+
+OA BB @ 1:48:39
+
+Toggle log
+
+cel
+
+BOee COE LWMSORight ctri
+
+
+G Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+@ BE kicksecure installer 2A & B © 1:48:39
+las
+“
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+CUA Kicksecu
+@ Kicksecure
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+Creating new rootfs partition on /dev/sda...
+BOv&C (BH GH Right ctri

@@ -1,0 +1,21 @@
+a Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 5 x
+
+File Machine View Input Devices Help
+
+s ENTER. To
+
+@0 EO @M— Right ctri
+
+5 Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 5 x
+File Machine View Input Devices Help
+Ls
+Choose boot mode
+System will start in 2 seconds
+@ PERSISTENT Mode | USER Session | daily activities
+PERSISTENT Mode | SYSMAINT Session | system maintenance tasks
+LIVE Mode | USER Session | disposable use
+LIVE Made | SYSMAINT Session | maintenance testing
+REMOVE user-sysmaint-split | enable unrestricted admin mode
+Use up and down keys to select a boot mode and then press ENTER. To edit commands before booting,
+press 'e'. To access a command line, press 'c'. To leave a submenu, press 'Esc'.
+@0 EO @M— Right ctri

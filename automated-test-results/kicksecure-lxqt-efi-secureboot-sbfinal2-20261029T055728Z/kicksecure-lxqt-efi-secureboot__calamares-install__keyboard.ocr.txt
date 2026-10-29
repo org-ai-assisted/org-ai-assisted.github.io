@@ -1,0 +1,131 @@
+G Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 8 x
+File Machine View Input Devices Help
+
+@ B B Akicksecure installer OA © B @ 148212
+
+Ch
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+Summary Keyboard model: | Generic 105-key PC =
+Install ‘user-defined custom Layout =| [Cherokee
+‘Albanian fault
+5 ‘Amharic -ngiish (Colemak)
+Finish Arabic English (Colemak-DH ISO)
+Arabic (Egypt) English (Colemak-DH Ortholinear)
+‘Arabic (Iraq) English (Colemak-DH Wide ISO)
+‘Arabic (Morocco) English (Colemak-DH Wide)
+‘Arabic (Syria) English (Colemak-DH)
+‘Armenian English (Dvorak)
+‘Azerbaijani English (Dvorak, Macintosh)
+Bambara English (Dvorak, alt. intl.)
+Bangla English (Dvorak, intl, with dead keys)
+Belarusian English (Dvorak, left-handed)
+Belgian English (Dvorak, right-handed)
+Berber (Algeria, Latin) English (Macintosh)
+Bosnian English (Norman)
+Braille English (US, Symbolic)
+Bulgarian English (US, alt. intl.)
+Burmese English (US, euro on 5)
+Chinese English (US, intl., with dead keys)
+Croatian English (Workman)
+Czech English (Workman, intl. with dead keys)
+Danish English (classic Dvorak)
+Dari English (intl., with AltGr dead keys)
+Dhivehi English (programmer Dvorak)
+Dutch English (the divide/multiply toggle the layout)
+Dzongkha Hawaiian
+English (Australia) Russian (US, phonetic)
+English (Cameroon) Serbo-Croatian (US)
+
+English (Ghana)
+English (New Zealand)
+English (Nigeria)
+English (South Africa)
+
+English (UK)
+
+Esperanto
+Estonian
+
+Faroese
+
+Filipino
+
+Finnish
+
+French
+
+French (Canada)
+
+French (Democratic Republic of the Congo)
+French (Togo)
+
+Georgian =
+fiype here to test your keyboard switch Keyboard: .
+Back Next Cancel
+BOL &C 18H GH Right ctri
+
+
+G Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 8k
+File Machine View Input Devices Help
+@ B B Akicksecure installer OA © B @ 148212
+las
+ietlsemnt2 Poe tet eb fe fe fe fe fe fh fe]
+se Pte fs fa fe fo de fs fe fi} P|
+al | fe fe fe fe fn fn fd
+5 /
+Partitions
+Summary Keyboard model: | Generic 105-key PC =
+‘user-defined custom Layout =| [Cherokee
+Init Albanian
+5 ‘Amharic English (Colemak)
+Finish Arabic English (Colemak-DH ISO)
+‘Arabic (Egypt) English (Colemak-DH Ortholinear)
+‘Arabic (Iraq) English (Colemak-DH Wide ISO)
+‘Arabic (Morocco) English (Colemak-DH Wide)
+‘Arabic (Syria) English (Colemak-DH)
+‘Armenian English (Dvorak)
+‘Azerbaijani English (Dvorak, Macintosh)
+Bambara English (Dvorak, alt. int.)
+Bangla English (Dvorak, inti., with dead keys)
+Belarusian English (Dvorak, left-handed)
+Belgian English (Dvorak, right-handed)
+Berber (Algeria, Latin) English (Macintosh)
+Bosnian English (Norman)
+Braille English (US, Symbolic)
+Bulgarian English (US, alt. intl.)
+Burmese English (US, euro on 5)
+Chinese English (US, intl., with dead keys)
+Croatian English (Workman)
+Czech English (Workman, intl., with dead keys)
+Danish English (classic Dvorak)
+Dari English (intl, with AltGr dead keys)
+Dhivehi English (programmer Dvorak)
+Dutch English (the divide/multiply toggle the layout)
+Dzongkha Hawaiian
+English (Australia) Russian (US, phonetic)
+English (Cameroon) Serbo-Croatian (US)
+English (Ghana)
+English (New Zealand)
+English (Nigeria)
+English (South Africa)
+English (Uk)
+Esperanto
+Estonian
+Faroese
+Filipino
+Finnish
+French
+French (Canada)
+French (Democratic Republic of the Congo)
+French (Togo)
+Georgian =
+[Type here to test your keyboard Switch Keyboard: x
+Back Next Cancel
+BOL &C 18H GH Right ctri
