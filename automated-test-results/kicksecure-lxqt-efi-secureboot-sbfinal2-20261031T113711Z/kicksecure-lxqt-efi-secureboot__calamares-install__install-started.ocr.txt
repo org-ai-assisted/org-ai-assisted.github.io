@@ -1,0 +1,44 @@
+@ G Wikicksecure-release-sbfi...
+
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+
+Ch
+
+Welcome
+Location
+Keyboard
+
+Partitions
+
+Summary
+
+Install
+
+Kicksecure
+
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+
+Creating new rootfs partition on /dev/sda...
+BO’ COB# WMG ®Right ctr
+
+
+@ WB Wikicksecure-release-sbfi... © ©) B 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File. Machine View Input Devices Help
+Pal as
+A
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+CWA Kick
+@ AicKsecure
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+Creating new rootfs partition on /dev/sda...
+BOLE COB WEA Right ct

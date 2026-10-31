@@ -1,0 +1,77 @@
+[i Kicksecure-release-sbfi... © ©) B 00:00
+
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+This is an overview of what will happen once you start the install procedure.
+
+a +
+h Location
+Set timezone to America/New York.
+Welcome The system language will be set to American English (United States).
+
+‘The numbers and dates locale will be set to American English (United States).
+
+Location
+
+Keyboard
+
+keyboard model has been set to Generic 105-key PC.
+Keyboard layout has been set to English (US)/Default.
+
+Keyboard
+Partitions
+Summary Partitions
+
+Erase disk /dev/sda (VBOX HARDDISK) and install Kicksecure 18
+Current:
+
+@ Unpartitioned space or unknown partition table
+
+@ EFI system B boot G rootts
+
+Creating new GPT pattition table on /dev/sda (VBOX HARDDISK).
+
+Create new 550MiB partition on /dev/sda (VBOX HARDDISK) with entries EFI
+
+Set flags on 550MiB fat32 partition to boot
+
+Create new 4096MiB partition on /dev/sda (VBOX HARDDISK) with entries boot
+Create new 20951MiB partition on /dev/sda (VBOX HARDDISK) with entries roots
+Set up new fat32 partition with mount point /boot/efi
+
+Set up new ext4 partition with mount point /boot
+
+Install Kicksecure on new ext4 system partition
+
+BOs COB# WAG ®Right ctr
+
+
+@ WB Wikicksecure-release-sbfi... © ©) B 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 8x
+File Machine View Input Devices Help
+- \ This is an overview of what will happen once you start the install procedure.
+wm Location
+Set timezone to America/New York.
+Welcome The system language will be set to American English (United States).
+The numbers and dates locale will be set to American English (United States).
+Location
+Keyboard
+Keyboard Keyboard model has been set to Generic 105-key PC.
+Keyboard layout has been set to English (US)/Default.
+Partitions
+Summary Partitions
+Erase disk /dev/sda (VBOX HARDDISK) and install Kicksecure 18
+instal ee
+Finish {@ Unpartitioned space or unknown partition table
+@ EFI system @ boot G rootfs
+Creating new GPT partition table on /dev/sda (VBOX HARDDISK).
+Create new 5SOMIB partition on /dev/sda (VBOX HARDDISK) with entries EFI
+Set flags on 550MiB fat32 partition to boot
+Create new 4096MiB partition on /dev/sda (VBOX HARDDISK) with entries boot
+Create new 20951MiB partition on /dev/sda (VBOX HARDDISK) with entries rootfs
+Set up new fat32 partition with mount point /boot/efi
+Set up new ext4 partition with mount point /boot
+Install Kicksecure on new ext4 system partition
+Back Install Cancel
+BOs COB# WAG ®Right ctr
