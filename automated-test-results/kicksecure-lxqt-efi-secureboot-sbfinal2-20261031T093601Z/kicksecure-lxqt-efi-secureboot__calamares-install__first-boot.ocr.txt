@@ -1,0 +1,54 @@
+[WiKicksecure-release-sbfi
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+2 Kicksecure Setup Wizard
+
+Computer
+
+Kicksecure Setup Wizard
+
+The setup-wizard-dist has been successfully completed.
+
+Please note the following default credentials:
+
+jo password required. (Passwordless login.)
+Enabled by default for account user
+
+No browser is installed by default, You may install one of several popular,
+‘open-source browsers by booting into "PERSISTENT Mode | SYSMAINT
+
+Session" and clicking "install a Browser".
+
+You can set a password and disable autologin by booting into "PERSISTENT
+
+Mode | SYSMAINT Session". See https://www.kicksecure,com/wiki/Sysmaint
+
+for more information.
+
+Click the "Ok" button to run systemcheck.
+
+8B © &C EB BMASSGRight ctri
+
+@ i Wikicksecure-release-sbfi... tm — 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 8x
+File Machine View Input Devices Help
+(B i Akicksecure Setup Wizard | 0 6 @ B 4 5:36::°
+Computer
+Trash
+(Empty)
+user
+Ce Kicksecure Setup Wizard -ox
+The setup-wizard-dist has been successfully completed.
+Please note the following default credentials:
+* Default username: user
+* Default password: No password required. (Passwordless login.)
++ Autologin: Enabled by default for account user
+No browser is installed by default, You may install one of several popular,
+‘open-source browsers by booting into "PERSISTENT Mode | SYSMAINT
+Session" and clicking "Install a Browser”.
+You can set a password and disable autologin by booting into "PERSISTENT
+Mode | SYSMAINT Session". See https://www.kicksecure.com/wiki/Sysmaint
+for more information.
+Click the "OK" button to run systemcheck.
+8B © &C EB BMASSGRight ctri

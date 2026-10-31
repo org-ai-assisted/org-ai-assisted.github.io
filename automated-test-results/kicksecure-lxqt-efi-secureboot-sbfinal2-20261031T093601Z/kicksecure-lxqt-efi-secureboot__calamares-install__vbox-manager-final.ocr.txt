@@ -1,0 +1,94 @@
+te Oracle VirtualBox Manager - 5 *
+File Machine Help
+
+12 - @ >.
+
+New, Open Settings Discard Start
+
+| ii
+
+al =) Details @ a
+& General & Preview
+
+fa] Name: Kicksecure-release-sbfinal2
+
+a Operating System: Debian (64-bit)
+| System Kicksecure-release-
+
+tal Base Memory: 4096 MB sbfinal2
+Processor 7
+
+(ad Boot Order: Floppy, Optical, Hard Disk
+
+EFI: Enabled
+Secure Boot: Enabled
+Acceleration: Nested Paging, KVM Paravirtualization
+
+@ Display
+
+Video Memory: 128 MB
+Graphics Controller:  VMSVGA
+Remote Desktop Server: Disabled
+Recording: Disabled
+@ Storage
+
+Controller: SATA
+SATA Port 0: Kicksecure-release-sbfinal2.axj1Qt.vdi (Normal, 25.00 GB)
+Controller: IDE
+
+(2 Audio
+
+Host Driver: Null Audio
+Controller: ICH AC97
+
+@ Network
+Adapter 1: Intel PRO/1000 MT Desktop (NAT)
+© USB
+
+USB Controller: OHCI
+Device Filters: 0 (0 active)
+
+2 Shared folders
+None
+
+® Description
+None
+
+
+te Oracle VirtualBox Manager - 0 x
+File Machine Help
+of mb >.
+=) New, Open Settings Discard Start
+al =) Details @ @ @
+& General & Preview
+fa] Name: Kicksecure-release-sbfinal2 ———
+a Operating System: Debian (64-bit)
+| System Kicksecure-release-
+tal Base Memory: 4096 MB sbfinal2
+Processors: 7
+(ad Boot Order: Floppy, Optical, Hard Disk
+EFI: Enabled
+Secure Boot: Enabled
+Acceleration: Nested Paging, KVM Paravirtualization
+@ Display
+Video Memory: 128 MB
+Graphics Controller: VMSVGA
+Remote Desktop Server: Disabled
+Recording: Disabled
+@ Storage
+Controller: SATA
+SATA Port 0: Kicksecure-release-sbfinal2.axj1Qt.vdi (Normal, 25.00 GB)
+Controller: IDE
+(® Audio
+Host Driver: Null Audio
+Controller: ICH AC97
+@ Network
+Adapter 1: Intel PRO/1000 MT Desktop (NAT)
+© USB
+USB Controller: OHCI
+Device Filters: 0 (0 active)
+2 Shared folders
+None
+® Description
+None
+[3

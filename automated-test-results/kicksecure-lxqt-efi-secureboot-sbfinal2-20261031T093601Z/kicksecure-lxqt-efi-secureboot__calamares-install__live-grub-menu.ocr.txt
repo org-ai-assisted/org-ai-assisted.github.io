@@ -1,0 +1,27 @@
+@ B @ Wkicksecure-release-sbfi... © ©) B 00:00
+
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+
+LS
+
+utilit
+keubi
+
+Booting the highlighted entry automatically in 29
+
+BOee GOEL ORight ctri
+
+@ B @ Wkicksecure-release-sbfi... tm (> B 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+Ls
+a Kicksecure Live ISO adrelanos_f65a6f9f
+LIVE Mode | USER Session | disposable use
+LIVE Mode | SYSMAINT Session | system maintenance, install
+LIVE Mode | UNRESTRICTED Session | system recovery, install
+Persistent (Advanced Users Only)...
+Utilities...
+Keyboard layout options
+Booting the highlighted entry automatically in 29 s.
+BOee GOEL ORight ctri

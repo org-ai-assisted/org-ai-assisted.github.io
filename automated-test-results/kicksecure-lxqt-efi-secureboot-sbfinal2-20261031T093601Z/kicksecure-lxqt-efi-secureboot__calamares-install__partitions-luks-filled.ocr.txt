@@ -1,0 +1,59 @@
+@ WB Wikicksecure-release-sbfi... © ©) B 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+sks Kicksecure Installer oO 6 © B @ 5:32:35
+
+© EFI Select storage device: | © VBOX HARDDISK - 25.00 GiB (/dev/sda) ~
+
+5 Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome
+ext ~
+Location
+
+Manual partitioning
+You can create or resize partit
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+V/ Encrypt system |e
+
+Vv)
+oe:
+
+@ Unpartitioned space or unknown partition table
+
+@ EFI system B boot rootfs
+
+Back Next Cancel
+
+BOee CGO LWMSORight ctri
+
+
+@ WB Wikicksecure-release-sbfi... © ©) B 00:00
+irs) Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 8x
+File Machine View Input Devices Help
+BB i Kicksecure installer oO 6 © B @ 5:32:35
+lap ® EFI Select storage device: | © VBOX HARDDISK - 25.00 GiB (/dev/sda) ~ ?
+= © Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome
+ext ~
+Location
+Manual partitioning
+Keyboard You can create or resize partitions yourself.
+Partitions
+Summary
+Install
+Finish
+@ Unpartitioned space or unknown partition table
+@ EFI system @ boot D rootfs
+Back Next Cancel
+BOL &C 18H GH Right ctri
