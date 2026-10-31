@@ -1,0 +1,22 @@
+Baw Kicksecure-release-sbfi... Oo -
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+
+File Machine View Input Devices Help
+
+LS
+
+systend[1]: Failed to start systend-modules-load.service ~ Load Kernel Modules.
+1 Failed to start systemd-modules-load.service - Load Kernel Modules.
+Please enter passphrase for disk rootfs (luks-473422b9-2b58-41ba-BbaZ-8292f45£2a16):
+
+@0C\ © B@AGGRight ctri
+
+74 GW Wkicksecure-release-sbfi... C & 00:00
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+Ls
+a ‘systemd[1]: Failed to start systemd-modules-load.service — Load Kernel Modules.
+IC 1 Failed to start systemd-modules-load.service - Load Kernel Modules.
+Please enter passphrase for disk rootfs (luks—473422b9-2b58-41ba-SbaZ-BZIZF4SFZa1H): seereseeseeseeseevees
+@0C\ © B@AGGRight ctri

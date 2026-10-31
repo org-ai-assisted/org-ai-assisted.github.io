@@ -1,0 +1,46 @@
+@ G Wikicksecure-release-sbfi... C & 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+ks Kicksecure Installer A © B @ 00:00
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+All done.
+
+Kicksecure 18 has been installed on your computer.
+You may now restart into your new system, or continue using the Kicksecure Live environment.
+
+Vv) Restart now
+
+8 OusC08#MSGright ctr
+
+
+@ WB Wikicksecure-release-sbfi...  & 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+Gi  -& Kicksecure Installer A tm & @ 00:00
+Ch
+A
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+All done.
+Kicksecure 18 has been installed on your computer.
+You may now restart into your new system, or continue using the Kicksecure Live environment.
+V| Restart now
+GB Ov &C (BH GOH Right ctri

@@ -1,0 +1,123 @@
+@ B @ Wkicksecure-release-sbfi...  & 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+(3 B Wb Kicksecure installer A © B @ 00:00
+
+fh
+Welcome
+Location
+Keyboard
+Partitions
+Summary Keyboard model: | Generic 105-key PC =
+Install ‘user-defined custom Layout =
+Albanian
+5 ‘Amharic English (Colemak)
+Finish Arabic English (Colemak-DH ISO)
+Arabic (Egypt) English (Colemak-DH Ortholinear)
+‘Arabic (Iraq) English (Colemak-DH Wide ISO)
+‘Arabic (Morocco) English (Colemak-DH Wide)
+‘Arabic (Syria) English (Colemak-DH)
+‘Armenian English (Dvorak)
+‘Azerbaijani English (Dvorak, Macintosh)
+Bambara English (Dvorak, alt. intl.)
+Bangla English (Dvorak, intl, with dead keys)
+Belarusian English (Dvorak, left-handed)
+Belgian English (Dvorak, right-handed)
+Berber (Algeria, Latin) English (Macintosh)
+Bosnian English (Norman)
+Braille English (US, Symbolic)
+Bulgarian English (US, alt. intl.)
+Burmese English (US, euro on 5)
+Chinese English (US, intl., with dead keys)
+Croatian English (Workman)
+Czech English (Workman, intl. with dead keys)
+Danish English (classic Dvorak)
+Dari English (intl., with AltGr dead keys)
+Dhivehi English (programmer Dvorak)
+Dutch English (the divide/multiply toggle the layout)
+Dzongkha Hawaiian
+English (Australia) Russian (US, phonetic)
+English (Cameroon) Serbo-Croatian (US)
+
+English (Ghana)
+English (New Zealand)
+English (Nigeria)
+
+English (South Africa)
+
+English (UK)
+
+Esperanto
+Estonian
+Faroese
+
+Filipino
+
+Finnish
+
+French
+
+French (Canada)
+
+Switch Keyboard: +
+
+Back Next Cancel
+
+Bowes @1@O Right ctrl
+
+
+@ B @ Wkicksecure-release-sbfi...  & 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 8x
+File Machine View Input Devices Help
+(3 B Wb Kicksecure installer A © B @ 00:00
+fh
+> 7
+al | fe fe fe fe fn fn fd
+5 /
+Partitions
+Summary Keyboard model: | Generic 105-key PC =
+‘A user-defined custom Layout =) [Cherokee
+Init Albanian
+. ‘Amharic English (Colemak)
+Finish Arabic English (Colemak-DH ISO)
+Arabic (Egypt) English (Colemak-DH Ortholinear)
+Arabic (Iraq) English (Colemak-DH Wide ISO)
+Arabic (Morocco) English (Colemak-DH Wide)
+Arabic (Syria) English (Colemak-DH)
+‘Armenian English (Dvorak)
+‘Azerbaijani English (Dvorak, Macintosh)
+Bambara English (Dvorak, alt. intl.)
+Bangla English (Dvorak, intl., with dead keys)
+Belarusian English (Dvorak, left-handed)
+Belgian English (Dvorak, right-handed)
+Berber (Algeria, Latin) English (Macintosh)
+Bosnian English (Norman)
+Braille English (US, Symbolic)
+Bulgarian English (US, alt. intl.)
+Burmese English (US, euro on 5)
+Chinese English (US, intl., with dead keys)
+Croatian English (Workman)
+Czech English (Workman, intl., with dead keys)
+Danish English (classic Dvorak)
+Dari English (intl., with AltGr dead keys)
+Dhivehi English (programmer Dvorak)
+Dutch English (the divide/multiply toggle the layout)
+Dzongkha Hawaiian
+English (Australia) Russian (US, phonetic)
+English (Cameroon) ‘Serbo-Croatian (US)
+English (Ghana)
+English (New Zealand)
+English (Nigeria)
+English (South Africa)
+ae (UK)
+Esperanto
+Estonian
+Faroese
+Filipino
+Finnish
+French
+French (Canada) +
+fiype here to test your keyboard Switch Keyboard: x
+Back Next Cancel
+BOee GOB LWMSORight ctri

@@ -1,0 +1,52 @@
+@ G Wikicksecure-release-sbfi... C & 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+Kicksecure Installer Agu 4) 00:00
+d
+
+Ch
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+Kicksecure
+
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+
+5% Toggle log
+
+BOee GOB LWMSORight ctri
+
+Creating new roots partition on /dev/sda...
+
+
+@ WB Wikicksecure-release-sbfi...  & 00:00
+w Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+Gi  -& Kicksecure Installer A @&m B @ 00:00
+Ch
+‘
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+CWA Kick.
+4 Kicksecure
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+Creating new rootfs partition on /dev/sda...
+BOL &C [BH GOH Right ctri
