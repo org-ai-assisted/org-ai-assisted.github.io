@@ -1,0 +1,96 @@
+Compute|s
+
+eph-inst-
+kicksecure-
+uilt
+
+Trash
+(Empty)
+
+[im] Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+
+4, Kicksecure Installer
+CH
+
+Welcome
+
+Location
+Keyboard
+Partitions
+Summary Keyboard model: | Generic 105-key PC
+
+Install Bambara
+Bangla
+
+. Belarusian
+Finish Belgian
+Berber (Algeria, Latin) nak-DH Ortholinear)
+Bosnian nak-DH Wide ISO)
+Braille nak-DH Wide)
+Bulgarian English (Colemak-DH)
+English (Dvorak)
+English (Dvorak, Macintosh)
+Croatian English (Dvorak, alt. intl.)
+Czech English (Dvorak, intl, with dead keys)
+Danish English (Dvorak, left-handed)
+Dari English (Dvorak, right-handed)
+Dhivehi English (Macintosh)
+Dutch English (Norman)
+Dzongkha English (US, Symbolic)
+English (Australia) English (US, alt. intl.)
+English (Cameroon) English (US, euro on 5)
+English (Ghana) English (US, intl., with dead keys)
+English (New Zealand) English (Workman)
+English (Nigeria) English (Workman, intl. with dead keys)
+English (South Africa) English (classic Dvorak)
+English (UK) English (intl., with AltGr dead keys)
+~| [English (programmer Dvorak)
+
+our keybo ‘Switch Keyboard:
+
+eo GOO Right ctri
+
+@ WB Wikicksecure-release-sbfi... Oo > B @6:58:53
+Compute|s
+eph-inst-
+kicksecure-
+built
+[im] Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox -o%x
+File Machine View Input Devices Help
+Trash = 5
+(Empty) BB A kicksecure installer OA © B 02:58:15
+¢ Wi.
+1 7
+il | fe fe fe fe fn fn fd
+5 /
+Partitions
+Summary Keyboard model: | Generic 105-key PC +
+Bambara “| (Cherokee ry
+Init Bangla
+. Belarusian English (Colemak)
+Finish Belgian English (Colemak-DH ISO)
+Berber (Algeria, Latin) English (Colemak-DH Ortholinear)
+Bosnian English (Colemak-DH Wide ISO)
+Braille English (Colemak-DH Wide)
+Bulgarian English (Colemak-DH)
+Burmese English (Dvorak)
+Chinese English (Dvorak, Macintosh)
+Croatian English (Dvorak, alt. intl.)
+Czech English (Dvorak, intl., with dead keys)
+Danish English (Dvorak, left-handed)
+Dari English (Dvorak, right-handed)
+Dhivehi English (Macintosh)
+Dutch English (Norman)
+Dzongkha English (US, Symbolic)
+English (Australia) English (US, alt. intl.)
+English (Cameroon) English (US, euro on 5)
+English (Ghana) English (US, intl., with dead keys)
+English (New Zealand) English (Workman)
+English (Nigeria) English (Workman, intl., with dead keys)
+English (South Africa) English (classic Dvorak)
+English (UK) English (intl., with AltGr dead keys)
+~| [English (programmer Dvorak) ~
+fiype here to test your keyboard Switch Keyboard: x
+Back Next Cancel
+OD DOwSSIG8HLMGORight ctr

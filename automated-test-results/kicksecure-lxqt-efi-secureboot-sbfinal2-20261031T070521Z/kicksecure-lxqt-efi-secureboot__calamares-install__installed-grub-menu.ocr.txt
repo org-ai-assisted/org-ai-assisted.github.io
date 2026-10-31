@@ -1,0 +1,52 @@
+Compute!
+
+eph-inst-
+kicksecure-
+built
+
+Trash
+(Empty)
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+
+File Machine View Input Devices Help
+
+Choose boot mode
+
+system will start in 1 seconds
+
+@ PERSISTENT Mode | USER Session | daily activities
+
+PERSISTENT Mode | SYSMAINT Session | system maintenance tasks
+
+LIVE Mode | USER Session | disposable use
+
+LIVE Mode | SYSMAINT Session | maintenance testing
+
+REMOVE user-sysmaint-split | enable unrestricted admin mode
+
+Use up and down keys to select a boot mode and then press ENTER. To edit commands before booting,
+
+press ‘e'. To access a command line, press 'c'. To leave a submenu, press ‘Esc’.
+
+ooeru Right Ctrl
+
+@ B @ Wkicksecure-release-sbfi... oa B @ 7:01:37
+Compute!
+eph-inst-
+kicksecure-
+built
+frit} [a] Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+Trash 7
+(Empty) :
+' ' - : ; Choose boot mode
+System will start in 1 seconds
+@ PERSISTENT Mode | USER Session | daily activities
+PERSISTENT Mode | SYSMAINT Session | system maintenance tasks
+LIVE Mode | USER Session | disposable use
+LIVE Mode | SYSMAINT Session | maintenance testing
+REMOVE user-sysmaint-split | enable unrestricted admin mode
+Use up and down keys ta select a boot made and then press ENTER. To edit commands before booting
+press 'e'. To access a command line, press 'c'. To leave a submenu, press ‘Esc’
+B&O 088 U OB Right ctr

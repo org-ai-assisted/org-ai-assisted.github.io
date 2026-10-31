@@ -1,0 +1,52 @@
+Kicksecure-release-sbfi.
+
+eph-ins
+kicksecure:
+built
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+
+Kicksecure Installer om 6 © B @ 3:04:19
+
+CH
+
+Welcome
+
+Location
+Keyboard
+Partitions
+
+Summary
+
+Install All done.
+
+Kicksecure 18 has been installed on your computer.
+You may now restart into your new system, or continue using the Kicksecure Live environment.
+
+Vv) Restart now
+
+{_ Done]
+
+62 C08 EGO Right ctr
+
+4 & WB Wkicksecure-release-sbfi.... O > B @7:01:26
+Computes
+eph-inst-
+kicksecure-
+built
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - ox
+File Machine View Input Devices Help
+Trash a ar er
+(Empty) [4 GW L.Kicksecure installer oO 6 © B @304:19
+Welcome
+Location
+Keyboard
+— aii — i Partitions
+Summary
+Install All done.
+Finish Kicksecure 18 has been installed on your computer.
+You may now restart into your new system, or continue using the Kicksecure Live environment.
+v Restart now
+{_ Done]
+@ OO 1G HUS@®Right ctrl

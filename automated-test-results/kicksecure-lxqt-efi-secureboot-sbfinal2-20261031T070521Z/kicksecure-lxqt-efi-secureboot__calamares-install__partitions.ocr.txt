@@ -1,0 +1,64 @@
+Kicksecure-release-sbfi.
+
+eph-inst-
+kicksecure:
+built
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+
+File Machine View Input Devices Help
+
+Kicksecure Installer
+
+© EFI Select storage device: | | VBOX HARDDISK - 25.00 GiB (/dev/sda) ~ | @ ?
+
+Erase disk
+This will delete all data currently present on the selected storage device.
+
+Welcome
+
+Manual partitioning
+You can create or resize partitions yourself.
+ocation
+
+Keyboard
+
+Partitions
+
+Summary
+Install
+
+Finish
+
+@ Unpartitioned space or unknown partition table
+25.00 GiB
+
+| Back | | Cancel |
+
+2008 # 1G O Right ctr
+
+
+4 & WB Wkicksecure-release-sbfi.... cm B @6:58:58
+Computes
+eph-inst-
+kicksecure-
+built
+al kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox -ox
+File Machine View Input Devices Help
+Trash Sl eeccmanesice | ¢
+(Empty) [4 @& i L.Kicksecure Installer A © B © 2:58:20
+© EFI Select storage device: | | VBOX HARDDISK - 25.00 GiB (/dev/sda) ~ | @ ?
+Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome Manual partitioning
+You can create or resize partitions yourself.
+Location
+' Keyboard
+Partitions
+Summary
+Install
+Finish
+@ Unpartitioned space or unknown partition table
+25.00 GiB
+{Back | {Cancel |
+(28008 UG Right ctr

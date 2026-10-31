@@ -1,0 +1,64 @@
+|[WKicksecure-release-sbfi
+
+File Machine View Input Devices Help
+
+(Empty)
+
+CH
+
+Welcome
+Location
+ard
+
+Partitions
+
+Summary
+Install
+
+Finish
+
+4. Kicksecure Installer
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+
+(> B @6:59:20
+
+OA B @ 2:58:42
+
+Gm Kicksecure
+
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+
+5%
+
+Creating new rootfs partition on /dev/sda...
+
+| Toggle log
+
+Cancel
+
+BOF OG HUGO Right ctri
+
+[4 @& Wi Wkicksecure-release-sbfi.... m > B @6:59:20
+Computes
+eph-inst-
+kicksecure-
+built
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - ox
+File Machine View Input Devices Help
+oath CA GB I eiKicksecure installer | DAB EB #25842
+CK
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+_ Gm Kicksecure
+Welcome!
+The rest of the installation is automated and should complete in a few minutes.
+5% | Toggle log
+Creating new rootfs partition on /dev/sda...
+|
+BOF OG HUGO Right ctri

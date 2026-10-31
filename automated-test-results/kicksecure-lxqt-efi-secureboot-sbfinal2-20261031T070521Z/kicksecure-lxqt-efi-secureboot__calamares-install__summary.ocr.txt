@@ -1,0 +1,93 @@
+Kicksecure-release-sbfi. Oo > B @6:59:13
+
+Compute!
+
+eph-inst-
+kicksecure-
+built
+
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+
++ Kicksecure Installer ] OA © B @ 2:58:35
+This is an overview of what will happen once you start the install procedure.
+
+Location
+
+Set timezone to America/New York.
+The system language will be set to American English (United States).
+‘The numbers and dates locale will be set to American English (United States).
+
+Keyboard
+
+keyboard model has been set to Generic 105-key PC.
+Keyboard layout has been set to English (US)/Default.
+
+Partitions
+
+Erase disk /dev/sda (VBOX HARDDISK) and install Kicksecure 18
+Current
+
+Finish {@ Unpartitioned space or unknown partition table
+25.00 GiB
+
+@ EFI system B boot GB rootfs
+550.00 MiB iB 20
+
+GiB LUKS2
+
+Creating new GPT partition table on /dev/sda (VBOX HARDDISK)...
+
+Create new 550MIB partition on /dev/sda (VBOX HARDDISK) with entries EFI
+
+Set flags on 550MiB fat32 partition to boot
+
+Create new 4096MiB partition on /dev/sda (VBOX HARDDISK) with entries boot
+Create new 20951MiB partition on /dev/sda (VBOX HARDDISK) with entries rootfs
+Set up new fat32 partition with mount point /boot/efi
+
+Set up new ext4 partition with mount point /boot
+
+Install Kicksecure on new ext4 system partition
+
+Back |{ Install | | Cancel
+
+2008 # 1G O Right ctr
+
+
+4 & WB Wkicksecure-release-sbfi.... mo B @6:59:13
+Computes
+eph-inst-
+kicksecure-
+built
+Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox - ox
+File Machine View Input Devices Help
+Trash Fy Gbeou po ietngp
+(Empty) [4 @& i L.Kicksecure Installer A © B 0 2:58:35
+This is an overview of what will happen once you start the install procedure.
+Location
+Set timezone to America/New York.
+Welcome The system language will be set to American English (United States).
+~ The numbers and dates locale will be set to American English (United States).
+Location
+Keyboard
+boz
+. Keyboard Keyboard model has been set to Generic 105-key PC.
+Keyboard layout has been set to English (US)/Default.
+Partitions
+Summary Partitions
+Erase disk /dev/sda (VBOX HARDDISK) and install Kicksecure 18
+Finish {@ Unpartitioned space or unknown partition table
+25.00 GiB
+@ EFI system @ boot G rootfs
+550.00 MiB FAT32  4.00GiB exta 20.46 GiB LUKS2
+Creating new GPT partition table on /dev/sda (VBOX HARDDISK)...
+Create new S5OMiB partition on /dev/sda (VBOX HARDDISK) with entries EFI
+Set flags on 550MiB fat32 partition to boot
+Create new 4096MiB partition on /dev/sda (VBOX HARDDISK) with entries boot
+Create new 20951MiB partition on /dev/sda (VBOX HARDDISK) with entries rootfs
+Set up new fat32 partition with mount point /boot/efi
+Set up new ext4 partition with mount point /boot
+Install Kicksecure on new ext4 system partition
+|Back |{ Install | | Cancel |
+2&6 08M @O Right ctr

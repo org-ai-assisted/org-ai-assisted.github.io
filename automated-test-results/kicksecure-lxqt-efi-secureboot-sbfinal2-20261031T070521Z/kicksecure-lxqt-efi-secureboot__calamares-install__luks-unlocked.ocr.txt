@@ -1,0 +1,34 @@
+D> B @ 7:02:24
+
+Compute!
+
+eph-inst-
+kicksecure-
+built
+
+tt
+
+Trash
+(Empty)
+
+[im] Kicksecure-rele; bfinal2 [Running] - Oracle VirtualBox
+
+File Machine View Input Devi
+systend[1]: Failed to start systend-modules-load.service ~ Load Kernel Modules.
+
+U 1 Failed to start systemd-modules-load.service - Load Kernel Modules.
+Please enter passphrase for disk rootfs .
+
+Cy Right Ctrl
+
+[A & i Wikicksecure-release-sbfi D> B @ 7:02:24
+Computels
+eph-inst-
+kicksecure-
+built
+frit} [a] Kicksecure-release-sbfinal2 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+Trash systend[11: Failed to start systemd-modules-load.service - Load Kernel Modules.
+(Empty) 0 1 Failed to start systemd-modules-load.service - Load Kernel Modules.
+Please enter passphrase for disk rootfs deeeesecseseseseeees
+Right Ctrl
