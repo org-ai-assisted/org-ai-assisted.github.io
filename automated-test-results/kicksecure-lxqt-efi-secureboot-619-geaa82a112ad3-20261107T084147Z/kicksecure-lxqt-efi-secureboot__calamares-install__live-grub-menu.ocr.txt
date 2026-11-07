@@ -1,0 +1,33 @@
+@ B @ Wkicksecure-release-619... cB Boo:
+
+w Kicksecure-release-619-geaa82a112ad3 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+
+LS
+
+Kicksecure Live ISO 18.2.3.6-619-geaa8
+
+Booting the highlighted entry automatically in 29 s
+
+BOvel COEB# WM © Bright ctr
+
+@ B @ Wkicksecure-release-619... co 8 > 00:00
+w Kicksecure-release-619-geaa82a112ad3 [Running] - Oracle VirtualBox
+File. Machine View Input Devices Help
+Ls
+a Kicksecure Live ISO 18.2.3.6-619-geaa8
+
+LIVE Mode | USER Session | disposable use
+
+LIVE Mode | SYSMAINT Session | system maintenance, install
+
+LIVE Mode | UNRESTRICTED Session | system recovery, install
+
+Persistent (Advanced Users Only)...
+
+Utilities...
+
+Keyboard layout options
+
+Booting the highlighted entry automatically in 29 s.
+BOLE COBO Oright ctr
