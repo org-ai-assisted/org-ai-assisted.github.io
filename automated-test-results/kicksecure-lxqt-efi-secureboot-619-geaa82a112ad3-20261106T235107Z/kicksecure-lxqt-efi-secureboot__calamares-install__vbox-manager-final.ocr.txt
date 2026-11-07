@@ -1,0 +1,95 @@
+te Oracle VirtualBox Manager - 5 *
+File Machine Help
+
+oe & >.
+
+New Open Settings Start
+| =
+jm] Petals a] ao
+(S| General
+Name: Kicksecure-release-619-geaa82a112ad3
+Operating System: Debian (64-bit)
+syste 7
+BH System Kicksecure-
+Base Memory: 4096 MB -619-
+Processors: 7 release-619
+Boot Order: Floppy, Optical, Hard Disk geaa82all12ad3
+EFI: Enabled
+
+Secure Boot: Enabled
+‘Acceleration: Nested Paging, KVM Paravirtualization
+
+© Display
+
+Video Memory: 128 MB
+Graphics Controller: _  VMSVGA
+Remote Desktop Server: Disabled
+Recordin Disabled
+
+© storage
+
+Controller:
+SATA
+
+SATA Port 0: Kicksecure-release-619-geaa82a112ad3.Xx}m09.vdi (Normal, 25.00 GB)
+Controller: IDE
+
+( Audio
+
+Host Driver: Null Audio
+Controller: ICH AC97
+
+@ Network
+Adapter 1: Intel PRO/1000 MT Desktop (NAT)
+
+Ouse
+
+USB Controller: OHC!
+Device Filters: 0 (0 active)
+
+(Gi Shared folders
+None
+
+© Description
+None
+
+
+NS Oracle VirtualBox Manager - 0 x
+File Machine Help
+aide >.
+New Open Settings Start
+Ai Beam ml) Details a) ao
+& General & Preview
+fol} Name: Kicksecure-release-619-geaa82al12ad3 OO
+Operating System: Debian (64-bit)
+syst 7
+al BH System Kicksecure-
+Base Memory: 4096 MB -619-
+fa Processors: 7 release-619
+Boot Order: Floppy, Optical, Hard Disk geaa82all12ad3
+al EFI: Enabled
+Secure Boot: Enabled
+‘Acceleration: Nested Paging, KVM Paravirtualization
+© Display
+Video Memory: 128 MB
+Graphics Controller: VMSVGA
+Remote Desktop Server: Disabled
+Recording: Disabled
+@ storage
+Controller:
+SATA
+SATA Port 0: Kicksecure-release-619-geaa82al12ad3.XxJm09. vai (Normal, 25.00 GB)
+Controller: IDE
+() Audio
+Host Driver: Null Audio
+Controller: ICH AC97
+@ Network
+Adapter 1: Intel PRO/1000 MT Desktop (NAT)
+O uss
+USB Controller: OHC!
+Device Filters: 0 (0 active)
+(Gl Shared folders
+None
+© Description
+None
+[2

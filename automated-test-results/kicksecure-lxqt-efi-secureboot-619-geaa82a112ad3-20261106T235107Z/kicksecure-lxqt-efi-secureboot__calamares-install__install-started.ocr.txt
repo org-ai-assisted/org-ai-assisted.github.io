@@ -1,0 +1,47 @@
+@ WB Wkicksecure-release-619... tc (> & & 00:00
+w Kicksecure-release-619-geaa82a112ad3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+Kicksecure Installer 6 Ba B @ 00:00
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+Summary
+
+Install
+
+Kicksecure
+
+Welcome!
+The rest of the installation is automated and should complete
+
+a few minutes.
+
+Creating new rootfs partition on /dev/sda...
+BOvee COB#S MAG Right ctr
+
+
+@ WB Wkicksecure-release-619... tc (> & & 00:00
+w Kicksecure-release-619-geaa82a112ad3 [Running] - Oracle VirtualBox - 3x
+File. Machine View Input Devices Help
+@ B je kicksecure installer 6 &U B @ 00:00
+fh
+‘
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+CUA Kick
+4 Kicksecure
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+Creating new rootfs partition on /dev/sda...
+BOL COB WEA Right ctr

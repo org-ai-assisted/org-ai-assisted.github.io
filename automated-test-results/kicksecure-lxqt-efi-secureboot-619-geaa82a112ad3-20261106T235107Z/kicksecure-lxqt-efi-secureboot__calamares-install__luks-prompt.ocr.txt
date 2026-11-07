@@ -1,0 +1,22 @@
+[4 & G Wkicksecure-release-619... Oo Be
+
+Kicksecure-release-619-geaa82a112ad3 [Running] - Oracle VirtualBox
+
+File Machine View Input Devices Help
+
+LS
+
+systend[1]: Failed to start systend-modules-load.service ~ Load Kernel Modules.
+1 Failed to start systemd-modules-load.service - Load Kernel Modules.
+Please enter passphrase for disk rootfs (luks—4f593e52-7acc-4c?e-954d-632098aZ0f9c): (press TAB for no echo)
+
+BC ONG WEO@® right ceri
+
+[4 GB Wkicksecure-release-619... mo > B & 00:00
+Kicksecure-release-619-geaa82a112ad3 [Running] - Oracle VirtualBox
+File. Machine View Input Devices Help
+Ls
+systend[1]: Failed to start systend-modules-load.service - Load Kernel Modules.
+lf 1 Failed to start systend-modules-load.seruice - Load Kernel Modules.
+Please enter passphrase for disk rootfs (luks~4f593e52~7acc-4c?e-954d-632098aZ0f9c): (press TAB for no echo)
+@ COU WSO right cn
