@@ -239,4 +239,4 @@ footer .fshare .sh-msg{color:var(--ok);font-family:var(--mono);font-size:.8rem}
 /* Step logs (full systemcheck / check-battery output) scroll within a bounded box so a long
    log is shown IN FULL without blowing out the page. */
 .issue pre.steplog{max-height:60vh;overflow:auto}
-.issue img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;margin-top:8px}
+.issue img{max-width:100%;height:auto;border:1px solid var(--line);margin-top:8px}
