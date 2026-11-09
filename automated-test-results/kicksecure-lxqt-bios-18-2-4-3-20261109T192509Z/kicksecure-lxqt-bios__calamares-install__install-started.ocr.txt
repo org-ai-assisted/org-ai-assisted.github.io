@@ -1,0 +1,52 @@
+@ BB Wkicksecure-release-18-... OB _ & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+BB i Kicksecure installer 6 &U B @ 00:00
+
+Ch
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+Kicksecure
+
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+
+4% Toggle log
+
+BOee GO LWMSHRight ctri
+
+Creating new luks2 partition on /dev/sda.
+
+
+@ BB Wkicksecure-release-18-... 7 B ” & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+BB i Kicksecure installer 6 &U B @ 00:00
+Ch
+‘
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+CWA Kick.
+4 Kicksecure
+Welcome!
+‘The rest of the installation is automated and should complete in a few minutes.
+la 4% Toggle log
+Creating new luks2 partition on /dev/sda.
+BO &C (BH GH Right ctri

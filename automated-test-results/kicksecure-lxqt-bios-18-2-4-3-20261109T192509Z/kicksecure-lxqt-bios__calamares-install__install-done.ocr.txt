@@ -1,0 +1,46 @@
+@ BB Wkicksecure-release-18-... OB _ & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+sks Kicksecure Installer 6 © B @ 00:00
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+All done.
+
+Kicksecure 18 has been installed on your computer.
+You may now restart into your new system, or continue using the Kicksecure Live environment.
+
+Vv) Restart now
+
+9 OusC0N#MOGright ctr
+
+
+@ BB Wkicksecure-release-18-... OB _ & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+BB i Kicksecure installer 6 OO B # 00:00
+Ch
+A
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+All done.
+Kicksecure 18 has been installed on your computer.
+You may now restart into your new system, or continue using the Kicksecure Live environment.
+V| Restart now
+BOv&C 0B HGH Right ctri

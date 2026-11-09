@@ -1,0 +1,30 @@
+@ B @ Wkicksecure-release-18-... co 8 > 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+
+LS
+
+Kicksecure Live ISO 18.2.4.3
+
+Booting the highlighted entry automatically in 29
+
+BOee GOEL ORight ctri
+
+@ B @ Wkicksecure-release-18-... co 8 > 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox
+File Machine View Input Devices Help
+Ls
+a h Kicksecure Live ISO 18.2.4.3
+
+LIVE Mode | USER Session | disposable use
+
+LIVE Mode | SYSMAINT Session | system maintenance, install
+
+LIVE Mode | UNRESTRICTED Session | system recovery, install
+
+Utilities...
+
+Keyboard layout options
+
+Booting the highlighted entry automatically in 29 s.
+BOee GOEL ORight ctri

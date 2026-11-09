@@ -1,0 +1,49 @@
+@ BB Wkicksecure-release-18-... OB _ & 00:00
+
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+sks Kicksecure Installer 6 © B @ 00:00
+
+©} BIOS Select storage device: | © VBOX HARDDISK - 25.00 GiB (/dev/sda) ~
+
+Erase disk
+This will delete all data currently present on the selected storage device.
+
+Welcome Manual partitioning
+You can create or resize partitions yourself.
+Location
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+@ Unpartitioned space or unknown partition table
+
+Back Cancel
+
+BOee GOB LWMSORight ctri
+
+
+@ BB Wkicksecure-release-18-... OB _ & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+BB i Kicksecure installer 6 OO B # 00:00
+lap ® BIOS Select storage device: | © VBOX HARDDISK - 25.00 GiB (/dev/sda) ~ ?
+= Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome Manual partitioning
+You can create or resize partitions yourself.
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+@ Unpartitioned space or unknown partition table
+Back Cancel
+GB Ov &C (BH GOH Right ctri

@@ -1,0 +1,62 @@
+@ BB Wkicksecure-release-18-... OB _ & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+
+sks Kicksecure Installer 6 © B @ 00:00
+
+©} BIOS Select storage device: | | VBOX HARDDISK - 25.00 GiB (/dev/sda) ~| @ 7
+
+5 Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome
+ext ~
+Location
+
+Manual partitioning
+You can create or resize partit
+
+Keyboard
+
+Partitions
+Summary
+Install
+
+Finish
+
+V/ Encrypt system |e
+
+! ©
+
+@ Unpartitioned space or unknown partition table
+
+@ boot Gi rootts
+
+Bootloader location: | Master Boot Record of VBOX HARDDISK (/dev/sda) ~
+
+Back Next Cancel
+
+BOee GOB LWMSORight ctri
+
+
+@ BB Wkicksecure-release-18-... OB _ & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 8x
+File Machine View Input Devices Help
+BB i Kicksecure installer 6 © B @ 00:00
+lap ® BIOS Select storage device: | | VBOX HARDDISK - 25.00 GiB (/dev/sda) -| @ 7
+= © Erase disk
+This will delete all data currently present on the selected storage device.
+Welcome
+ext ~
+Location
+Manual partitioning
+Keyboard You can create or resize partitions yourself.
+Partitions
+Summary
+Install
+Finish
+Encrypt system /egeeacoecsoccoocooccs iv)
+@ Unpartitioned space or unknown partition table
+@ boot GB roots
+Bootloader location: | Master Boot Record of VBOX HARDDISK (/dev/sda) ~
+Back Next Cancel
+BOL &C BH BGO Right ctri

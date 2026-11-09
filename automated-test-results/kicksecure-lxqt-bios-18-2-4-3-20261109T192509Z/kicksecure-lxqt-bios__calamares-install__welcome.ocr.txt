@@ -1,0 +1,59 @@
+[WiKicksecure-release-18-...
+
+File Machine View Input Devices Help
+
+(Bi BB ck Kicksecure Installer
+
+Ch
+
+iS
+
+Welcome
+Location
+Keyboard
+Partitions
+Summary
+Install
+
+Finish
+
+Bal ‘American English
+
+Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox
+
+Welcome to the Calamares installer for Kicksecure 18
+
+This program will ask you some questions and set up Kicksecure on your computer.
+
+G@)
+
+Kicksecure
+
+7 B > B 00:00
+
+- 3x
+
+6 OU B 00:00
+
+Next Cancel
+
+BOee GO LWMSORight ctri
+
+@ W Wkicksecure-release-18-... tc @ | B 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 3x
+File Machine View Input Devices Help
+BB i Kicksecure installer 6 © B @ 00:00
+Ch
+5 Welcome to the Calamares installer for Kicksecure 18
+Welcome This program will ask you some questions and set up Kicksecure on your computer.
+Location
+Keyboard
+Partitions
+Summary
+Install
+Finish
+CATE
+LA Kicksecure
+Bal ‘American English ~
+Next Cancel
+BOee GO LWMSORight ctri

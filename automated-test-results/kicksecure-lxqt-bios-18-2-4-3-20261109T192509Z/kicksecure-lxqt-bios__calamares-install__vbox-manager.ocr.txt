@@ -1,0 +1,89 @@
+te Oracle VirtualBox Manager - 5 *
+File Machine Help
+
+12 - @ >.
+
+New, Open Settings Discard Start
+
+=i) So
+al Kicksecure-LXQ¢t (pre-ci-validate-2026-10-01) a) Details ao
+Op d Off a
+omere’ & General & Preview
+a Kicksecure-R3 Name: Kicksecure-release-18-2-4-3
+a © Powered Off Operating System: Debian (64-bit)
+face enol @ System Kicksecure-
+A ec secure-( Base Memory: 4096 MB release-18-2-4-3
+Powered Off Processors: 7
+(ad) Boot Order: Floppy, Optical, Hard Disk
+
+Kicksecure-R7 Acceleration: Nested Paging, KVM Paravirtualization
+© Powered Off
+
+@ Display
+Kicksecure-release-18-2-1-9 bark eats fi Vinayen
+© raphics Controller:
+Geely Remote Desktop Server: Disabled
+Kicksecure-release-18-2-4-2 Recording: Disabled
+© Powered Off @ Storage
+Controller: SATA
+SATA Port 0: Kicksecure-release-18-2-4-3.RPTFvk.vdi (Normal, 25.00 GB)
+Controller: IDE
+IDE Primary Device 0: [Optical Drive] Kicksecure-LXQt-18.2.4.3.Intel_AMD64.iso (1.36 GB)
+(® Audio
+
+Host Driver: Null Audio
+Controller: ICH AC97
+
+@ Network
+Adapter 1: Intel PRO/1000 MT Desktop (NAT)
+© USB
+
+USB Controller: OHCI
+Device Filters: 0 (0 active)
+
+2 Shared folders
+None
+
+® Description
+None
+
+
+te Oracle VirtualBox Manager - 0 x
+File Machine Help
+of mb >.
+New, Open Settings Discard Start
+| EB) OP 9
+A re) Kicksecure-LXQt (pre-ci-validate-2026-10-01) a) Details a4 8
+Op d Off a
+owere' & General & Preview
+a Kicksecure-R3 Name: Kicksecure-release-18-2-4-3 _____
+a f@ © powered Off Operating System: Debian (64-bit)
+Kick: ca0 | System Kicksecure-
+A i ec secure-( Base Memory: 4096 MB release-18-2-4-3
+Powered Off Processors: 7
+(ad Boot Order: — Floppy, Optical, Hard Disk
+re) Kicksecure-R7 Acceleration: Nested Paging, KVM Paravirtualization
+© Powered Off 5
+@ Display
+F Kicksecure-release-18-2-1-9 bark eats fi Vinayen
+© raphics Controller:
+Geely Remote Desktop Server: Disabled
+ia Kicksecure-release-18-2-4-2 Recording: Disabled
+© Powered Off @ Storage
+Controller: SATA
+SATA Port 0: Kicksecure-release-18-2-4-3.RPTFvk.vdi (Normal, 25.00 GB)
+Controller: IDE
+IDE Primary Device 0: [Optical Drive] Kicksecure-LXQt-18.2.4.3.Intel_AMD64.iso (1.36 GB)
+(® Audio
+Host Driver: Null Audio
+Controller: ICH AC97
+@ Network
+Adapter 1: Intel PRO/1000 MT Desktop (NAT)
+© USB
+USB Controller: OHCI
+Device Filters: 0 (0 active)
+2 Shared folders
+None
+® Description
+None
+[3

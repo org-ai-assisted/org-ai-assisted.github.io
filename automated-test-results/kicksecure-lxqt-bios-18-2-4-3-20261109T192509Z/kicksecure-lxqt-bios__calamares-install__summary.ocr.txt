@@ -1,0 +1,89 @@
+File Machine View
+
+Welcome
+
+Location
+
+Keyboard
+
+Partitions
+
+Summary
+
+[WiKicksecure-release-18-...
+
+Input Devices Help
+
+che Kicksecure Installer
+
+This is an overview of what will happen once you start the install procedure.
+Location
+Set timezone to America/New York.
+
+The system language will be set to American English (United States).
+‘The numbers and dates locale will be set to American English (United States).
+
+Keyboard
+
+keyboard model has been set to Generic 105-key PC.
+Keyboard layout has been set to English (US)/Default.
+
+Partitions
+
+Erase disk /dev/sda (VBOX HARDDISK) and install Kicksecure 18
+Current:
+
+@ Unpartitioned space or unknown partition table
+
+Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox
+
+7 B > B 00:00
+
+- 3x
+
+6 OU B 00:00
+
+@ boot Gi rootts
+
+Creating new MSDOS partition table on /dev/sda (VBOX HARDDISK)
+Create new 4096MiB partition on /dev/sda (VBOX HARDDISK) with file system ext
+Set flags on 4096MiB ext4 partition to boot
+
+Create new 21503MiB partition on /dev/sda (VBOX HARDDISK) with file system luks2
+Set up new ext4 partition with mount point /boot
+
+Install Kicksecure on new ext4 system partition
+
+Install boot loader on /dev/sda
+
+Back Cancel
+BOee CGO LWMSORight ctri
+
+@ BB Wkicksecure-release-18-... 7 B ” & 00:00
+w Kicksecure-release-18-2-4-3 [Running] - Oracle VirtualBox - 8x
+File Machine View Input Devices Help
+BB i Kicksecure installer 6 © B @ 00:00
+- This is an overview of what will happen once you start the install procedure.
+WN Location
+Set timezone to America/New York.
+Welcome The system language will be set to American English (United States).
+The numbers and dates locale will be set to American English (United States).
+Location
+Keyboard
+Keyboard Keyboard model has been set to Generic 105-key PC.
+Keyboard layout has been set to English (US)/Default.
+Partitions
+Summary Partitions
+Erase disk /dev/sda (VBOX HARDDISK) and install Kicksecure 18
+instal ee
+Finish {@ Unpartitioned space or unknown partition table
+1B boot @ rootfs
+Creating new MSDOS partition table on /dev/sda (VBOX HARDDISK).
+Create new 4096MiB partition on /dev/sda (VBOX HARDDISK) with file system ext
+Set flags on 4096MiB ext4 partition to boot
+Create new 21503MiB partition on /dev/sda (VBOX HARDDISK) with file system luks2
+Set up new ext4 partition with mount point /boot
+Install Kicksecure on new ext4 system partition
+Install boot loader on /dev/sda.
+Back Cancel
+BOee CGO LWMSORight ctri

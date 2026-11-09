@@ -1,0 +1,9 @@
+V3 VirtualBox
+
+ORACLE
+
+Press FiZ to select boot device.
+
+Ya VirtualB
+ORACLE
+Press Fi2 to select boot device.
