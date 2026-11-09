@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ai-disclosure" content="ai-assisted">
+<meta name="robots" content="noindex">
+<title>Run whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261109T070125Z</title>
+<meta name="description" content="Test run whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261109T070125Z">
+<link rel="stylesheet" href="/style.css">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
+    <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
+    <label class="menubtn" for="navtoggle">Menu</label>
+    <nav aria-label="Primary">
+      <a href="/automated-test-results/">Test results</a>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+      <a href="https://secure-terminal.github.io">secure-terminal</a>
+    </nav>
+    <label class="navscrim" for="navtoggle"></label>
+  </div>
+</header>
+<main>
+<section class="hero"><div class="wrap"><p class="kicker">whonix-cli-inst-bios</p><h1 class="runid">whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261109T070125Z</h1><p class="line">whonix-cli-inst-bios 18.2.3.6-ga-cli-fix &middot; builder dm-release-test &middot; provenance built &middot; <span class="chip st-fail">fail</span> &middot; 9m ago</p><p class="sub"><a href="../">back to all results</a></p></div></section><section class="cat"><div class="wrap"><h2 class="catname">Run detail</h2><div class="fg"><div class="issue"><h3>whonix-func <span class="chip st-fail">fail</span></h3><p>exit 5</p><pre class="steplog" tabindex="0"></pre><pre class="steplog" tabindex="0">=== check 3 (upgrade-nonroot --yes) FAILED rc=1 ===
+Hit:1 tor+https://deb.debian.org/debian trixie InRelease
+Hit:2 tor+https://deb.debian.org/debian trixie-updates InRelease
+Hit:3 tor+https://deb.debian.org/debian trixie-backports InRelease
+Hit:4 tor+https://deb.kicksecure.com trixie InRelease
+Hit:5 tor+https://deb.debian.org/debian-security trixie-security InRelease
+Hit:6 tor+https://deb.whonix.org trixie InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following package was automatically installed and is no longer required:
+  dist-system-metadata
+Use &#x27;sudo apt autoremove&#x27; to remove it.
+The following packages will be upgraded:
+  anon-apt-sources-list dist-base-files dist-system-metadata grub-live
+  privleap repository-dist sdwdate swap-file-creator systemcheck
+  timesanitycheck uwt virtualbox-guest-additions-iso vm-config-dist
+13 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 39.5 MB of archives.
+After this operation, 406 kB disk space will be freed.
+Get:1 tor+https://deb.kicksecure.com trixie/main amd64 dist-base-files all 3:16.6-1 [203 kB]
+Get:2 tor+https://deb.whonix.org trixie/main amd64 uwt all 3:10.4-1 [51.9 kB]
+Get:3 tor+https://deb.kicksecure.com trixie/main amd64 anon-apt-sources-list all 3:8.0-1 [33.4 kB]
+Get:4 tor+https://deb.kicksecure.com trixie/main amd64 dist-system-metadata all 3:1.1-1 [42.1 kB]
+Get:5 tor+https://deb.kicksecure.com trixie/main amd64 grub-live all 3:11.5-1 [47.2 kB]
+Get:6 tor+https://deb.kicksecure.com trixie/main amd64 privleap all 3:7.1-1 [103 kB]
+Get:7 tor+https://deb.kicksecure.com trixie/main amd64 repository-dist all 3:14.1-1 [64.7 kB]
+Get:8 tor+https://deb.kicksecure.com trixie/main amd64 sdwdate all 3:29.6-1 [181 kB]
+Get:9 tor+https://deb.kicksecure.com trixie/main amd64 swap-file-creator all 3:9.7-1 [38.1 kB]
+Get:10 tor+https://deb.kicksecure.com trixie/main amd64 systemcheck all 3:53.3-1 [242 kB]
+Get:11 tor+https://deb.kicksecure.com trixie/main amd64 timesanitycheck all 3:10.6-1 [32.4 kB]
+Get:12 tor+https://deb.kicksecure.com trixie/main amd64 virtualbox-guest-additions-iso all 1:7.2.20.1-1 [38.4 MB]
+Get:13 tor+https://deb.kicksecure.com trixie/main amd64 vm-config-dist all 3:18.5-1 [85.3 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Fetched 39.5 MB in 1min 4s (618 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63320 files and directories currently installed.)
+Preparing to unpack .../00-dist-base-files_3%3a16.6-1_all.deb ...
+Unpacking dist-base-files (3:16.6-1) over (3:16.6-1) ...
+Preparing to unpack .../01-anon-apt-sources-list_3%3a8.0-1_all.deb ...
+Unpacking anon-apt-sources-list (3:8.0-1) over (3:8.0-1) ...
+Preparing to unpack .../02-dist-system-metadata_3%3a1.1-1_all.deb ...
+Unpacking dist-system-metadata (3:1.1-1) over (3:1.1-1) ...
+Preparing to unpack .../03-grub-live_3%3a11.5-1_all.deb ...
+Unpacking grub-live (3:11.5-1) over (3:11.5-1) ...
+Preparing to unpack .../04-privleap_3%3a7.1-1_all.deb ...
+Unpacking privleap (3:7.1-1) over (3:7.1-1) ...
+Preparing to unpack .../05-repository-dist_3%3a14.1-1_all.deb ...
+Unpacking repository-dist (3:14.1-1) over (3:14.1-1) ...
+Preparing to unpack .../06-sdwdate_3%3a29.6-1_all.deb ...
+Unpacking sdwdate (3:29.6-1) over (3:29.6-1) ...
+Preparing to unpack .../07-swap-file-creator_3%3a9.7-1_all.deb ...
+Unpacking swap-file-creator (3:9.7-1) over (3:9.7-1) ...
+Preparing to unpack .../08-systemcheck_3%3a53.3-1_all.deb ...
+Unpacking systemcheck (3:53.3-1) over (3:53.3-1) ...
+Preparing to unpack .../09-timesanitycheck_3%3a10.6-1_all.deb ...
+Unpacking timesanitycheck (3:10.6-1) over (3:10.6-1) ...
+Preparing to unpack .../10-uwt_3%3a10.4-1_all.deb ...
+Unpacking uwt (3:10.4-1) over (3:10.4-1) ...
+Preparing to unpack .../11-virtualbox-guest-additions-iso_1%3a7.2.20.1-1_all.deb ...
+Unpacking virtualbox-guest-additions-iso (1:7.2.20.1-1) over (1:7.2.12.1-1) ...
+Preparing to unpack .../12-vm-config-dist_3%3a18.5-1_all.deb ...
+Unpacking vm-config-dist (3:18.5-1) over (3:18.5-1) ...
+Setting up privleap (3:7.1-1) ...
+Setting up virtualbox-guest-additions-iso (1:7.2.20.1-1) ...
+Setting up sdwdate (3:29.6-1) ...
+Installing new version of config file /etc/apparmor.d/abstractions/url_to_unixtime ...
+Installing new version of config file /etc/apparmor.d/usr.bin.url_to_unixtime ...
+Installing new version of config file /etc/qubes/suspend-post.d/30_sdwdate.sh ...
+Installing new version of config file /etc/qubes/suspend-pre.d/30_sdwdate.sh ...
+Installing new version of config file /etc/rsyslog.d/sdwdate.conf ...
+Installing new version of config file /etc/sdwdate.d/30_default.conf ...
+Installing new version of config file /etc/sdwdate.d/qubes-sync-time-disabled-by-sdwdate.marker ...
+Installing new version of config file /etc/sudoers.d/sdwdate ...
+usermod: no changes
+warn: The user `sdwdate&#x27; is already a member of `debian-tor&#x27;.
+gcc -g sclockadj.c -o sclockadj -O2 -Wall -Wextra -Wformat -Wformat=2 -Wconversion -Wimplicit-fallthrough -Werror=format-security -Werror=implicit -Werror=int-conversion -Werror=incompatible-pointer-types -Wformat-overflow -Wformat-signedness -Wformat-truncation -Wnull-dereference -Winit-self -Wmissing-include-dirs -Wshift-negative-value -Wshift-overflow -Wswitch-default -Wuninitialized -Walloca -Warray-bounds -Wfloat-equal -Wshadow -Wpointer-arith -Wundef -Wunused-macros -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wdate-time -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Winvalid-utf8 -Wvla -Wdisabled-optimization -Wstack-protector -Wdeclaration-after-statement -Wtrampolines -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat-truncation=2 -Wshift-overflow=2 -Wtrivial-auto-var-init -Wstringop-overflow=3 -Wstrict-flex-arrays -Walloc-zero -Warray-bounds=2 -Wattribute-alias=2 -Wduplicated-branches -Wduplicated-cond -Wcast-align=strict -Wjump-misses-init -Wlogical-op -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=3 -fstack-clash-protection -fstack-protector-all -fno-delete-null-pointer-checks -fno-strict-overflow -fno-strict-aliasing -fstrict-flex-arrays=3 -ftrivial-auto-var-init=pattern -fPIE -fcf-protection=full -fzero-call-used-regs=all -Wl,-z,nodlopen -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,separate-code -Wl,--as-needed -Wl,--no-copy-dt-needed-entries -pie
+Setting up dist-base-files (3:16.6-1) ...
+&#x27;/usr/share/derivative-base-files/repart-d_50-root.conf&#x27; -&gt; &#x27;/usr/lib/repart.d/50-root.conf&#x27;
+Created symlink &#x27;/etc/systemd/system/multi-user.target.wants/dist-skel-first-boot.service&#x27; -&gt; &#x27;/usr/lib/systemd/system/dist-skel-first-boot.service&#x27;.
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 148.
+Setting up dist-system-metadata (3:1.1-1) ...
+Setting up timesanitycheck (3:10.6-1) ...
+Installing new version of config file /etc/apparmor.d/abstractions/timesanitycheck ...
+Setting up grub-live (3:11.5-1) ...
+Installing new version of config file /etc/grub.d/45_debugging ...
+Setting up swap-file-creator (3:9.7-1) ...
+Installing new version of config file /etc/default/swap-file-creator ...
+Setting up repository-dist (3:14.1-1) ...
+Setting up uwt (3:10.4-1) ...
+Installing new version of config file /etc/uwt.d/30_timeprivacy_default.conf ...
+Installing new version of config file /etc/uwt.d/30_uwt_default.conf ...
+Setting up vm-config-dist (3:18.5-1) ...
+/usr/bin/vbox-guest-installer (part of package &#x27;vm-config-dist&#x27;) INFO: This is VirtualBox guest additions from Debian package &#x27;virtualbox-guest-additions-iso&#x27; installation helper by Kicksecure developers.
+/usr/bin/vbox-guest-installer INFO: VirtualBox guest additions package &#x27;virtualbox-guest-additions-iso&#x27; installed.
+/usr/bin/vbox-guest-installer INFO: Extracting file &#x27;/usr/share/virtualbox/VBoxGuestAdditions.iso&#x27; (from package &#x27;virtualbox-guest-additions-iso&#x27;) to folder &#x27;/var/cache/vm-config-dist/vbox-guest-additions-extracted-iso&#x27; now...
+/usr/bin/vbox-guest-installer INFO: Running &#x27;/var/cache/vm-config-dist/vbox-guest-additions-extracted-iso/VBoxLinuxAdditions.run --check&#x27; now...
+ ./VBoxLinuxAdditions.run does not contain an embedded SHA256 checksum.
+     0%    65%  100%
+/usr/bin/vbox-guest-installer INFO: Extracting file &#x27;/var/cache/vm-config-dist/vbox-guest-additions-extracted-iso/VBoxLinuxAdditions.run&#x27; to folder &#x27;/var/cache/vm-config-dist/vbox-guest-additions-extracted-makeself&#x27; now...
+Creating directory /var/cache/vm-config-dist/vbox-guest-additions-extracted-makeself
+Verifying archive integrity...     0%    65%  100%   MD5 checksums are OK. All good.
+Uncompressing VirtualBox 7.2.20 Guest Additions for Linux     0%    65%  100%
+/usr/bin/vbox-guest-installer INFO: Running &#x27;/var/cache/vm-config-dist/vbox-guest-additions-extracted-makeself/install.sh force force&#x27; now...
+VirtualBox Guest Additions installer
+Removing installed version 7.2.12 of VirtualBox Guest Additions...
+VBoxManage: error: Reading from guest process &quot;/bin/bash&quot; (PID 6310) failed: VERR_TIMEOUT.
+VBoxManage: error: Reading from guest process &quot;/bin/bash&quot; (PID 6310) failed: VERR_NOT_FOUND.
+VBoxManage: error: Closing guest session &quot;[1697310] VBoxManage Guest Control [Whonix-Workstation-CLI] - run&quot; failed with VERR_TIMEOUT
+VBoxManage: error: Details: code VBOX_E_IPRT_ERROR (0x80bb0005), component GuestSessionWrap, interface IGuestSession, callee nsISupports
+VBoxManage: error: Context: &quot;Close()&quot; at line 904 of file VBoxManageGuestCtrl.cpp
+</pre></div></div></div></section>
+</main>
+<footer>
+  <div class="ftop">
+    <div class="fbrand">
+      <span class="ftag"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></span>
+      <p>Code, not discussion. Go upstream.</p>
+    </div>
+    <nav class="fcols" aria-label="Footer">
+      <div class="fcol">
+        <h3>Navigate</h3>
+        <a href="/#trust">Trust model</a>
+        <a href="/#concerns">Concerns</a>
+        <a href="/#repos">Repositories</a>
+        <a href="/#discussion">Discussion</a>
+        <a href="/automated-test-results/">Test results</a>
+      </div>
+      <div class="fcol">
+        <h3>Source</h3>
+        <a href="https://github.com/org-ai-assisted">organisation</a>
+        <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">this page</a>
+        <a href="https://github.com/org-ai-assisted/.github">org profile</a>
+      </div>
+      <div class="fcol">
+        <h3>Policy &amp; references</h3>
+        <a href="https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence">Kicksecure AI policy</a><a class="arch" href="https://web.archive.org/web/20260418141613/https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence" title="Archived copy of the Kicksecure AI policy page (Wayback Machine)" aria-label="Archived copy of the Kicksecure AI policy page"></a>
+        <a href="https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence">Whonix AI policy</a><a class="arch" href="https://web.archive.org/web/20260604004341/https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence" title="Archived copy of the Whonix AI policy page (Wayback Machine)" aria-label="Archived copy of the Whonix AI policy page"></a>
+        <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">Forum discussion</a><a class="arch" href="https://web.archive.org/web/20260715060626/https://forums.whonix.org/t/is-whonix-vibecoded-now/23405" title="Archived copy of the Whonix forums thread (Wayback Machine)" aria-label="Archived copy of the Whonix forums thread"></a>
+        <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a><a class="arch" href="https://web.archive.org/web/20260515195725/https://www.kicksecure.com/wiki/Dev/Build_Documentation" title="Archived copy of the Kicksecure build documentation (Wayback Machine)" aria-label="Archived copy of the Kicksecure build documentation"></a>
+      </div>
+      <div class="fcol">
+        <h3>Family</h3>
+        <a href="https://output-lies.github.io">output lies</a>
+        <a href="https://secure-terminal.github.io">secure-terminal</a>
+        <a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a>
+      </div>
+    </nav>
+  </div>
+  <div class="fshare">
+    <span class="fshare-l">Share:</span>
+    <a class="sh" data-net="x" href="#" rel="nofollow noopener">X</a>
+    <a class="sh" data-net="facebook" href="#" rel="nofollow noopener">Facebook</a>
+    <a class="sh" data-net="telegram" href="#" rel="nofollow noopener">Telegram</a>
+    <a class="sh" data-net="reddit" href="#" rel="nofollow noopener">Reddit</a>
+    <a class="sh" data-net="whatsapp" href="#" rel="nofollow noopener">WhatsApp</a>
+    <a class="sh" data-net="linkedin" href="#" rel="nofollow noopener">LinkedIn</a>
+    <a class="sh" data-net="hn" href="#" rel="nofollow noopener">Hacker News</a>
+    <a class="sh" data-net="mastodon" href="#" rel="nofollow noopener">Mastodon</a>
+    <a class="sh" data-net="email" href="#">Email</a>
+    <button class="sh" data-net="copy" type="button">Copy link</button>
+    <button class="sh" data-net="md" type="button">Copy as Markdown</button>
+    <span class="sh-msg" aria-live="polite"></span>
+  </div>
+  <script src="/share.js"></script>
+  <div class="fbot">
+    <span class="fcopy">&copy; 2026 <a href="https://www.encrypted-support.com">ENCRYPTED SUPPORT LLC</a></span>
+    <span class="fcopy sp"><a href="/#trust">Built with AI assistance</a></span>
+  </div>
+</footer>
+</html>
