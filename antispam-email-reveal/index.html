@@ -83,7 +83,7 @@
       <tr><th>Capability</th><th>A pure CSS (hover)</th><th>A3 pure CSS :target</th><th>B popover (click)</th><th>B3 popover hybrid</th></tr>
     </thead>
     <tbody>
-      <tr><td>Opens on hover</td><td class="y">yes</td><td class="y">yes</td><td class="n">no</td><td class="p">preview</td></tr>
+      <tr><td>Opens on hover</td><td class="y">yes</td><td class="n">no</td><td class="n">no</td><td class="p">preview</td></tr>
       <tr><td>Opens on click/tap</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
       <tr><td>Explicit close control</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
       <tr><td>Backdrop dim</td><td class="n">no</td><td class="p">approx</td><td class="y">yes</td><td class="y">yes</td></tr>
@@ -95,8 +95,10 @@
   </table>
   </div>
   <p class="lede">The hard line: no single no-JS control gives hover-open AND a true top layer with Esc.
-     Hover-open (A, A3) gives up the top layer; the top layer with Esc (B, B3) gives up hover-open
-     (B3's hover only previews). Pick by whether hover-open or an un-clippable modal matters more.</p>
+     Hover-open (A) gives up the top layer; the top layer with Esc (B, B3) gives up hover-open
+     (B3's hover only previews). Pick by whether hover-open or an un-clippable top-layer panel matters more.
+     Note a popover is top layer + backdrop + light-dismiss, but not a true modal: it does not make the
+     background inert.</p>
 
   <h2>Live demonstration</h2>
 
@@ -122,12 +124,13 @@
 
   <div class="card" id="card-a3">
     <h3>A3 -- Pure CSS <code>:target</code> + CSS dimmer <span class="badge badge-safe">CONTENT-SAFE</span></h3>
-    <p class="how">Opens on <b>hover/focus</b> or stays open after click/tap. Adds an explicit <b>(x) close</b>,
-       a dimmer, and click-outside dismissal -- all no-JS. <b>Not</b> top layer (an ancestor can still clip it);
-       Esc cannot dismiss a pure-CSS state.</p>
+    <p class="how">Opens on <b>click/tap</b> (not hover -- card A is the hover option). Adds an explicit
+       <b>(x) close</b>, a dimmer, and click-outside dismissal -- all no-JS. <b>Not</b> top layer (an ancestor
+       can still clip it); Esc cannot dismiss a pure-CSS state; it uses the URL fragment, so browser Back
+       steps through open/closed.</p>
     <div class="tradeoffs">
       <span class="kept">Closes:</span> close control, backdrop (approx), click-outside.
-      <span class="lost">Cannot (JS-only):</span> true top layer, Esc.
+      <span class="lost">Cannot (JS-only):</span> true top layer, Esc, history-free toggle.
     </div>
     <span id="a3-reset" class="target-reset" aria-hidden="true"></span>
     <p class="contact">Contact:
@@ -189,7 +192,7 @@
         </button>
         <span id="pop-hint-b3" class="pop-preview" role="tooltip">
           <strong>Antispam hint:</strong> e-mail hidden to protect against automated bot harvesting.
-          <span class="pop-preview-cta">Click "why?" for full details in a modal panel</span>
+          <span class="pop-preview-cta">Click "why?" for full details in a pop-up panel</span>
         </span>
       </span>
     </p>

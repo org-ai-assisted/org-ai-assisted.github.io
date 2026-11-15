@@ -57,17 +57,15 @@
 .demo .css-tip:hover .css-reasons,
 .demo .css-tip:focus-within .css-reasons { display: block; }
 
-/* A3: pure CSS :target + CSS dimmer */
+/* A3: pure CSS :target + CSS dimmer -- CLICK-only (hover-open + :target-close is unfixable
+   in pure CSS: hover re-shows what the close dismissed; a focus-shown panel collapses when
+   focus tabs to its close link). Card A is the hover option. The panel is a CENTERED fixed
+   box capped to the viewport, so it always fits and keeps (x) on-screen at any width. */
 .demo .target-reset { display: block; height: 0; overflow: hidden; }
-.demo .target-trigger { anchor-name: --a3-trigger; color: #1c6bdd; font-size: 13px;
-                        font-weight: 600; text-decoration: underline; }
-.demo .target-panel { display: none; position: fixed; position-anchor: --a3-trigger;
-                      position-area: block-end span-inline-end; position-try-fallbacks: flip-block;
-                      margin-block: 6px; z-index: 101; width: max-content; max-width: min(90vw, 26rem);
-                      padding-right: 42px; }
-.demo .target-trigger:hover ~ .target-panel,
-.demo .target-trigger:focus ~ .target-panel,
-.demo .target-panel:hover:not(:focus-within),
+.demo .target-trigger { color: #1c6bdd; font-size: 13px; font-weight: 600; text-decoration: underline; }
+.demo .target-panel { display: none; box-sizing: border-box; position: fixed;
+                      left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 101;
+                      width: max-content; max-width: min(26rem, calc(100vw - 16px)); padding-right: 42px; }
 .demo .target-panel:target { display: block; }
 .demo .target-close { position: absolute; top: 8px; right: 8px; padding: 4px 7px;
                       border: 1px solid #ccd1d9; border-radius: 6px; background: #f3f5f8;
