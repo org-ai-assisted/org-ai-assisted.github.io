@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-  org-ai-assisted: no-JavaScript antispam e-mail reveal demo. AI-Assisted.
-  Live demonstration of four content-safe reveal patterns at Tor Browser Safest (JS off).
+  org-ai-assisted: no-JavaScript reveal demo -- CSS vs the Popover API. AI-Assisted.
+  Four content-safe reveal patterns compared at Tor Browser Safest (JS off).
   Source: https://github.com/org-ai-assisted/org-ai-assisted.github.io
 -->
 <meta charset="utf-8">
@@ -13,30 +13,30 @@
 <script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[data-no-instant]"}}]},"eagerness":"moderate"}]}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="ai-disclosure" content="ai-assisted">
-<title>No-JavaScript antispam e-mail reveal at Tor Browser Safest</title>
-<meta name="description" content="Four content-safe ways to reveal a hidden contact address with an explanation panel that work with JavaScript disabled at Tor Browser Security Level Safest: pure CSS, pure-CSS :target, the HTML Popover API, and a hybrid. Each verified on real Tor Browser.">
-<link rel="canonical" href="https://org-ai-assisted.github.io/antispam-email-reveal/">
+<title>CSS vs the Popover API -- revealing content without JavaScript</title>
+<meta name="description" content="Four no-JavaScript ways to reveal on-demand content -- pure CSS :hover, pure-CSS :target, the HTML Popover API, and a hybrid -- compared at Tor Browser Security Level Safest (JS off), with a spam-hidden e-mail address as the worked example. Each verified on real Tor Browser.">
+<link rel="canonical" href="https://org-ai-assisted.github.io/css-vs-popover/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="org-ai-assisted">
-<meta property="og:title" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
-<meta property="og:description" content="Four content-safe reveal patterns that work with JavaScript disabled at Tor Browser Safest: pure CSS, pure-CSS :target, the HTML Popover API, and a hybrid.">
-<meta property="og:url" content="https://org-ai-assisted.github.io/antispam-email-reveal/">
+<meta property="og:title" content="CSS vs the Popover API -- revealing content without JavaScript">
+<meta property="og:description" content="Four no-JavaScript reveal patterns compared at Tor Browser Safest: pure CSS, pure-CSS :target, the HTML Popover API, and a hybrid.">
+<meta property="og:url" content="https://org-ai-assisted.github.io/css-vs-popover/">
 <meta property="og:image" content="https://org-ai-assisted.github.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
+<meta property="og:image:alt" content="CSS vs the Popover API -- revealing content without JavaScript">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
-<meta name="twitter:description" content="Four content-safe reveal patterns that work with JavaScript disabled at Tor Browser Safest.">
+<meta name="twitter:title" content="CSS vs the Popover API -- revealing content without JavaScript">
+<meta name="twitter:description" content="Four no-JavaScript reveal patterns compared at Tor Browser Safest.">
 <meta name="twitter:image" content="https://org-ai-assisted.github.io/og.png">
-<meta name="twitter:image:alt" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
+<meta name="twitter:image:alt" content="CSS vs the Popover API -- revealing content without JavaScript">
 <meta name="theme-color" content="#e9ebef">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
 <link rel="apple-touch-icon" href="/favicon.png">
 <link rel="stylesheet" href="/style.css?v=2">
-<link rel="stylesheet" href="/antispam-email-reveal/demo.css">
+<link rel="stylesheet" href="/css-vs-popover/demo.css">
 
 <header class="nav">
   <div class="wrap">
@@ -45,6 +45,7 @@
     <label class="menubtn" for="navtoggle">Menu</label>
     <nav aria-label="Primary">
       <a href="/automated-test-results/">Test results</a>
+      <a href="/css-vs-popover/">CSS vs Popover API</a>
       <a href="https://github.com/org-ai-assisted">GitHub</a>
       <a href="https://output-lies.github.io">output lies</a>
       <a href="https://secure-terminal.github.io">secure-terminal</a>
@@ -57,12 +58,15 @@
 
 <section class="hero"><div class="wrap">
   <p class="kicker">No-JavaScript UI &middot; <b>Tor Browser Safest</b></p>
-  <h1>Antispam e-mail reveal</h1>
-  <p class="line">Reveal a hidden contact address plus a short "why is this hidden" panel -- with JavaScript fully disabled.</p>
+  <h1>CSS vs the Popover API</h1>
+  <p class="line">Four ways to reveal on-demand content without JavaScript -- pure CSS versus the HTML Popover API -- compared head to head.</p>
   <p class="sub">
-    Tor Browser at Security Level <b>Safest</b> disables JavaScript on every site. These four
-    reveal patterns all work there, and all survive a content sanitizer (no <code>&lt;input&gt;</code>,
-    no <code>&lt;label&gt;</code>, no inline JavaScript). Every row in the table and every card
+    Tor Browser at Security Level <b>Safest</b> disables JavaScript on every site, so a reveal
+    (a panel that opens on demand) has to work without it. Two families do: pure CSS
+    (<code>:hover</code>, <code>:target</code>) and the declarative HTML <b>Popover API</b>. The
+    worked example throughout is a spam-hidden e-mail address plus a short "why is this hidden"
+    panel. All four patterns survive a content sanitizer (no <code>&lt;input&gt;</code>, no
+    <code>&lt;label&gt;</code>, no inline JavaScript), and every row in the table and every card
     below was verified on real Tor Browser 16.0.1 at Safest.
   </p>
 </div></section>
@@ -73,7 +77,7 @@
     <noscript><span class="ctl off">JavaScript is OFF -- the page's script did NOT run (this is the Tor Browser Safest state)</span></noscript>
     <span id="json" class="ctl on" hidden>JavaScript is ON -- the page's script executed (<span id="jts">pending</span>)</span>
   </div>
-  <script src="/antispam-email-reveal/jsprobe.js"></script>
+  <script src="/css-vs-popover/jsprobe.js"></script>
 
   <h2 id="comparison">What each no-JS option settles</h2>
   <div class="cmp-wrap">
@@ -224,12 +228,9 @@
     <nav class="fcols" aria-label="Footer">
       <div class="fcol">
         <h3>Navigate</h3>
-        <a href="#comparison">Comparison</a>
-        <a href="#card-a">Pure CSS</a>
-        <a href="#card-a3">Pure CSS :target</a>
-        <a href="#card-b">Popover API</a>
-        <a href="#card-b3">Popover hybrid</a>
+        <a href="/">Home</a>
         <a href="/automated-test-results/">Test results</a>
+        <a href="/css-vs-popover/">CSS vs Popover API</a>
       </div>
       <div class="fcol">
         <h3>Source</h3>
