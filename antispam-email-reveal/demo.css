@@ -1,0 +1,102 @@
+/* Antispam e-mail reveal demo -- scoped under .demo so nothing here touches site chrome. */
+.demo { --panel-dim: rgba(15, 23, 42, 0.34); max-width: 900px; margin: 0 auto; }
+.demo h2 { font-size: 17px; margin: 28px 0 10px; }
+
+.demo .lede { font-size: 14px; color: #555; margin: 0 0 18px; }
+
+.demo .js-proof { margin: 0 0 20px; }
+.demo .ctl { font: 600 13px/1.35 ui-monospace, monospace; display: inline-block;
+             padding: 8px 12px; border-radius: 6px; }
+.demo .ctl[hidden] { display: none; }
+.demo .ctl.off { background: #e6f4ea; color: #0a7a2f; border: 1px solid #9ad3af; }
+.demo .ctl.on  { background: #fdecec; color: #b00020; border: 1px solid #e3a3ad; }
+
+.demo .card { background: #fff; border: 1px solid #d3d7dd; border-radius: 9px;
+              padding: 18px 22px 22px; margin: 0 0 26px; }
+.demo .card h3 { margin: 0 0 2px; font-size: 15px; }
+.demo .card .how { margin: 0 0 14px; font-size: 12.5px; color: #596170; }
+.demo .card .how b { color: #17191c; }
+.demo .contact { font-size: 16px; }
+.demo .mail { font-weight: 600; }
+
+/* comparison table */
+.demo .cmp { border-collapse: collapse; margin: 0 0 8px; width: 100%; font-size: 12.5px;
+             background: #fff; }
+.demo .cmp caption { text-align: left; font-weight: 700; font-size: 13px; margin-bottom: 6px; }
+.demo .cmp th, .demo .cmp td { border: 1px solid #d3d7dd; padding: 5px 9px; text-align: center; }
+.demo .cmp th { background: #f3f5f8; }
+.demo .cmp td:first-child, .demo .cmp th:first-child { text-align: left; }
+.demo .cmp .y { color: #0a7a2f; font-weight: 700; }
+.demo .cmp .n { color: #b00020; font-weight: 700; }
+.demo .cmp .p { color: #8f5b00; font-weight: 700; }
+.demo .cmp-wrap { overflow-x: auto; margin: 0 0 26px; }
+
+.demo .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 7px;
+               border-radius: 10px; vertical-align: 2px; }
+.demo .badge-safe { background: #e6f4ea; color: #0a7a2f; border: 1px solid #9ad3af; }
+.demo .tradeoffs { margin: 6px 0 14px; font-size: 12px; line-height: 1.5; color: #374151; }
+.demo .tradeoffs .kept { color: #0a7a2f; font-weight: 600; }
+.demo .tradeoffs .lost { color: #b00020; font-weight: 600; }
+
+.demo .info { display: inline-flex; width: 18px; height: 18px; vertical-align: -3px; color: #1c6bdd; }
+.demo .info svg { width: 100%; height: 100%; }
+
+.demo .panel { background: #fff; border: 1px solid #c3c8d0; border-radius: 8px;
+               box-shadow: 0 8px 28px rgba(0,0,0,.20); padding: 13px 15px;
+               font-size: 13px; line-height: 1.5; color: #22262b; }
+.demo .panel strong { color: #b00020; }
+.demo .blist { display: block; margin-top: 8px; }
+.demo .bitem { display: block; position: relative; padding-left: 16px; margin: 2px 0; }
+.demo .bitem::before { content: "\2022"; position: absolute; left: 2px; color: #1c6bdd; }
+
+/* A: pure CSS :hover / :focus-within */
+.demo .css-tip { position: relative; display: inline-block; }
+.demo .css-tip > .info { cursor: help; }
+.demo .css-reasons { display: none; position: absolute; top: calc(100% + 6px); left: 0;
+                     z-index: 30; width: max-content; max-width: min(90vw, 26rem); }
+.demo .css-tip:hover .css-reasons,
+.demo .css-tip:focus-within .css-reasons { display: block; }
+
+/* A3: pure CSS :target + CSS dimmer */
+.demo .target-reset { display: block; height: 0; overflow: hidden; }
+.demo .target-trigger { anchor-name: --a3-trigger; color: #1c6bdd; font-size: 13px;
+                        font-weight: 600; text-decoration: underline; }
+.demo .target-panel { display: none; position: fixed; position-anchor: --a3-trigger;
+                      position-area: block-end span-inline-end; position-try-fallbacks: flip-block;
+                      margin-block: 6px; z-index: 101; width: max-content; max-width: min(90vw, 26rem);
+                      padding-right: 42px; }
+.demo .target-trigger:hover ~ .target-panel,
+.demo .target-trigger:focus ~ .target-panel,
+.demo .target-panel:hover:not(:focus-within),
+.demo .target-panel:target { display: block; }
+.demo .target-close { position: absolute; top: 8px; right: 8px; padding: 4px 7px;
+                      border: 1px solid #ccd1d9; border-radius: 6px; background: #f3f5f8;
+                      color: #7a1425; font: 600 13px/1.2 sans-serif; text-decoration: none; }
+.demo .target-shade { display: none; position: fixed; inset: 0; z-index: 100;
+                      background: var(--panel-dim); cursor: default; }
+.demo .target-panel:target + .target-shade { display: block; }
+
+/* B: HTML Popover API */
+.demo .pop-btn { background: none; border: 0; padding: 0; margin: 0; cursor: pointer;
+                 display: inline-flex; align-items: center; color: #1c6bdd; vertical-align: -3px; }
+.demo .pop-btn .info { color: inherit; }
+.demo .pop-btn .pop-txt { font-size: 13px; text-decoration: underline; margin-left: 3px; }
+.demo [popover].pop { width: min(92vw, 27rem); max-width: 27rem; border: 0; margin: auto;
+                      padding: 0; background: transparent; overflow: visible; }
+.demo [popover].pop::backdrop { background: var(--panel-dim); }
+.demo .pop .panel { position: relative; padding-right: 40px; }
+.demo .pop-close { position: absolute; top: 8px; right: 8px; width: 26px; height: 26px;
+                   border: 1px solid #ccd1d9; border-radius: 6px; background: #f3f5f8;
+                   color: #444; font: 600 16px/1 sans-serif; cursor: pointer; }
+
+/* B3: popover hybrid -- CSS hover preview + real popover on click */
+.demo .pop-b3-wrap { position: relative; display: inline-block; }
+.demo .pop-preview { display: none; position: absolute; top: calc(100% + 6px); left: 0; z-index: 25;
+                     width: max-content; max-width: min(90vw, 25rem); background: #f8fafc;
+                     border: 1px solid #94a3b8; border-radius: 7px; box-shadow: 0 6px 18px rgba(0,0,0,.14);
+                     padding: 10px 13px; font-size: 12.5px; line-height: 1.45; color: #1e293b; }
+.demo .pop-preview strong { color: #0f172a; }
+.demo .pop-preview-cta { display: block; margin-top: 6px; font-size: 11.5px; color: #1c6bdd; font-weight: 600; }
+.demo .pop-b3-wrap:hover .pop-preview,
+.demo .pop-b3-wrap:focus-within .pop-preview { display: block; }
+.demo:has(#pop-reasons-b3:popover-open) #pop-hint-b3 { display: none; }

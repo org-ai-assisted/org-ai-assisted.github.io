@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  org-ai-assisted: no-JavaScript antispam e-mail reveal demo. AI-Assisted.
+  Live demonstration of four content-safe reveal patterns at Tor Browser Safest (JS off).
+  Source: https://github.com/org-ai-assisted/org-ai-assisted.github.io
+-->
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-sahKEA9TULQayVrIEubBQwOXCaXywLzaFHCWx96kC18='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<!-- Speculation Rules: same-origin prefetch on hover/pointerdown (Chromium). Pure progressive
+     enhancement; Firefox/Tor Browser ignore it. Byte-identical to the wikis + sibling sites, so
+     the one script-src sha256 above covers it. [data-no-instant] opts a link out. -->
+<script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[data-no-instant]"}}]},"eagerness":"moderate"}]}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ai-disclosure" content="ai-assisted">
+<title>No-JavaScript antispam e-mail reveal at Tor Browser Safest</title>
+<meta name="description" content="Four content-safe ways to reveal a hidden contact address with an explanation panel that work with JavaScript disabled at Tor Browser Security Level Safest: pure CSS, pure-CSS :target, the HTML Popover API, and a hybrid. Each verified on real Tor Browser.">
+<link rel="canonical" href="https://org-ai-assisted.github.io/antispam-email-reveal/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="org-ai-assisted">
+<meta property="og:title" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
+<meta property="og:description" content="Four content-safe reveal patterns that work with JavaScript disabled at Tor Browser Safest: pure CSS, pure-CSS :target, the HTML Popover API, and a hybrid.">
+<meta property="og:url" content="https://org-ai-assisted.github.io/antispam-email-reveal/">
+<meta property="og:image" content="https://org-ai-assisted.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
+<meta name="twitter:description" content="Four content-safe reveal patterns that work with JavaScript disabled at Tor Browser Safest.">
+<meta name="twitter:image" content="https://org-ai-assisted.github.io/og.png">
+<meta name="twitter:image:alt" content="No-JavaScript antispam e-mail reveal at Tor Browser Safest">
+<meta name="theme-color" content="#e9ebef">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="stylesheet" href="/style.css?v=2">
+<link rel="stylesheet" href="/antispam-email-reveal/demo.css">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
+    <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
+    <label class="menubtn" for="navtoggle">Menu</label>
+    <nav aria-label="Primary">
+      <a href="/automated-test-results/">Test results</a>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+      <a href="https://secure-terminal.github.io">secure-terminal</a>
+    </nav>
+    <label class="navscrim" for="navtoggle"></label>
+  </div>
+</header>
+
+<main>
+
+<section class="hero"><div class="wrap">
+  <p class="kicker">No-JavaScript UI &middot; <b>Tor Browser Safest</b></p>
+  <h1>Antispam e-mail reveal</h1>
+  <p class="line">Reveal a hidden contact address plus a short "why is this hidden" panel -- with JavaScript fully disabled.</p>
+  <p class="sub">
+    Tor Browser at Security Level <b>Safest</b> disables JavaScript on every site. These four
+    reveal patterns all work there, and all survive a content sanitizer (no <code>&lt;input&gt;</code>,
+    no <code>&lt;label&gt;</code>, no inline JavaScript). Every row in the table and every card
+    below was verified on real Tor Browser 16.0.1 at Safest.
+  </p>
+</div></section>
+
+<section class="cat" id="demo"><div class="wrap"><div class="demo">
+
+  <div class="js-proof">
+    <noscript><span class="ctl off">JavaScript is OFF -- the page's script did NOT run (this is the Tor Browser Safest state)</span></noscript>
+    <span id="json" class="ctl on" hidden>JavaScript is ON -- the page's script executed (<span id="jts">pending</span>)</span>
+  </div>
+  <script src="/antispam-email-reveal/jsprobe.js"></script>
+
+  <h2 id="comparison">What each no-JS option settles</h2>
+  <div class="cmp-wrap">
+  <table class="cmp">
+    <caption>Verified on real Tor Browser 16.0.1, Security Level Safest</caption>
+    <thead>
+      <tr><th>Capability</th><th>A pure CSS (hover)</th><th>A3 pure CSS :target</th><th>B popover (click)</th><th>B3 popover hybrid</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Opens on hover</td><td class="y">yes</td><td class="y">yes</td><td class="n">no</td><td class="p">preview</td></tr>
+      <tr><td>Opens on click/tap</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
+      <tr><td>Explicit close control</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
+      <tr><td>Backdrop dim</td><td class="n">no</td><td class="p">approx</td><td class="y">yes</td><td class="y">yes</td></tr>
+      <tr><td>True top layer (un-clippable)</td><td class="n">no</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td></tr>
+      <tr><td>Esc to close</td><td class="n">no</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td></tr>
+      <tr><td>Click-outside dismiss</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
+      <tr><td>Content-safe (survives sanitizer)</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="lede">The hard line: no single no-JS control gives hover-open AND a true top layer with Esc.
+     Hover-open (A, A3) gives up the top layer; the top layer with Esc (B, B3) gives up hover-open
+     (B3's hover only previews). Pick by whether hover-open or an un-clippable modal matters more.</p>
+
+  <h2>Live demonstration</h2>
+
+  <div class="card" id="card-a">
+    <h3>A -- Pure CSS (<code>:hover</code> / <code>:focus-within</code>)</h3>
+    <p class="how">Reveals on <b>hover</b> and on keyboard/tap <b>focus</b>. No close control (closes when the
+       pointer leaves or focus moves away). The shipped approach.</p>
+    <p class="contact">Contact:
+      <span class="css-tip" tabindex="0">
+        <span class="mail">team(at)example(dot)org</span>
+        <span class="info" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 3.2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM9.3 12.4H6.7v-1.1h.7V7.9h-.7V6.8h2v4.5h.6v1.1z"/></svg></span>
+        <span class="css-reasons panel" role="note">
+          Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
+          <span class="blist">
+            <span class="bitem">spam harvesting by bots</span>
+            <span class="bitem">unsolicited mail</span>
+            <span class="bitem">use the contact form instead</span>
+          </span>
+        </span>
+      </span>
+    </p>
+  </div>
+
+  <div class="card" id="card-a3">
+    <h3>A3 -- Pure CSS <code>:target</code> + CSS dimmer <span class="badge badge-safe">CONTENT-SAFE</span></h3>
+    <p class="how">Opens on <b>hover/focus</b> or stays open after click/tap. Adds an explicit <b>(x) close</b>,
+       a dimmer, and click-outside dismissal -- all no-JS. <b>Not</b> top layer (an ancestor can still clip it);
+       Esc cannot dismiss a pure-CSS state.</p>
+    <div class="tradeoffs">
+      <span class="kept">Closes:</span> close control, backdrop (approx), click-outside.
+      <span class="lost">Cannot (JS-only):</span> true top layer, Esc.
+    </div>
+    <span id="a3-reset" class="target-reset" aria-hidden="true"></span>
+    <p class="contact">Contact:
+      <span class="mail">team(at)example(dot)org</span>
+      <a id="a3-trigger" class="target-trigger" href="#a3-panel">why?</a>
+      <span id="a3-panel" class="target-panel panel" role="note">
+        <a class="target-close" href="#a3-reset" aria-label="Close">(x)</a>
+        Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
+        <span class="blist">
+          <span class="bitem">spam harvesting by bots</span>
+          <span class="bitem">unsolicited mail</span>
+          <span class="bitem">use the contact form instead</span>
+        </span>
+      </span>
+      <a class="target-shade" href="#a3-reset" aria-label="Close reasons"></a>
+    </p>
+  </div>
+
+  <div class="card" id="card-b">
+    <h3>B -- HTML Popover API (click to open + close button)</h3>
+    <p class="how">Opens on <b>click/tap</b> of the button (declarative <code>popovertarget</code>, pure HTML).
+       Has a <b>close button</b> (<code>popovertargetaction="hide"</code>), the top layer, a <code>::backdrop</code>,
+       Esc and click-outside light-dismiss. Does <b>not</b> open on hover without JavaScript.</p>
+    <p class="contact">Contact:
+      <span class="mail">team(at)example(dot)org</span>
+      <button class="pop-btn" popovertarget="pop-reasons-b" aria-label="Why is this hidden?">
+        <span class="info" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 3.2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM9.3 12.4H6.7v-1.1h.7V7.9h-.7V6.8h2v4.5h.6v1.1z"/></svg></span>
+        <span class="pop-txt">why?</span>
+      </button>
+    </p>
+    <div id="pop-reasons-b" popover class="pop">
+      <div class="panel">
+        <button class="pop-close" popovertarget="pop-reasons-b" popovertargetaction="hide" aria-label="Close">&times;</button>
+        Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
+        <span class="blist">
+          <span class="bitem">spam harvesting by bots</span>
+          <span class="bitem">unsolicited mail</span>
+          <span class="bitem">use the contact form instead</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="card-b3">
+    <h3>B3 -- Popover hybrid: hover preview + click top layer <span class="badge badge-safe">CONTENT-SAFE</span></h3>
+    <p class="how">Hover/focus shows a pure-CSS <b>preview</b>; clicking <b>commits</b> to the real top-layer
+       popover (keeps top layer, <code>::backdrop</code>, close, Esc, click-outside). The preview is suppressed
+       while the popover is open (<code>:has(:popover-open)</code>).</p>
+    <div class="tradeoffs">
+      <span class="kept">Keeps:</span> hover feedback + all popover chrome on click.
+      <span class="lost">Loses:</span> hover only previews -- top-layer entry needs a click.
+    </div>
+    <p class="contact">Contact:
+      <span class="pop-b3-wrap">
+        <span class="mail">team(at)example(dot)org</span>
+        <button id="pop-btn-b3" class="pop-btn" popovertarget="pop-reasons-b3" aria-label="Why is this hidden?" aria-describedby="pop-hint-b3">
+          <span class="info" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 3.2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM9.3 12.4H6.7v-1.1h.7V7.9h-.7V6.8h2v4.5h.6v1.1z"/></svg></span>
+          <span class="pop-txt">why?</span>
+        </button>
+        <span id="pop-hint-b3" class="pop-preview" role="tooltip">
+          <strong>Antispam hint:</strong> e-mail hidden to protect against automated bot harvesting.
+          <span class="pop-preview-cta">Click "why?" for full details in a modal panel</span>
+        </span>
+      </span>
+    </p>
+    <div id="pop-reasons-b3" popover class="pop">
+      <div class="panel">
+        <button class="pop-close" popovertarget="pop-reasons-b3" popovertargetaction="hide" aria-label="Close">&times;</button>
+        Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
+        <span class="blist">
+          <span class="bitem">spam harvesting by bots</span>
+          <span class="bitem">unsolicited mail</span>
+          <span class="bitem">use the contact form instead</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div></div></section>
+
+</main>
+
+<footer>
+  <div class="ftop">
+    <div class="fbrand">
+      <span class="ftag"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></span>
+      <p>Code, not discussion. Go upstream.</p>
+    </div>
+    <nav class="fcols" aria-label="Footer">
+      <div class="fcol">
+        <h3>Navigate</h3>
+        <a href="#comparison">Comparison</a>
+        <a href="#card-a">Pure CSS</a>
+        <a href="#card-a3">Pure CSS :target</a>
+        <a href="#card-b">Popover API</a>
+        <a href="#card-b3">Popover hybrid</a>
+        <a href="/automated-test-results/">Test results</a>
+      </div>
+      <div class="fcol">
+        <h3>Source</h3>
+        <a href="https://github.com/org-ai-assisted">organisation</a>
+        <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">this page</a>
+      </div>
+      <div class="fcol">
+        <h3>Policy &amp; references</h3>
+        <a href="https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence">Kicksecure AI policy</a><a class="arch" href="https://web.archive.org/web/20260418141613/https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence" title="Archived copy of www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence (Wayback Machine)" aria-label="Archived copy of www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence"></a>
+        <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a><a class="arch" href="https://web.archive.org/web/20260515195725/https://www.kicksecure.com/wiki/Dev/Build_Documentation" title="Archived copy of www.kicksecure.com/wiki/Dev/Build_Documentation (Wayback Machine)" aria-label="Archived copy of www.kicksecure.com/wiki/Dev/Build_Documentation"></a>
+      </div>
+      <div class="fcol">
+        <h3>Family</h3>
+        <a href="https://output-lies.github.io">output lies</a>
+        <a href="https://secure-terminal.github.io">secure-terminal</a>
+        <a class="self" href="https://org-ai-assisted.github.io" aria-label="org-ai-assisted (org-ai-assisted.github.io)">org-ai-assisted</a>
+      </div>
+    </nav>
+  </div>
+  <div class="fshare">
+    <span class="fshare-l">Share:</span>
+    <a class="sh" data-net="x" href="#" rel="nofollow noopener">X</a>
+    <a class="sh" data-net="facebook" href="#" rel="nofollow noopener">Facebook</a>
+    <a class="sh" data-net="telegram" href="#" rel="nofollow noopener">Telegram</a>
+    <a class="sh" data-net="reddit" href="#" rel="nofollow noopener">Reddit</a>
+    <a class="sh" data-net="whatsapp" href="#" rel="nofollow noopener">WhatsApp</a>
+    <a class="sh" data-net="linkedin" href="#" rel="nofollow noopener">LinkedIn</a>
+    <a class="sh" data-net="hn" href="#" rel="nofollow noopener">Hacker News</a>
+    <a class="sh" data-net="mastodon" href="#" rel="nofollow noopener">Mastodon</a>
+    <a class="sh" data-net="email" href="#">Email</a>
+    <button class="sh" data-net="copy" type="button">Copy link</button>
+    <button class="sh" data-net="md" type="button">Copy as Markdown</button>
+    <span class="sh-msg" aria-live="polite"></span>
+  </div>
+  <script src="/share.js"></script>
+  <div class="fbot">
+    <span class="fcopy">&copy; 2026 <a href="https://www.encrypted-support.com">ENCRYPTED SUPPORT LLC</a></span>
+    <span class="fcopy sp"><a href="/">Built with AI assistance</a></span>
+  </div>
+</footer>
