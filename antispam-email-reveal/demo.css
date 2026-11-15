@@ -75,9 +75,14 @@
 .demo .target-panel { display: none; box-sizing: border-box; position: fixed;
                       left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 101;
                       width: max-content; max-width: min(26rem, calc(100vw - 16px)); padding-right: 42px;
-                      max-height: calc(100vh - 32px); overflow-y: auto;
+                      max-height: calc(100vh - 32px);
                       box-shadow: 0 8px 28px rgba(0,0,0,.20), 0 0 0 100vmax var(--panel-dim); }
-.demo .target-panel:target { display: block; }
+.demo .target-panel:target { display: flex; flex-direction: column; }
+/* Scroll the BODY, not the panel: the (x) is A3's sole dismiss (no Esc, no
+   click-outside), so it must stay pinned to the panel and never scroll away
+   when tall content overflows a short viewport. min-height:0 lets the flex
+   child actually scroll instead of growing the panel. */
+.demo .target-body { display: block; overflow-y: auto; min-height: 0; }
 .demo .target-close { position: absolute; top: 8px; right: 8px; padding: 4px 7px;
                       border: 1px solid #ccd1d9; border-radius: 6px; background: #f3f5f8;
                       color: #7a1425; font: 600 13px/1.2 sans-serif; text-decoration: none; }

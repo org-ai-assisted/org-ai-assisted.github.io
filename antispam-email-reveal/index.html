@@ -107,7 +107,7 @@
     <p class="how">Reveals on <b>hover</b> and on keyboard/tap <b>focus</b>. No close control (closes when the
        pointer leaves or focus moves away). The shipped approach.</p>
     <p class="contact">Contact:
-      <span class="css-tip" tabindex="0">
+      <span class="css-tip" tabindex="0" data-webcheck-open="hover" data-webcheck-sel=".css-reasons (A)">
         <span class="mail">team(at)example(dot)org</span>
         <span class="info" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 3.2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM9.3 12.4H6.7v-1.1h.7V7.9h-.7V6.8h2v4.5h.6v1.1z"/></svg></span>
         <span class="css-reasons panel" role="note">
@@ -136,14 +136,16 @@
     <span id="a3-reset" class="target-reset" aria-hidden="true"></span>
     <p class="contact">Contact:
       <span class="mail">team(at)example(dot)org</span>
-      <a id="a3-trigger" class="target-trigger" href="#a3-panel">why?</a>
+      <a id="a3-trigger" class="target-trigger" href="#a3-panel" data-webcheck-open="click" data-webcheck-sel=".target-panel (A3)">why?</a>
       <span id="a3-panel" class="target-panel panel" role="note">
         <a class="target-close" href="#a3-reset" aria-label="Close">(x)</a>
-        Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
-        <span class="blist">
-          <span class="bitem">spam harvesting by bots</span>
-          <span class="bitem">unsolicited mail</span>
-          <span class="bitem">use the contact form instead</span>
+        <span class="target-body">
+          Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
+          <span class="blist">
+            <span class="bitem">spam harvesting by bots</span>
+            <span class="bitem">unsolicited mail</span>
+            <span class="bitem">use the contact form instead</span>
+          </span>
         </span>
       </span>
     </p>
@@ -161,7 +163,7 @@
         <span class="pop-txt">why?</span>
       </button>
     </p>
-    <div id="pop-reasons-b" popover class="pop">
+    <div id="pop-reasons-b" popover class="pop" data-webcheck-open="popover" data-webcheck-sel="#pop-reasons-b (B)">
       <div class="panel">
         <button class="pop-close" popovertarget="pop-reasons-b" popovertargetaction="hide" aria-label="Close">&times;</button>
         Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
@@ -184,7 +186,7 @@
       <span class="lost">Loses:</span> hover only previews -- top-layer entry needs a click.
     </div>
     <p class="contact">Contact:
-      <span class="pop-b3-wrap">
+      <span class="pop-b3-wrap" data-webcheck-open="hover" data-webcheck-sel=".pop-preview (B3)">
         <span class="mail">team(at)example(dot)org</span>
         <button id="pop-btn-b3" class="pop-btn" popovertarget="pop-reasons-b3" aria-label="Why is this hidden?" aria-describedby="pop-hint-b3">
           <span class="info" aria-hidden="true"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 3.2a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2zM9.3 12.4H6.7v-1.1h.7V7.9h-.7V6.8h2v4.5h.6v1.1z"/></svg></span>
@@ -196,7 +198,7 @@
         </span>
       </span>
     </p>
-    <div id="pop-reasons-b3" popover class="pop">
+    <div id="pop-reasons-b3" popover class="pop" data-webcheck-open="popover" data-webcheck-sel="#pop-reasons-b3 (B3 popover)">
       <div class="panel">
         <button class="pop-close" popovertarget="pop-reasons-b3" popovertargetaction="hide" aria-label="Close">&times;</button>
         Please <strong>DO NOT</strong> send e-mail to the address above. We hide it for these reasons:
