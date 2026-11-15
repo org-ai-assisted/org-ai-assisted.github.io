@@ -89,7 +89,7 @@
       <tr><td>Backdrop dim</td><td class="n">no</td><td class="p">approx</td><td class="y">yes</td><td class="y">yes</td></tr>
       <tr><td>True top layer (un-clippable)</td><td class="n">no</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td></tr>
       <tr><td>Esc to close</td><td class="n">no</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td></tr>
-      <tr><td>Click-outside dismiss</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
+      <tr><td>Click-outside dismiss</td><td class="n">no</td><td class="n">no</td><td class="y">yes</td><td class="y">yes</td></tr>
       <tr><td>Content-safe (survives sanitizer)</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td><td class="y">yes</td></tr>
     </tbody>
   </table>
@@ -125,12 +125,13 @@
   <div class="card" id="card-a3">
     <h3>A3 -- Pure CSS <code>:target</code> + CSS dimmer <span class="badge badge-safe">CONTENT-SAFE</span></h3>
     <p class="how">Opens on <b>click/tap</b> (not hover -- card A is the hover option). Adds an explicit
-       <b>(x) close</b>, a dimmer, and click-outside dismissal -- all no-JS. <b>Not</b> top layer (an ancestor
-       can still clip it); Esc cannot dismiss a pure-CSS state; it uses the URL fragment, so browser Back
-       steps through open/closed.</p>
+       <b>(x) close</b> and a <b>dimmer</b> backdrop -- no-JS. <b>No</b> click-outside dismiss: that needs a
+       full-viewport click-catcher, which drops a full-screen fixed overlay on deep-link (a native popover
+       gives light-dismiss for free -- see B/B3). <b>Not</b> top layer (an ancestor can still clip it); Esc
+       cannot dismiss a pure-CSS state; it uses the URL fragment, so browser Back steps through open/closed.</p>
     <div class="tradeoffs">
-      <span class="kept">Closes:</span> close control, backdrop (approx), click-outside.
-      <span class="lost">Cannot (JS-only):</span> true top layer, Esc, history-free toggle.
+      <span class="kept">Closes:</span> (x) control, backdrop (box-shadow dim).
+      <span class="lost">Cannot (JS-only):</span> true top layer, Esc, click-outside, history-free toggle.
     </div>
     <span id="a3-reset" class="target-reset" aria-hidden="true"></span>
     <p class="contact">Contact:
@@ -145,7 +146,6 @@
           <span class="bitem">use the contact form instead</span>
         </span>
       </span>
-      <a class="target-shade" href="#a3-reset" aria-label="Close reasons"></a>
     </p>
   </div>
 

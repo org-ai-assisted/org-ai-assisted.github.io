@@ -1,4 +1,7 @@
 /* Antispam e-mail reveal demo -- scoped under .demo so nothing here touches site chrome. */
+/* This page's hero title wraps on narrow screens; sibling run-id titles keep the shared
+   .hero h1 nowrap -- without this override the long title forces horizontal scroll at 320/390px. */
+.hero h1 { white-space: normal; overflow-wrap: anywhere; }
 .demo { --panel-dim: rgba(15, 23, 42, 0.34); max-width: 900px; margin: 0 auto; }
 .demo h2 { font-size: 17px; margin: 28px 0 10px; }
 
@@ -47,6 +50,12 @@
 .demo .panel { background: #fff; border: 1px solid #c3c8d0; border-radius: 8px;
                box-shadow: 0 8px 28px rgba(0,0,0,.20); padding: 13px 15px;
                font-size: 13px; line-height: 1.5; color: #22262b; }
+/* Narrow screens: the A hover panel + B3 hover preview are tethered to an inline trigger
+   that can sit far from the left edge; viewport-pin them so a wide panel never overflows. */
+@media (max-width: 30rem) {
+  .demo .css-reasons, .demo .pop-preview {
+    position: fixed; left: 8px; right: 8px; width: auto; max-width: none; }
+}
 .demo .panel strong { color: #b00020; }
 .demo .blist { display: block; margin-top: 8px; }
 .demo .bitem { display: block; position: relative; padding-left: 16px; margin: 2px 0; }
@@ -60,22 +69,24 @@
 .demo .css-tip:hover .css-reasons,
 .demo .css-tip:focus-within .css-reasons { display: block; }
 
-/* A3: pure CSS :target + CSS dimmer -- CLICK-only (hover-open + :target-close is unfixable
-   in pure CSS: hover re-shows what the close dismissed; a focus-shown panel collapses when
-   focus tabs to its close link). Card A is the hover option. The panel is a CENTERED fixed
-   box capped to the viewport, so it always fits and keeps (x) on-screen at any width. */
-.demo .target-reset { display: block; height: 0; overflow: hidden; }
+/* A3: pure CSS :target -- CLICK-only (hover-open + :target-close is unfixable in pure CSS:
+   hover re-shows what the close dismissed; a focus-shown panel collapses when focus tabs to
+   its close link). Card A is the hover option. CENTERED fixed box capped to the viewport
+   (always fits, (x) always on-screen), height-capped + scrollable for tiny viewports. The
+   dimmer is a box-shadow spread, NOT a full-viewport element -- so deep-linking #a3-panel
+   does not drop a full-screen fixed overlay (which traps focus and reads as an occluding
+   header). The reset target is position:fixed so closing via the fragment does not scroll. */
+.demo .target-reset { position: fixed; top: 50%; left: 0; width: 0; height: 0; overflow: hidden; }
 .demo .target-trigger { color: #1c6bdd; font-size: 13px; font-weight: 600; text-decoration: underline; }
 .demo .target-panel { display: none; box-sizing: border-box; position: fixed;
                       left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 101;
-                      width: max-content; max-width: min(26rem, calc(100vw - 16px)); padding-right: 42px; }
+                      width: max-content; max-width: min(26rem, calc(100vw - 16px)); padding-right: 42px;
+                      max-height: calc(100vh - 32px); overflow-y: auto;
+                      box-shadow: 0 8px 28px rgba(0,0,0,.20), 0 0 0 100vmax var(--panel-dim); }
 .demo .target-panel:target { display: block; }
 .demo .target-close { position: absolute; top: 8px; right: 8px; padding: 4px 7px;
                       border: 1px solid #ccd1d9; border-radius: 6px; background: #f3f5f8;
                       color: #7a1425; font: 600 13px/1.2 sans-serif; text-decoration: none; }
-.demo .target-shade { display: none; position: fixed; inset: 0; z-index: 100;
-                      background: var(--panel-dim); cursor: default; }
-.demo .target-panel:target + .target-shade { display: block; }
 
 /* B: HTML Popover API */
 .demo .pop-btn { background: none; border: 0; padding: 0; margin: 0; cursor: pointer;
@@ -85,7 +96,8 @@
 .demo [popover].pop { width: min(92vw, 27rem); max-width: 27rem; border: 0; margin: auto;
                       padding: 0; background: transparent; overflow: visible; }
 .demo [popover].pop::backdrop { background: var(--panel-dim); }
-.demo .pop .panel { position: relative; padding-right: 40px; }
+.demo .pop .panel { position: relative; padding-right: 40px;
+                    max-height: calc(100vh - 32px); overflow-y: auto; }
 .demo .pop-close { position: absolute; top: 8px; right: 8px; width: 26px; height: 26px;
                    border: 1px solid #ccd1d9; border-radius: 6px; background: #f3f5f8;
                    color: #444; font: 600 16px/1 sans-serif; cursor: pointer; }
