@@ -50,12 +50,6 @@
 .demo .panel { background: #fff; border: 1px solid #c3c8d0; border-radius: 8px;
                box-shadow: 0 8px 28px rgba(0,0,0,.20); padding: 13px 15px;
                font-size: 13px; line-height: 1.5; color: #22262b; }
-/* Narrow screens: the A hover panel + B3 hover preview are tethered to an inline trigger
-   that can sit far from the left edge; viewport-pin them so a wide panel never overflows. */
-@media (max-width: 30rem) {
-  .demo .css-reasons, .demo .pop-preview {
-    position: fixed; left: 8px; right: 8px; width: auto; max-width: none; }
-}
 .demo .panel strong { color: #b00020; }
 .demo .blist { display: block; margin-top: 8px; }
 .demo .bitem { display: block; position: relative; padding-left: 16px; margin: 2px 0; }
@@ -113,3 +107,15 @@
 .demo .pop-b3-wrap:hover .pop-preview,
 .demo .pop-b3-wrap:focus-within .pop-preview { display: block; }
 .demo:has(#pop-reasons-b3:popover-open) #pop-hint-b3 { display: none; }
+
+/* Narrow screens: the A hover panel + B3 hover preview are tethered to an inline trigger
+   that can sit far from the left edge, so an absolute left:0 box overflows the right edge.
+   Pin to the viewport as a bottom sheet. MUST follow the base .css-reasons/.pop-preview
+   rules above: media queries add no specificity, so source order alone wins this (0,2,0)
+   tie -- placed earlier it would be overridden and never apply. Overrides position/left/
+   width/max-width AND top (the base top:calc(100%+6px) is wrong once position is fixed). */
+@media (max-width: 30rem) {
+  .demo .css-reasons, .demo .pop-preview {
+    position: fixed; left: 8px; right: 8px; top: auto; bottom: 8px;
+    width: auto; max-width: none; max-height: 60vh; overflow-y: auto; }
+}
