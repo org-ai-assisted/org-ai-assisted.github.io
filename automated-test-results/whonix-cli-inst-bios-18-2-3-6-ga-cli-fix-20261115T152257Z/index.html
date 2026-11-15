@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ai-disclosure" content="ai-assisted">
+<meta name="robots" content="noindex">
+<title>Run whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261115T152257Z</title>
+<meta name="description" content="Test run whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261115T152257Z">
+<link rel="stylesheet" href="/style.css">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="org-ai-assisted home"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
+    <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
+    <label class="menubtn" for="navtoggle">Menu</label>
+    <nav aria-label="Primary">
+      <a href="/automated-test-results/">Test results</a>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+      <a href="https://secure-terminal.github.io">secure-terminal</a>
+    </nav>
+    <label class="navscrim" for="navtoggle"></label>
+  </div>
+</header>
+<main>
+<section class="hero"><div class="wrap"><p class="kicker">whonix-cli-inst-bios</p><h1 class="runid">whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261115T152257Z</h1><p class="line">whonix-cli-inst-bios 18.2.3.6-ga-cli-fix &middot; builder dm-release-test &middot; provenance built &middot; <span class="chip st-inconclusive">inconclusive</span> &middot; 29m ago</p><p class="line">screenshots: 0 validated, 3 unvalidated, 0 mismatch, 0 OCR error</p><p class="sub"><a href="../">back to all results</a></p></div></section><section class="cat"><div class="wrap"><h2 class="catname">Run detail</h2><div class="issue"><h3>Local apt repo manifest: kicksecure (124 packages)</h3><p>complete name=version manifest delivered to the guest &middot; source <code class="runid">175e1e36f56ecdfe92c937acb42eecebb2c03c49</code></p><p>repo <code>/srv/derivative-maker/aptrepo_local/kicksecure</code></p><pre class="steplog" tabindex="0">age-api=3:0.6-1
+anon-apt-sources-list=3:8.0-1
+anon-connection-wizard=1:11.5-1
+anon-shared-build-apt-sources-tpo=3:7.3-1
+apparmor-profile-dist=3:10.7-1
+apparmor-profile-hexchat=3:5.7-1
+apparmor-profile-thunderbird=3:6.3-1
+apparmor-profile-torbrowser=3:10.0-1
+apparmor-profiles-kicksecure=3:37.9-1
+binaries-freedom=0:3.5-1
+bindp=3:4.8-1
+bootclockrandomization=3:8.3-1
+browser-choice=3:3.8-1
+calamares-settings-debian=13.1.9-1
+damngpl=3:4.9-1
+deb.torproject.org-keyring=2025.08.08
+debug-misc=3:6.4-1
+desktop-config-dist=3:19.1-1
+desktop-config-dist-dependencies=3:19.1-1
+developer-meta-files=3:62.3-1
+dist-baremetal-cli=3:37.9-1
+dist-baremetal-gui-lxqt=3:37.9-1
+dist-base-files=3:16.6-1
+dist-general-cli=3:37.9-1
+dist-general-gui-all=3:37.9-1
+dist-general-gui-lxqt=3:37.9-1
+dist-general-server=3:37.9-1
+dist-nonqubes-cli=3:37.9-1
+dist-nonqubes-gui-all=3:37.9-1
+dist-nonqubes-gui-lxqt=3:37.9-1
+dist-qubes-cli=3:37.9-1
+dist-qubes-gui-all=3:37.9-1
+dist-qubes-gui-lxqt=3:37.9-1
+dist-system-metadata=3:1.1-1
+dummy-dependency-apparmor-profiles-kicksecure=3:37.9-1
+dummy-dependency-bindp=3:37.9-1
+dummy-dependency-browser-choice=3:37.9-1
+dummy-dependency-efibootmgr=3:37.9-1
+dummy-dependency-electrum=3:37.9-1
+dummy-dependency-firefox-esr=3:37.9-1
+dummy-dependency-hardened-malloc=3:37.9-1
+dummy-dependency-keyutils=3:37.9-1
+dummy-dependency-kloak=3:37.9-1
+dummy-dependency-lxqt-policykit=3:37.9-1
+dummy-dependency-mokutil=3:37.9-1
+dummy-dependency-mta=3:37.9-1
+dummy-dependency-qubes-core-agent-passwordless-root=3:37.9-1
+dummy-dependency-sbsigntool=3:37.9-1
+dummy-dependency-sway=3:37.9-1
+dummy-dependency-tb-starter=3:37.9-1
+dummy-dependency-tb-updater=3:37.9-1
+dummy-dependency-tirdad=3:37.9-1
+dummy-dependency-virtualbox-guest-utils=3:37.9-1
+dummy-dependency-virtualbox-guest-x11=3:37.9-1
+dummy-dependency-xorg-vm=3:37.9-1
+firmware-freedom=3:37.9-1
+genmkfile=3:22.7-1
+grub-live=3:11.5-1
+grub-live-dracut=3:11.5-1
+hardened-kernel=3:5.8-1
+helper-scripts=3:55.6-1
+helper-scripts-tests=3:55.6-1
+icon-pack-dist=3:5.4-1
+initializer-dist=3:9.6-1
+kicksecure-baremetal-cli=3:37.9-1
+kicksecure-baremetal-gui-lxqt=3:37.9-1
+kicksecure-baremetal-server=3:37.9-1
+kicksecure-base-files=3:11.1-1
+kicksecure-ci-tiny-do-not-use=3:37.9-1
+kicksecure-general-cli=3:37.9-1
+kicksecure-general-gui-all=3:37.9-1
+kicksecure-general-gui-lxqt=3:37.9-1
+kicksecure-network-conf=3:7.1-1
+kicksecure-network-conf-gui=3:7.1-1
+kicksecure-nonqubes-cli=3:37.9-1
+kicksecure-nonqubes-gui-all=3:37.9-1
+kicksecure-nonqubes-gui-lxqt=3:37.9-1
+kicksecure-packages-dependencies-pre=3:37.9-1
+kicksecure-qubes-cli=3:37.9-1
+kicksecure-qubes-gui-all=3:37.9-1
+kicksecure-qubes-gui-lxqt=3:37.9-1
+kicksecure-qubes-server=3:37.9-1
+kicksecure-vm-cli=3:37.9-1
+kicksecure-vm-gui-all=3:37.9-1
+kicksecure-vm-gui-lxqt=3:37.9-1
+kicksecure-vm-server=3:37.9-1
+kicksecure-welcome-page=3:7.9-1
+legacy-dist=3:21.7-1
+libvirt-dist=3:12.7-1
+live-config-dist=3:11.5-1
+lxqt-wayland-session=0.3.0-1
+mediawiki-shell=3:8.2-1
+msgcollector=3:18.1-1
+msgcollector-gui=3:18.1-1
+open-link-confirmation=3:9.4-1
+privleap=3:7.1-1
+rads=3:9.0-1
+ram-wipe=3:4.6-1
+repository-dist=3:14.1-1
+repository-dist-wizard=3:14.1-1
+sandbox-app-launcher=0:7.7-1
+sdwdate=3:29.6-1
+sdwdate-gui=1:15.7-1
+security-misc-desktop=3:54.2-1
+security-misc-server=3:54.2-1
+security-misc-shared=3:54.2-1
+serial-console-enable=3:5.2-1
+setup-dist=3:12.6-1
+setup-wizard-dist=3:13.6-1
+swap-file-creator=3:9.7-1
+sysmaint-panel=3:5.6-1
+systemcheck=3:53.3-1
+tb-default-browser=3:9.4-1
+tb-starter=3:19.2-1
+tb-updater=3:48.5-1
+timesanitycheck=3:10.6-1
+tirdad=0:0.3.5-1
+tirdad-dkms=0:0.3.5-1
+tor-control-panel=1:8.8-1
+tor-ctrl=3:7.4-1
+tor-geoipdb=0.4.9.17-1~d13.trixie+1
+usability-misc=3:42.1-1
+user-sysmaint-split=3:13.1-1
+vm-config-dist=3:18.5-1</pre></div><div class="issue"><h3>Local apt repo manifest: whonix (48 packages)</h3><p>complete name=version manifest delivered to the guest &middot; source <code class="runid">175e1e36f56ecdfe92c937acb42eecebb2c03c49</code></p><p>repo <code>/srv/derivative-maker/aptrepo_local/whonix</code></p><pre class="steplog" tabindex="0">anon-apps-config=3:10.4-1
+anon-gw-anonymizer-config=3:21.9-1
+anon-gw-base-files=3:8.2-1
+anon-ws-base-files=3:7.6-1
+anon-ws-disable-stacked-tor=3:11.4-1
+corridor=2:0.11.9.1.0-1
+onion-grater=3:14.4-1
+qubes-whonix=1:25.8-1
+uwt=3:10.4-1
+whonix-base-files=3:12.3-1
+whonix-firewall=3:19.5-1
+whonix-gateway-baremetal-cli=3:27.4-1
+whonix-gateway-baremetal-gui-lxqt=3:27.4-1
+whonix-gateway-baremetal-server=3:27.4-1
+whonix-gateway-general-cli=3:27.4-1
+whonix-gateway-general-gui-all=3:27.4-1
+whonix-gateway-nonqubes-cli=3:27.4-1
+whonix-gateway-nonqubes-gui-lxqt=3:27.4-1
+whonix-gateway-packages-dependencies-pre=3:27.4-1
+whonix-gateway-qubes-cli=3:27.4-1
+whonix-gateway-qubes-gui-all=3:27.4-1
+whonix-gateway-qubes-gui-lxqt=3:27.4-1
+whonix-gateway-qubes-server=3:27.4-1
+whonix-gateway-vm-cli=3:27.4-1
+whonix-gateway-vm-gui-lxqt=3:27.4-1
+whonix-gateway-vm-server=3:27.4-1
+whonix-general-cli=3:27.4-1
+whonix-general-gui-all=3:27.4-1
+whonix-gw-network-conf=3:6.3-1
+whonix-qubes-gui-all=3:27.4-1
+whonix-welcome-page=3:8.3-1
+whonix-workstation-baremetal-cli=3:27.4-1
+whonix-workstation-baremetal-gui-lxqt=3:27.4-1
+whonix-workstation-baremetal-server=3:27.4-1
+whonix-workstation-general-cli=3:27.4-1
+whonix-workstation-general-gui-all=3:27.4-1
+whonix-workstation-general-gui-lxqt=3:27.4-1
+whonix-workstation-nonqubes-cli=3:27.4-1
+whonix-workstation-nonqubes-gui-lxqt=3:27.4-1
+whonix-workstation-packages-dependencies-pre=3:27.4-1
+whonix-workstation-qubes-cli=3:27.4-1
+whonix-workstation-qubes-gui-all=3:27.4-1
+whonix-workstation-qubes-gui-lxqt=3:27.4-1
+whonix-workstation-qubes-server=3:27.4-1
+whonix-workstation-vm-cli=3:27.4-1
+whonix-workstation-vm-gui-lxqt=3:27.4-1
+whonix-workstation-vm-server=3:27.4-1
+whonix-ws-network-conf=3:5.1-1</pre></div><div class="fg"><div class="issue"><h3>whonix-func <span class="chip st-inconclusive">inconclusive</span></h3><p>exit 2</p><pre class="steplog" tabindex="0">dm-whonix-pair: [functional-cli] boot Gateway (Whonix-Gateway-CLI)
+dm-whonix-pair: [functional-cli] boot Workstation (Whonix-Workstation-CLI) into the user session
+dm-shared-apt-repo: attached shared -&gt; /srv/derivative-maker on Whonix-Workstation-CLI
+dm-shared-apt-repo: mounts at /mnt/shared on the next boot (mnt-shared-vbox.service)
+dm-whonix-pair: [functional-cli] wait for Tor egress (systemcheck SocksPort + TransPort)
+tr: write error: Broken pipe
+[INFO] [systemcheck] SocksPort IP Leak Test: Testing Tor&#x27;s SocksPort (SOCKS_PORT_SYSTEMCHECK: 9110)...
+[ERROR] [systemcheck] SocksPort IP Leak Test Result: https://check.torproject.org/api/ip was not reachable.
+You could check, if you can reach https://check.torproject.org/api/ip via the Tor Browser Bundle.
+(curl exit code: [97] - [Unknown curl exit code, please report this!])
+[INFO] [systemcheck] system default networking IP Leak Test: system default networking IP Leak Test...
+[INFO] [systemcheck] system default networking IP Leak Test: Connected to Tor.
+dm-whonix-pair: Tor not confirmed yet (attempt 1); retrying
+tr: write error: Broken pipe
+[INFO] [systemcheck] SocksPort IP Leak Test: Testing Tor&#x27;s SocksPort (SOCKS_PORT_SYSTEMCHECK: 9110)...
+[INFO] [systemcheck] SocksPort IP Leak Test: Connected to Tor.
+[INFO] [systemcheck] system default networking IP Leak Test: system default networking IP Leak Test...
+[INFO] [systemcheck] system default networking IP Leak Test: Connected to Tor.
+dm-whonix-pair: [functional-cli] enable the local apt repo (whonix) in the Workstation
+Ign:1 file:/mnt/shared/aptrepo_local/kicksecure local InRelease
+Ign:2 file:/mnt/shared/aptrepo_local/whonix local InRelease
+Get:3 file:/mnt/shared/aptcache/debian trixie InRelease [140 kB]
+Get:4 file:/mnt/shared/aptcache/debian trixie-updates InRelease [47.3 kB]
+Get:5 file:/mnt/shared/aptcache/debian-security trixie-security InRelease [43.4 kB]
+Get:6 file:/mnt/shared/aptrepo_local/kicksecure local Release [57.5 kB]
+Get:7 file:/mnt/shared/aptrepo_local/whonix local Release [56.7 kB]
+Get:3 file:/mnt/shared/aptcache/debian trixie InRelease [140 kB]
+Get:4 file:/mnt/shared/aptcache/debian trixie-updates InRelease [47.3 kB]
+Get:5 file:/mnt/shared/aptcache/debian-security trixie-security InRelease [43.4 kB]
+Get:6 file:/mnt/shared/aptrepo_local/kicksecure local Release [57.5 kB]
+Ign:8 file:/mnt/shared/aptrepo_local/kicksecure local Release.gpg
+Get:7 file:/mnt/shared/aptrepo_local/whonix local Release [56.7 kB]
+Get:9 file:/mnt/shared/aptrepo_local/kicksecure local/non-free amd64 Packages [1,549 B]
+Ign:10 file:/mnt/shared/aptrepo_local/whonix local Release.gpg
+Get:11 file:/mnt/shared/aptrepo_local/kicksecure local/contrib amd64 Packages [501 B]
+Get:12 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 Packages [38.5 kB]
+Get:13 file:/mnt/shared/aptrepo_local/whonix local/main amd64 Packages [14.2 kB]
+Get:14 file:/mnt/shared/aptcache/debian trixie/contrib amd64 Packages [53.9 kB]
+Get:15 file:/mnt/shared/aptcache/debian trixie/non-free-firmware amd64 Packages [6,884 B]
+Get:16 file:/mnt/shared/aptcache/debian trixie/main amd64 Packages [9,678 kB]
+Get:17 file:/mnt/shared/aptcache/debian trixie/non-free amd64 Packages [100 kB]
+Get:18 file:/mnt/shared/aptcache/debian trixie-updates/main amd64 Packages [1,108 B]
+Get:19 file:/mnt/shared/aptcache/debian-security trixie-security/non-free-firmware amd64 Packages [544 B]
+Get:20 file:/mnt/shared/aptcache/debian-security trixie-security/main amd64 Packages [304 kB]
+Get:21 file:/mnt/shared/aptcache/debian-security trixie-security/contrib amd64 Packages [3,152 B]
+Reading package lists...
+dm-whonix-pair: [functional-cli] verify the local build payloads are installed in the Workstation
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 46 reinstalled, 0 to remove and 3 not upgraded.
+Need to get 0 B/4,485 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 apparmor-profiles-kicksecure all 3:37.9-1 [90.7 kB]
+Get:2 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 dist-base-files all 3:16.6-1 [203 kB]
+Get:3 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 dist-general-cli all 3:37.9-1 [91.2 kB]
+Get:4 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 dist-general-server all 3:37.9-1 [90.6 kB]
+Get:5 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 dist-nonqubes-cli all 3:37.9-1 [90.7 kB]
+Get:6 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 security-misc-shared all 3:54.2-1 [322 kB]
+Get:7 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-general-cli all 3:27.4-1 [72.0 kB]
+Get:8 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-workstation-general-cli all 3:27.4-1 [72.0 kB]
+Get:9 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-workstation-nonqubes-cli all 3:27.4-1 [72.0 kB]
+Get:10 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-workstation-vm-cli all 3:27.4-1 [72.0 kB]
+Get:11 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-workstation-vm-server all 3:27.4-1 [72.0 kB]
+Get:12 file:/mnt/shared/aptrepo_local/whonix local/main amd64 anon-apps-config all 3:10.4-1 [86.1 kB]
+Get:13 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 anon-apt-sources-list all 3:8.0-1 [33.6 kB]
+Get:14 file:/mnt/shared/aptrepo_local/whonix local/main amd64 anon-ws-base-files all 3:7.6-1 [365 kB]
+Get:15 file:/mnt/shared/aptrepo_local/whonix local/main amd64 anon-ws-disable-stacked-tor all 3:11.4-1 [57.0 kB]
+Get:16 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 apparmor-profile-dist all 3:10.7-1 [39.4 kB]
+Get:17 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 apparmor-profile-hexchat all 3:5.7-1 [24.1 kB]
+Get:18 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 apparmor-profile-thunderbird all 3:6.3-1 [27.3 kB]
+Get:19 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 apparmor-profile-torbrowser all 3:10.0-1 [35.9 kB]
+Get:20 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 bindp all 3:4.8-1 [15.9 kB]
+Get:21 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 bootclockrandomization all 3:8.3-1 [33.0 kB]
+Get:22 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 damngpl all 3:4.9-1 [14.1 kB]
+Get:23 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 dist-system-metadata all 3:1.1-1 [42.2 kB]
+Get:24 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 dummy-dependency-mta all 3:37.9-1 [90.7 kB]
+Get:25 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 grub-live all 3:11.5-1 [47.7 kB]
+Get:26 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 grub-live-dracut all 3:11.5-1 [38.6 kB]
+Get:27 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 helper-scripts all 3:55.6-1 [488 kB]
+Get:28 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 initializer-dist all 3:9.6-1 [48.3 kB]
+Get:29 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 legacy-dist all 3:21.7-1 [73.9 kB]
+Get:30 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 msgcollector all 3:18.1-1 [120 kB]
+Get:31 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 privleap all 3:7.1-1 [104 kB]
+Get:32 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 repository-dist all 3:14.1-1 [64.9 kB]
+Get:33 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 sdwdate all 3:29.6-1 [182 kB]
+Get:34 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 security-misc-server all 3:54.2-1 [222 kB]
+Get:35 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 setup-dist all 3:12.6-1 [47.7 kB]
+Get:36 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 swap-file-creator all 3:9.7-1 [42.9 kB]
+Get:37 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 systemcheck all 3:53.3-1 [247 kB]
+Get:38 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 timesanitycheck all 3:10.6-1 [32.3 kB]
+Get:39 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 tirdad amd64 0:0.3.5-1 [19.5 kB]
+Get:40 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 tor-ctrl all 3:7.4-1 [45.1 kB]
+Get:41 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 usability-misc all 3:42.1-1 [248 kB]
+Get:42 file:/mnt/shared/aptrepo_local/whonix local/main amd64 uwt all 3:10.4-1 [56.4 kB]
+Get:43 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-base-files all 3:12.3-1 [48.5 kB]
+Get:44 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-firewall all 3:19.5-1 [100 kB]
+Get:45 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-workstation-packages-dependencies-pre all 3:27.4-1 [72.0 kB]
+Get:46 file:/mnt/shared/aptrepo_local/whonix local/main amd64 whonix-ws-network-conf all 3:5.1-1 [24.5 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Preconfiguring packages ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63320 files and directories currently installed.)
+Preparing to unpack .../legacy-dist_21.7-1_all.deb ...
+Unpacking legacy-dist (3:21.7-1) over (3:21.7-1) ...
+Preparing to unpack .../helper-scripts_55.6-1_all.deb ...
+Unpacking helper-scripts (3:55.6-1) over (3:55.6-1) ...
+Setting up helper-scripts (3:55.6-1) ...
+Setting up legacy-dist (3:21.7-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63320 files and directories currently installed.)
+Preparing to unpack .../0-apparmor-profiles-kicksecure_37.9-1_all.deb ...
+Unpacking apparmor-profiles-kicksecure (3:37.9-1) over (3:37.9-1) ...
+Preparing to unpack .../1-dist-base-files_16.6-1_all.deb ...
+Unpacking dist-base-files (3:16.6-1) over (3:16.6-1) ...
+Preparing to unpack .../2-dist-general-cli_37.9-1_all.deb ...
+Unpacking dist-general-cli (3:37.9-1) over (3:37.9-1) ...
+Preparing to unpack .../3-dist-general-server_37.9-1_all.deb ...
+Unpacking dist-general-server (3:37.9-1) over (3:37.9-1) ...
+Preparing to unpack .../4-dist-nonqubes-cli_37.9-1_all.deb ...
+Unpacking dist-nonqubes-cli (3:37.9-1) over (3:37.9-1) ...
+Preparing to unpack .../5-security-misc-shared_54.2-1_all.deb ...
+warn: The user `root&#x27; is already a member of `sudo&#x27;.
+warn: The user `root&#x27; is already a member of `console&#x27;.
+Unpacking security-misc-shared (3:54.2-1) over (3:54.2-1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Preparing to unpack .../6-anon-apps-config_10.4-1_all.deb ...
+Unpacking anon-apps-config (3:10.4-1) over (3:10.4-1) ...
+Setting up anon-apps-config (3:10.4-1) ...
+
+Current default time zone: &#x27;Etc/UTC&#x27;
+Local time is now:      Sun Nov 15 15:25:08 UTC 2026.
+Universal Time is now:  Sun Nov 15 15:25:08 UTC 2026.
+
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63320 files and directories currently installed.)
+Preparing to unpack .../00-whonix-general-cli_27.4-1_all.deb ...
+Unpacking whonix-general-cli (3:27.4-1) over (3:27.4-1) ...
+Preparing to unpack .../01-whonix-workstation-general-cli_27.4-1_all.deb ...
+Unpacking whonix-workstation-general-cli (3:27.4-1) over (3:27.4-1) ...
+Preparing to unpack .../02-whonix-workstation-nonqubes-cli_27.4-1_all.deb ...
+Unpacking whonix-workstation-nonqubes-cli (3:27.4-1) over (3:27.4-1) ...
+Preparing to unpack .../03-whonix-workstation-vm-cli_27.4-1_all.deb ...
+Unpacking whonix-workstation-vm-cli (3:27.4-1) over (3:27.4-1) ...
+Preparing to unpack .../04-whonix-workstation-vm-server_27.4-1_all.deb ...
+Unpacking whonix-workstation-vm-server (3:27.4-1) over (3:27.4-1) ...
+Preparing to unpack .../05-anon-apt-sources-list_8.0-1_all.deb ...
+Unpacking anon-apt-sources-list (3:8.0-1) over (3:8.0-1) ...
+Preparing to unpack .../06-anon-ws-base-files_7.6-1_all.deb ...
+Unpacking anon-ws-base-files (3:7.6-1) over (3:7.6-1) ...
+Preparing to unpack .../07-anon-ws-disable-stacked-tor_11.4-1_all.deb ...
+Unpacking anon-ws-disable-stacked-tor (3:11.4-1) over (3:11.4-1) ...
+Preparing to unpack .../08-apparmor-profile-dist_10.7-1_all.deb ...
+Unpacking apparmor-profile-dist (3:10.7-1) over (3:10.7-1) ...
+Preparing to unpack .../09-apparmor-profile-hexchat_5.7-1_all.deb ...
+Unpacking apparmor-profile-hexchat (3:5.7-1) over (3:5.7-1) ...
+Preparing to unpack .../10-apparmor-profile-thunderbird_6.3-1_all.deb ...
+Unpacking apparmor-profile-thunderbird (3:6.3-1) over (3:6.3-1) ...
+Preparing to unpack .../11-apparmor-profile-torbrowser_10.0-1_all.deb ...
+Unpacking apparmor-profile-torbrowser (3:10.0-1) over (3:10.0-1) ...
+Preparing to unpack .../12-bindp_4.8-1_all.deb ...
+Unpacking bindp (3:4.8-1) over (3:4.8-1) ...
+Preparing to unpack .../13-bootclockrandomization_8.3-1_all.deb ...
+Unpacking bootclockrandomization (3:8.3-1) over (3:8.3-1) ...
+Preparing to unpack .../14-damngpl_4.9-1_all.deb ...
+Unpacking damngpl (3:4.9-1) over (3:4.9-1) ...
+Preparing to unpack .../15-dist-system-metadata_1.1-1_all.deb ...
+Unpacking dist-system-metadata (3:1.1-1) over (3:1.1-1) ...
+Preparing to unpack .../16-dummy-dependency-mta_37.9-1_all.deb ...
+Unpacking dummy-dependency-mta (3:37.9-1) over (3:37.9-1) ...
+Preparing to unpack .../17-grub-live_11.5-1_all.deb ...
+Unpacking grub-live (3:11.5-1) over (3:11.5-1) ...
+Preparing to unpack .../18-grub-live-dracut_11.5-1_all.deb ...
+Unpacking grub-live-dracut (3:11.5-1) over (3:11.5-1) ...
+Preparing to unpack .../19-initializer-dist_9.6-1_all.deb ...
+Unpacking initializer-dist (3:9.6-1) over (3:9.6-1) ...
+Preparing to unpack .../20-msgcollector_18.1-1_all.deb ...
+Unpacking msgcollector (3:18.1-1) over (3:18.1-1) ...
+Preparing to unpack .../21-privleap_7.1-1_all.deb ...
+Unpacking privleap (3:7.1-1) over (3:7.1-1) ...
+Preparing to unpack .../22-repository-dist_14.1-1_all.deb ...
+Unpacking repository-dist (3:14.1-1) over (3:14.1-1) ...
+Preparing to unpack .../23-sdwdate_29.6-1_all.deb ...
+Unpacking sdwdate (3:29.6-1) over (3:29.6-1) ...
+Preparing to unpack .../24-security-misc-server_54.2-1_all.deb ...
+Unpacking security-misc-server (3:54.2-1) over (3:54.2-1) ...
+Preparing to unpack .../25-setup-dist_12.6-1_all.deb ...
+Unpacking setup-dist (3:12.6-1) over (3:12.6-1) ...
+Preparing to unpack .../26-swap-file-creator_9.7-1_all.deb ...
+Unpacking swap-file-creator (3:9.7-1) over (3:9.7-1) ...
+Preparing to unpack .../27-systemcheck_53.3-1_all.deb ...
+Unpacking systemcheck (3:53.3-1) over (3:53.3-1) ...
+Preparing to unpack .../28-timesanitycheck_10.6-1_all.deb ...
+Unpacking timesanitycheck (3:10.6-1) over (3:10.6-1) ...
+Preparing to unpack .../29-tirdad_0.3.5-1_amd64.deb ...
+Unpacking tirdad (0.3.5-1) over (0.3.5-1) ...
+Preparing to unpack .../30-tor-ctrl_7.4-1_all.deb ...
+Unpacking tor-ctrl (3:7.4-1) over (3:7.4-1) ...
+Preparing to unpack .../31-usability-misc_42.1-1_all.deb ...
+Unpacking usability-misc (3:42.1-1) over (3:42.1-1) ...
+Preparing to unpack .../32-uwt_10.4-1_all.deb ...
+Unpacking uwt (3:10.4-1) over (3:10.4-1) ...
+Preparing to unpack .../33-whonix-base-files_12.3-1_all.deb ...
+Unpacking whonix-base-files (3:12.3-1) over (3:12.3-1) ...
+Preparing to unpack .../34-whonix-firewall_19.5-1_all.deb ...
+Unpacking whonix-firewall (3:19.5-1) over (3:19.5-1) ...
+Preparing to unpack .../35-whonix-workstation-packages-dependencies-pre_27.4-1_all.deb ...
+Unpacking whonix-workstation-packages-dependencies-pre (3:27.4-1) over (3:27.4-1) ...
+Preparing to unpack .../36-whonix-ws-network-conf_5.1-1_all.deb ...
+Unpacking whonix-ws-network-conf (3:5.1-1) over (3:5.1-1) ...
+Setting up dummy-dependency-mta (3:37.9-1) ...
+Setting up privleap (3:7.1-1) ...
+Setting up setup-dist (3:12.6-1) ...
+Setting up anon-ws-base-files (3:7.6-1) ...
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/whonix-workstation/theme.txt
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Setting up msgcollector (3:18.1-1) ...
+Setting up apparmor-profile-torbrowser (3:10.0-1) ...
+Setting up dist-base-files (3:16.6-1) ...
+&#x27;/usr/share/derivative-base-files/repart-d_50-root.conf&#x27; -&gt; &#x27;/usr/lib/repart.d/50-root.conf&#x27;
+Setting up dist-system-metadata (3:1.1-1) ...
+Setting up timesanitycheck (3:10.6-1) ...
+Setting up grub-live (3:11.5-1) ...
+Setting up bootclockrandomization (3:8.3-1) ...
+Setting up bindp (3:4.8-1) ...
+gcc -g bindp.c -o libindp.so -nostartfiles -shared -O2 -Wall -Wextra -Wformat -Wformat=2 -Wconversion -Wimplicit-fallthrough -Werror=format-security -Werror=implicit -Werror=int-conversion -Werror=incompatible-pointer-types -Wformat-overflow -Wformat-signedness -Wformat-truncation -Wnull-dereference -Winit-self -Wmissing-include-dirs -Wshift-negative-value -Wshift-overflow -Wswitch-default -Wuninitialized -Walloca -Warray-bounds -Wfloat-equal -Wshadow -Wpointer-arith -Wundef -Wunused-macros -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wdate-time -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Winvalid-utf8 -Wvla -Wdisabled-optimization -Wstack-protector -Wdeclaration-after-statement -Wtrampolines -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat-truncation=2 -Wshift-overflow=2 -Wtrivial-auto-var-init -Wstringop-overflow=3 -Wstrict-flex-arrays -Walloc-zero -Warray-bounds=2 -Wattribute-alias=2 -Wduplicated-branches -Wduplicated-cond -Wcast-align=strict -Wjump-misses-init -Wlogical-op -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=3 -fstack-clash-protection -fstack-protector-all -fno-delete-null-pointer-checks -fno-strict-overflow -fno-strict-aliasing -fstrict-flex-arrays=3 -ftrivial-auto-var-init=pattern -fPIC -fcf-protection=full -fzero-call-used-regs=all -Wl,-z,nodlopen -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,separate-code -Wl,--as-needed -Wl,--no-copy-dt-needed-entries -ldl
+Setting up apparmor-profile-thunderbird (3:6.3-1) ...
+Setting up swap-file-creator (3:9.7-1) ...
+Setting up repository-dist (3:14.1-1) ...
+Setting up uwt (3:10.4-1) ...
+Setting up whonix-base-files (3:12.3-1) ...
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/whonix-workstation/theme.txt
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Setting up apparmor-profile-dist (3:10.7-1) ...
+Setting up whonix-workstation-nonqubes-cli (3:27.4-1) ...
+Setting up grub-live-dracut (3:11.5-1) ...
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/whonix-workstation/theme.txt
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+Setting up apparmor-profile-hexchat (3:5.7-1) ...
+Setting up whonix-firewall (3:19.5-1) ...
+Setting up anon-apt-sources-list (3:8.0-1) ...
+Setting up damngpl (3:4.9-1) ...
+Setting up whonix-ws-network-conf (3:5.1-1) ...
+Setting up tirdad (0.3.5-1) ...
+Setting up whonix-general-cli (3:27.4-1) ...
+Setting up anon-ws-disable-stacked-tor (3:11.4-1) ...
+warn: The user `user&#x27; is already a member of `debian-tor&#x27;.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_127.0.0.1_9050.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_127.0.0.1_9051.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_127.0.0.1_9150.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_127.0.0.1_9151.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_::1_9050.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_::1_9051.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_::1_9150.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_anon-ws-disable-stacked-tor_::1_9151.sock.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen__run_tor_socks.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port6_9050.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port6_9051.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port6_9102.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port6_9150.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port6_9151.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port_9050.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port_9051.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port_9102.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port_9150.service is a disabled or a static unit not running, not starting it.
+anon-ws-disable-stacked-tor_autogen_port_9151.service is a disabled or a static unit not running, not starting it.
+Setting up apparmor-profiles-kicksecure (3:37.9-1) ...
+Setting up usability-misc (3:42.1-1) ...
+shim-signed-mok-setup [NOTICE]: Preparing Secure Boot module-signing keys (used only if Secure Boot is enabled)...
+shim-signed-mok-setup [NOTICE]: See also:
+https://www.kicksecure.com/wiki/Secure_Boot
+shim-signed-mok-setup [NOTICE]: Expected DKMS key files: &#x27;/var/lib/dkms/mok.pub&#x27; and &#x27;/var/lib/dkms/mok.key&#x27;
+shim-signed-mok-setup [NOTICE]: Expected shim key links: &#x27;/var/lib/shim-signed/mok/MOK.der&#x27; and &#x27;/var/lib/shim-signed/mok/MOK.priv&#x27;
+shim-signed-mok-setup [NOTICE]: Key files already exist: no - trying to create them using &#x27;dkms generate_mok&#x27;...
+shim-signed-mok-setup [NOTICE]: Command executing: $ dkms generate_mok
+Signing key: /var/lib/dkms/mok.key
+Public certificate (MOK): /var/lib/dkms/mok.pub
+Certificate or key are missing, generating self signed certificate for MOK...
+shim-signed-mok-setup [NOTICE]: Key files created: yes
+shim-signed-mok-setup [NOTICE]: Key links are in place: yes
+shim-signed-mok-setup [NOTICE]: Successfully prepared Secure Boot module-signing keys/links.
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/whonix-workstation/theme.txt
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+orca-kill-at-shutdown.service is a disabled or a static unit not running, not starting it.
+Setting up sdwdate (3:29.6-1) ...
+usermod: no changes
+warn: The user `sdwdate&#x27; is already a member of `debian-tor&#x27;.
+gcc -g sclockadj.c -o sclockadj -O2 -Werror -Wall -Wextra -Wformat -Wformat=2 -Wconversion -Wimplicit-fallthrough -Werror=format-security -Werror=implicit -Werror=int-conversion -Werror=incompatible-pointer-types -Wformat-overflow -Wformat-signedness -Wformat-truncation -Wnull-dereference -Winit-self -Wmissing-include-dirs -Wshift-negative-value -Wshift-overflow -Wswitch-default -Wuninitialized -Walloca -Warray-bounds -Wfloat-equal -Wshadow -Wpointer-arith -Wundef -Wunused-macros -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wdate-time -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Winvalid-utf8 -Wvla -Wdisabled-optimization -Wstack-protector -Wdeclaration-after-statement -Wtrampolines -Wbidi-chars=any,ucn -Wformat-overflow=2 -Wformat-truncation=2 -Wshift-overflow=2 -Wtrivial-auto-var-init -Wstringop-overflow=3 -Wstrict-flex-arrays -Walloc-zero -Warray-bounds=2 -Wattribute-alias=2 -Wduplicated-branches -Wduplicated-cond -Wcast-align=strict -Wjump-misses-init -Wlogical-op -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=3 -fstack-clash-protection -fstack-protector-all -fno-delete-null-pointer-checks -fno-strict-overflow -fno-strict-aliasing -fstrict-flex-arrays=3 -ftrivial-auto-var-init=pattern -fPIE -fcf-protection=full -fzero-call-used-regs=all -Wl,-z,nodlopen -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -Wl,-z,separate-code -Wl,--as-needed -Wl,--no-copy-dt-needed-entries -pie
+Setting up whonix-workstation-packages-dependencies-pre (3:27.4-1) ...
+Setting up security-misc-shared (3:54.2-1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+No schema files found: doing nothing.
+/usr/libexec/security-misc/permission-lockdown: chmod o-rwx &quot;/home/user&quot;
+Running SUID Disabler and Permission Hardener... See also:
+https://www.kicksecure.com/wiki/SUID_Disabler_and_Permission_Hardener
+/var/lib/dpkg/info/security-misc-shared.postinst: INFO: running: permission-hardener enable
+permission-hardener [NOTICE]: Executing: setcap -r /bin/ping
+permission-hardener [NOTICE]: To compare the current and previous permission modes, install &#x27;meld&#x27; (or preferred diff tool) for comparison of file mode changes:
+    sudo apt install --no-install-recommends meld
+    meld /var/lib/permission-hardener-v2/existing_mode/statoverride /var/lib/permission-hardener-v2/new_mode/statoverride
+/var/lib/dpkg/info/security-misc-shared.postinst: INFO: Permission hardening success.
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/whonix-workstation/theme.txt
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Found linux image: /boot/vmlinuz-6.12.116+deb13-amd64
+Found initrd image: /boot/initrd.img-6.12.116+deb13-amd64
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+/usr/libexec/security-misc/mmap-rnd-bits: INFO: Successfully written ASLR map config file:
+/etc/sysctl.d/30_security-misc_aslr-mmap.conf
+block-shutdown.service is a disabled or a static unit not running, not starting it.
+ensure-shutdown-trigger.service is a disabled or a static unit not running, not starting it.
+ensure-shutdown.service is a disabled or a static unit not running, not starting it.
+harden-module-loading.service is a disabled or a static unit not running, not starting it.
+hide-hardware-info.service is a disabled or a static unit not running, not starting it.
+permission-hardener.service is a disabled or a static unit not running, not starting it.
+proc-hidepid.service is a disabled or a static unit not running, not starting it.
+remount-secure.service is a disabled or a static unit not running, not starting it.
+Setting up tor-ctrl (3:7.4-1) ...
+Setting up whonix-workstation-general-cli (3:27.4-1) ...
+Setting up dist-nonqubes-cli (3:37.9-1) ...
+Setting up initializer-dist (3:9.6-1) ...
+Processing triggers for systemd (257.13-1~deb13u1) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for libglib2.0-0t64:amd64 (2.84.4-3~deb13u5) ...
+No schema files found: doing nothing.
+Setting up systemcheck (3:53.3-1) ...
+warn: The user `canary&#x27; is already a member of `debian-tor&#x27;.
+warn: The user `systemcheck&#x27; is already a member of `debian-tor&#x27;.
+warn: The user `systemcheck&#x27; is already a member of `systemd-journal&#x27;.
+Processing triggers for dracut (106-6) ...
+dracut: Generating /boot/initrd.img-6.12.116+deb13-amd64
+Creating group &#x27;tty&#x27; with GID 5.
+Creating group &#x27;disk&#x27; with GID 6.
+Creating group &#x27;man&#x27; with GID 12.
+Creating group &#x27;kmem&#x27; with GID 15.
+Creating group &#x27;dialout&#x27; with GID 20.
+Creating group &#x27;fax&#x27; with GID 21.
+Creating group &#x27;voice&#x27; with GID 22.
+Creating group &#x27;cdrom&#x27; with GID 24.
+Creating group &#x27;floppy&#x27; with GID 25.
+Creating group &#x27;tape&#x27; with GID 26.
+Creating group &#x27;sudo&#x27; with GID 27.
+Creating group &#x27;audio&#x27; with GID 29.
+Creating group &#x27;dip&#x27; with GID 30.
+Creating group &#x27;operator&#x27; with GID 37.
+Creating group &#x27;src&#x27; with GID 40.
+Creating group &#x27;shadow&#x27; with GID 42.
+Creating group &#x27;video&#x27; with GID 44.
+Creating group &#x27;sasl&#x27; with GID 45.
+Creating group &#x27;plugdev&#x27; with GID 46.
+Creating group &#x27;staff&#x27; with GID 50.
+Creating group &#x27;games&#x27; with GID 60.
+Creating group &#x27;users&#x27; with GID 100.
+Creating group &#x27;nogroup&#x27; with GID 65534.
+Creating group &#x27;systemd-journal&#x27; with GID 999.
+Creating user &#x27;root&#x27; (n/a) with UID 0 and GID 0.
+Creating group &#x27;daemon&#x27; with GID 1.
+Creating user &#x27;daemon&#x27; (n/a) with UID 1 and GID 1.
+Creating group &#x27;bin&#x27; with GID 2.
+Creating user &#x27;bin&#x27; (n/a) with UID 2 and GID 2.
+Creating group &#x27;sys&#x27; with GID 3.
+Creating user &#x27;sys&#x27; (n/a) with UID 3 and GID 3.
+Creating user &#x27;sync&#x27; (n/a) with UID 4 and GID 65534.
+Creating user &#x27;games&#x27; (n/a) with UID 5 and GID 60.
+Creating user &#x27;man&#x27; (n/a) with UID 6 and GID 12.
+Creating group &#x27;lp&#x27; with GID 7.
+Creating user &#x27;lp&#x27; (n/a) with UID 7 and GID 7.
+Creating group &#x27;mail&#x27; with GID 8.
+Creating user &#x27;mail&#x27; (n/a) with UID 8 and GID 8.
+Creating group &#x27;news&#x27; with GID 9.
+Creating user &#x27;news&#x27; (n/a) with UID 9 and GID 9.
+Creating group &#x27;uucp&#x27; with GID 10.
+Creating user &#x27;uucp&#x27; (n/a) with UID 10 and GID 10.
+Creating group &#x27;proxy&#x27; with GID 13.
+Creating user &#x27;proxy&#x27; (n/a) with UID 13 and GID 13.
+Creating group &#x27;www-data&#x27; with GID 33.
+Creating user &#x27;www-data&#x27; (n/a) with UID 33 and GID 33.
+Creating group &#x27;backup&#x27; with GID 34.
+Creating user &#x27;backup&#x27; (n/a) with UID 34 and GID 34.
+Creating group &#x27;list&#x27; with GID 38.
+Creating user &#x27;list&#x27; (n/a) with UID 38 and GID 38.
+Creating group &#x27;irc&#x27; with GID 39.
+Creating user &#x27;irc&#x27; (n/a) with UID 39 and GID 39.
+Creating user &#x27;_apt&#x27; (n/a) with UID 42 and GID 65534.
+Creating user &#x27;nobody&#x27; (n/a) with UID 65534 and GID 65534.
+Setting up security-misc-server (3:54.2-1) ...
+Processing triggers for procps (2:4.0.4-9) ...
+Setting up dist-general-cli (3:37.9-1) ...
+Setting up whonix-workstation-vm-cli (3:27.4-1) ...
+Setting up dist-general-server (3:37.9-1) ...
+Setting up whonix-workstation-vm-server (3:27.4-1) ...
+local payload NOT installed: tirdad want 0:0.3.5-1 got 0.3.5-1
+dm-whonix-pair: ERROR: Whonix-Workstation-CLI: local payload verification failed -- the locally-built packages were not actually installed (INCONCLUSIVE, not a release FAIL)
+</pre><p><strong>pair-defined</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Whonix pair under test (pre-boot)
+
+Gateway VM: Whonix-Gateway-CLI
+memory=768
+vram=16
+firmware=&quot;BIOS&quot;
+VMState=&quot;poweroff&quot;
+nic1=&quot;nat&quot;
+
+Workstation VM: Whonix-Workstation-CLI
+memory=768
+vram=16
+firmware=&quot;BIOS&quot;
+VMState=&quot;poweroff&quot;
+nic1=&quot;intnet&quot;
+</pre><p><span class="chip st-inconclusive">inconclusive</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>gateway-booted</strong></p><a href="whonix-cli-inst-bios__whonix-func__gateway-booted.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__gateway-booted.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/gateway-booted"></a><p><span class="chip st-inconclusive">inconclusive</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>workstation-booted</strong></p><a href="whonix-cli-inst-bios__whonix-func__workstation-booted.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__workstation-booted.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/workstation-booted"></a><p><strong>gateway-tor-bootstrap</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Gateway Tor bootstrapped
+
+Workstation systemcheck confirmed the Gateway&#x27;s Tor SocksPort + TransPort are up (positive control). The egress path Workstation -&gt; Gateway -&gt; Tor is live; the battery runs only now.
+</pre><p><span class="chip st-inconclusive">inconclusive</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>workstation-tor-confirmed</strong></p><a href="whonix-cli-inst-bios__whonix-func__workstation-tor-confirmed.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__workstation-tor-confirmed.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/workstation-tor-confirmed"></a><p><strong>local-repo-enabled</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Local apt repo enabled in the Workstation
+
+The derivative &#x27;local&#x27; apt sources (kicksecure whonix) plus the Debian base suites (trixie trixie-updates trixie-security) are live -- apt-cache policy shows each of: kicksecure whonix. Check 3 upgrades offline from these file: sources, no Tor.
+</pre><p><strong>pair-poweroff</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Pair teardown (final VM states below)
+
+Gateway Whonix-Gateway-CLI: poweroff
+Workstation Whonix-Workstation-CLI: poweroff
+</pre><p><strong>failure</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Run failed (rc=2)
+
+Whonix-Workstation-CLI: local payload verification failed -- the locally-built packages were not actually installed (INCONCLUSIVE, not a release FAIL)
+</pre></div></div></div></section>
+</main>
+<footer>
+  <div class="ftop">
+    <div class="fbrand">
+      <span class="ftag"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></span>
+      <p>Code, not discussion. Go upstream.</p>
+    </div>
+    <nav class="fcols" aria-label="Footer">
+      <div class="fcol">
+        <h3>Navigate</h3>
+        <a href="/#trust">Trust model</a>
+        <a href="/#concerns">Concerns</a>
+        <a href="/#repos">Repositories</a>
+        <a href="/#discussion">Discussion</a>
+        <a href="/automated-test-results/">Test results</a>
+      </div>
+      <div class="fcol">
+        <h3>Source</h3>
+        <a href="https://github.com/org-ai-assisted">organisation</a>
+        <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">this page</a>
+        <a href="https://github.com/org-ai-assisted/.github">org profile</a>
+      </div>
+      <div class="fcol">
+        <h3>Policy &amp; references</h3>
+        <a href="https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence">Kicksecure AI policy</a><a class="arch" href="https://web.archive.org/web/20260418141613/https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence" title="Archived copy of the Kicksecure AI policy page (Wayback Machine)" aria-label="Archived copy of the Kicksecure AI policy page"></a>
+        <a href="https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence">Whonix AI policy</a><a class="arch" href="https://web.archive.org/web/20260604004341/https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence" title="Archived copy of the Whonix AI policy page (Wayback Machine)" aria-label="Archived copy of the Whonix AI policy page"></a>
+        <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">Forum discussion</a><a class="arch" href="https://web.archive.org/web/20260715060626/https://forums.whonix.org/t/is-whonix-vibecoded-now/23405" title="Archived copy of the Whonix forums thread (Wayback Machine)" aria-label="Archived copy of the Whonix forums thread"></a>
+        <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a><a class="arch" href="https://web.archive.org/web/20260515195725/https://www.kicksecure.com/wiki/Dev/Build_Documentation" title="Archived copy of the Kicksecure build documentation (Wayback Machine)" aria-label="Archived copy of the Kicksecure build documentation"></a>
+      </div>
+      <div class="fcol">
+        <h3>Family</h3>
+        <a href="https://output-lies.github.io">output lies</a>
+        <a href="https://secure-terminal.github.io">secure-terminal</a>
+        <a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a>
+      </div>
+    </nav>
+  </div>
+  <div class="fshare">
+    <span class="fshare-l">Share:</span>
+    <a class="sh" data-net="x" href="#" rel="nofollow noopener">X</a>
+    <a class="sh" data-net="facebook" href="#" rel="nofollow noopener">Facebook</a>
+    <a class="sh" data-net="telegram" href="#" rel="nofollow noopener">Telegram</a>
+    <a class="sh" data-net="reddit" href="#" rel="nofollow noopener">Reddit</a>
+    <a class="sh" data-net="whatsapp" href="#" rel="nofollow noopener">WhatsApp</a>
+    <a class="sh" data-net="linkedin" href="#" rel="nofollow noopener">LinkedIn</a>
+    <a class="sh" data-net="hn" href="#" rel="nofollow noopener">Hacker News</a>
+    <a class="sh" data-net="mastodon" href="#" rel="nofollow noopener">Mastodon</a>
+    <a class="sh" data-net="email" href="#">Email</a>
+    <button class="sh" data-net="copy" type="button">Copy link</button>
+    <button class="sh" data-net="md" type="button">Copy as Markdown</button>
+    <span class="sh-msg" aria-live="polite"></span>
+  </div>
+  <script src="/share.js"></script>
+  <div class="fbot">
+    <span class="fcopy">&copy; 2026 <a href="https://www.encrypted-support.com">ENCRYPTED SUPPORT LLC</a></span>
+    <span class="fcopy sp"><a href="/#trust">Built with AI assistance</a></span>
+  </div>
+</footer>
+</html>
