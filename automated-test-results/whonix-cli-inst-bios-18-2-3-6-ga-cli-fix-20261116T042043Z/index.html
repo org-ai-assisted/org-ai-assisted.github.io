@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ai-disclosure" content="ai-assisted">
+<meta name="robots" content="noindex">
+<title>Run whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261116T042043Z</title>
+<meta name="description" content="Test run whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261116T042043Z">
+<link rel="stylesheet" href="/style.css">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="org-ai-assisted home"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></a>
+    <input type="checkbox" class="navtoggle" id="navtoggle" aria-label="Toggle navigation menu">
+    <label class="menubtn" for="navtoggle">Menu</label>
+    <nav aria-label="Primary">
+      <a href="/automated-test-results/">Test results</a>
+      <a href="/css-vs-popover/">CSS vs Popover API</a>
+      <a href="https://github.com/org-ai-assisted">GitHub</a>
+      <a href="https://output-lies.github.io">output lies</a>
+      <a href="https://secure-terminal.github.io">secure-terminal</a>
+    </nav>
+    <label class="navscrim" for="navtoggle"></label>
+  </div>
+</header>
+<main>
+<section class="hero"><div class="wrap"><p class="kicker">whonix-cli-inst-bios</p><h1 class="runid">whonix-cli-inst-bios-18-2-3-6-ga-cli-fix-20261116T042043Z</h1><p class="line">whonix-cli-inst-bios 18.2.3.6-ga-cli-fix &middot; builder dm-release-test &middot; provenance built &middot; <span class="chip st-pass">pass</span> &middot; 44m ago</p><p class="line">screenshots: 0 validated, 5 unvalidated, 0 mismatch, 0 OCR error</p><p class="sub"><a href="../">back to all results</a></p></div></section><section class="cat"><div class="wrap"><h2 class="catname">Run detail</h2><div class="issue"><h3>Local apt repo manifest: kicksecure (124 packages)</h3><p>complete name=version manifest delivered to the guest &middot; source <code class="runid">175e1e36f56ecdfe92c937acb42eecebb2c03c49</code></p><p>repo <code>/srv/derivative-maker/aptrepo_local/kicksecure</code></p><pre class="steplog" tabindex="0">age-api=3:0.6-1
+anon-apt-sources-list=3:8.0-1
+anon-connection-wizard=1:11.5-1
+anon-shared-build-apt-sources-tpo=3:7.3-1
+apparmor-profile-dist=3:10.7-1
+apparmor-profile-hexchat=3:5.7-1
+apparmor-profile-thunderbird=3:6.3-1
+apparmor-profile-torbrowser=3:10.0-1
+apparmor-profiles-kicksecure=3:37.9-1
+binaries-freedom=0:3.5-1
+bindp=3:4.8-1
+bootclockrandomization=3:8.3-1
+browser-choice=3:3.8-1
+calamares-settings-debian=13.1.9-1
+damngpl=3:4.9-1
+deb.torproject.org-keyring=2025.08.08
+debug-misc=3:6.4-1
+desktop-config-dist=3:19.1-1
+desktop-config-dist-dependencies=3:19.1-1
+developer-meta-files=3:62.3-1
+dist-baremetal-cli=3:37.9-1
+dist-baremetal-gui-lxqt=3:37.9-1
+dist-base-files=3:16.6-1
+dist-general-cli=3:37.9-1
+dist-general-gui-all=3:37.9-1
+dist-general-gui-lxqt=3:37.9-1
+dist-general-server=3:37.9-1
+dist-nonqubes-cli=3:37.9-1
+dist-nonqubes-gui-all=3:37.9-1
+dist-nonqubes-gui-lxqt=3:37.9-1
+dist-qubes-cli=3:37.9-1
+dist-qubes-gui-all=3:37.9-1
+dist-qubes-gui-lxqt=3:37.9-1
+dist-system-metadata=3:1.1-1
+dummy-dependency-apparmor-profiles-kicksecure=3:37.9-1
+dummy-dependency-bindp=3:37.9-1
+dummy-dependency-browser-choice=3:37.9-1
+dummy-dependency-efibootmgr=3:37.9-1
+dummy-dependency-electrum=3:37.9-1
+dummy-dependency-firefox-esr=3:37.9-1
+dummy-dependency-hardened-malloc=3:37.9-1
+dummy-dependency-keyutils=3:37.9-1
+dummy-dependency-kloak=3:37.9-1
+dummy-dependency-lxqt-policykit=3:37.9-1
+dummy-dependency-mokutil=3:37.9-1
+dummy-dependency-mta=3:37.9-1
+dummy-dependency-qubes-core-agent-passwordless-root=3:37.9-1
+dummy-dependency-sbsigntool=3:37.9-1
+dummy-dependency-sway=3:37.9-1
+dummy-dependency-tb-starter=3:37.9-1
+dummy-dependency-tb-updater=3:37.9-1
+dummy-dependency-tirdad=3:37.9-1
+dummy-dependency-virtualbox-guest-utils=3:37.9-1
+dummy-dependency-virtualbox-guest-x11=3:37.9-1
+dummy-dependency-xorg-vm=3:37.9-1
+firmware-freedom=3:37.9-1
+genmkfile=3:22.7-1
+grub-live=3:11.5-1
+grub-live-dracut=3:11.5-1
+hardened-kernel=3:5.8-1
+helper-scripts=3:55.6-1
+helper-scripts-tests=3:55.6-1
+icon-pack-dist=3:5.4-1
+initializer-dist=3:9.6-1
+kicksecure-baremetal-cli=3:37.9-1
+kicksecure-baremetal-gui-lxqt=3:37.9-1
+kicksecure-baremetal-server=3:37.9-1
+kicksecure-base-files=3:11.1-1
+kicksecure-ci-tiny-do-not-use=3:37.9-1
+kicksecure-general-cli=3:37.9-1
+kicksecure-general-gui-all=3:37.9-1
+kicksecure-general-gui-lxqt=3:37.9-1
+kicksecure-network-conf=3:7.1-1
+kicksecure-network-conf-gui=3:7.1-1
+kicksecure-nonqubes-cli=3:37.9-1
+kicksecure-nonqubes-gui-all=3:37.9-1
+kicksecure-nonqubes-gui-lxqt=3:37.9-1
+kicksecure-packages-dependencies-pre=3:37.9-1
+kicksecure-qubes-cli=3:37.9-1
+kicksecure-qubes-gui-all=3:37.9-1
+kicksecure-qubes-gui-lxqt=3:37.9-1
+kicksecure-qubes-server=3:37.9-1
+kicksecure-vm-cli=3:37.9-1
+kicksecure-vm-gui-all=3:37.9-1
+kicksecure-vm-gui-lxqt=3:37.9-1
+kicksecure-vm-server=3:37.9-1
+kicksecure-welcome-page=3:7.9-1
+legacy-dist=3:21.7-1
+libvirt-dist=3:12.7-1
+live-config-dist=3:11.5-1
+lxqt-wayland-session=0.3.0-1
+mediawiki-shell=3:8.2-1
+msgcollector=3:18.1-1
+msgcollector-gui=3:18.1-1
+open-link-confirmation=3:9.4-1
+privleap=3:7.1-1
+rads=3:9.0-1
+ram-wipe=3:4.6-1
+repository-dist=3:14.1-1
+repository-dist-wizard=3:14.1-1
+sandbox-app-launcher=0:7.7-1
+sdwdate=3:29.6-1
+sdwdate-gui=1:15.7-1
+security-misc-desktop=3:54.2-1
+security-misc-server=3:54.2-1
+security-misc-shared=3:54.2-1
+serial-console-enable=3:5.2-1
+setup-dist=3:12.6-1
+setup-wizard-dist=3:13.6-1
+swap-file-creator=3:9.7-1
+sysmaint-panel=3:5.6-1
+systemcheck=3:53.3-1
+tb-default-browser=3:9.4-1
+tb-starter=3:19.2-1
+tb-updater=3:48.5-1
+timesanitycheck=3:10.6-1
+tirdad=0:0.3.5-1
+tirdad-dkms=0:0.3.5-1
+tor-control-panel=1:8.8-1
+tor-ctrl=3:7.4-1
+tor-geoipdb=0.4.9.17-1~d13.trixie+1
+usability-misc=3:42.1-1
+user-sysmaint-split=3:13.1-1
+vm-config-dist=3:18.5-1</pre></div><div class="issue"><h3>Local apt repo manifest: whonix (48 packages)</h3><p>complete name=version manifest delivered to the guest &middot; source <code class="runid">175e1e36f56ecdfe92c937acb42eecebb2c03c49</code></p><p>repo <code>/srv/derivative-maker/aptrepo_local/whonix</code></p><pre class="steplog" tabindex="0">anon-apps-config=3:10.4-1
+anon-gw-anonymizer-config=3:21.9-1
+anon-gw-base-files=3:8.2-1
+anon-ws-base-files=3:7.6-1
+anon-ws-disable-stacked-tor=3:11.4-1
+corridor=2:0.11.9.1.0-1
+onion-grater=3:14.4-1
+qubes-whonix=1:25.8-1
+uwt=3:10.4-1
+whonix-base-files=3:12.3-1
+whonix-firewall=3:19.5-1
+whonix-gateway-baremetal-cli=3:27.4-1
+whonix-gateway-baremetal-gui-lxqt=3:27.4-1
+whonix-gateway-baremetal-server=3:27.4-1
+whonix-gateway-general-cli=3:27.4-1
+whonix-gateway-general-gui-all=3:27.4-1
+whonix-gateway-nonqubes-cli=3:27.4-1
+whonix-gateway-nonqubes-gui-lxqt=3:27.4-1
+whonix-gateway-packages-dependencies-pre=3:27.4-1
+whonix-gateway-qubes-cli=3:27.4-1
+whonix-gateway-qubes-gui-all=3:27.4-1
+whonix-gateway-qubes-gui-lxqt=3:27.4-1
+whonix-gateway-qubes-server=3:27.4-1
+whonix-gateway-vm-cli=3:27.4-1
+whonix-gateway-vm-gui-lxqt=3:27.4-1
+whonix-gateway-vm-server=3:27.4-1
+whonix-general-cli=3:27.4-1
+whonix-general-gui-all=3:27.4-1
+whonix-gw-network-conf=3:6.3-1
+whonix-qubes-gui-all=3:27.4-1
+whonix-welcome-page=3:8.3-1
+whonix-workstation-baremetal-cli=3:27.4-1
+whonix-workstation-baremetal-gui-lxqt=3:27.4-1
+whonix-workstation-baremetal-server=3:27.4-1
+whonix-workstation-general-cli=3:27.4-1
+whonix-workstation-general-gui-all=3:27.4-1
+whonix-workstation-general-gui-lxqt=3:27.4-1
+whonix-workstation-nonqubes-cli=3:27.4-1
+whonix-workstation-nonqubes-gui-lxqt=3:27.4-1
+whonix-workstation-packages-dependencies-pre=3:27.4-1
+whonix-workstation-qubes-cli=3:27.4-1
+whonix-workstation-qubes-gui-all=3:27.4-1
+whonix-workstation-qubes-gui-lxqt=3:27.4-1
+whonix-workstation-qubes-server=3:27.4-1
+whonix-workstation-vm-cli=3:27.4-1
+whonix-workstation-vm-gui-lxqt=3:27.4-1
+whonix-workstation-vm-server=3:27.4-1
+whonix-ws-network-conf=3:5.1-1</pre></div><div class="fg"><div class="issue"><h3>whonix-func <span class="chip st-pass">pass</span></h3><p>exit 0</p><pre class="steplog" tabindex="0">dm-whonix-pair: [functional-cli] boot Gateway (Whonix-Gateway-CLI)
+dm-whonix-pair: [functional-cli] boot Workstation (Whonix-Workstation-CLI) into the user session
+dm-shared-apt-repo: attached shared -&gt; /srv/derivative-maker on Whonix-Workstation-CLI
+dm-shared-apt-repo: mounts at /mnt/shared on the next boot (mnt-shared-vbox.service)
+dm-whonix-pair: [functional-cli] wait for Tor egress (systemcheck SocksPort + TransPort)
+tr: write error: Broken pipe
+[INFO] [systemcheck] SocksPort IP Leak Test: Testing Tor&#x27;s SocksPort (SOCKS_PORT_SYSTEMCHECK: 9110)...
+[ERROR] [systemcheck] SocksPort IP Leak Test Result: https://check.torproject.org/api/ip was not reachable.
+You could check, if you can reach https://check.torproject.org/api/ip via the Tor Browser Bundle.
+(curl exit code: [56] - [Failure in receiving network data.])
+[INFO] [systemcheck] system default networking IP Leak Test: system default networking IP Leak Test...
+[INFO] [systemcheck] system default networking IP Leak Test: Connected to Tor.
+dm-whonix-pair: Tor not confirmed yet (attempt 1); retrying
+tr: write error: Broken pipe
+[INFO] [systemcheck] SocksPort IP Leak Test: Testing Tor&#x27;s SocksPort (SOCKS_PORT_SYSTEMCHECK: 9110)...
+[INFO] [systemcheck] SocksPort IP Leak Test: Connected to Tor.
+[INFO] [systemcheck] system default networking IP Leak Test: system default networking IP Leak Test...
+[ERROR] [systemcheck] system default networking IP Leak Test Test Result: Tor&#x27;s TransPort was not reachable.
+It is normal for this error to temporarily occur.
+(curl exit code: [35] - [SSL connect error. The SSL handshaking failed.])
+dm-whonix-pair: Tor not confirmed yet (attempt 2); retrying
+tr: write error: Broken pipe
+[INFO] [systemcheck] SocksPort IP Leak Test: Testing Tor&#x27;s SocksPort (SOCKS_PORT_SYSTEMCHECK: 9110)...
+[INFO] [systemcheck] SocksPort IP Leak Test: Connected to Tor.
+[INFO] [systemcheck] system default networking IP Leak Test: system default networking IP Leak Test...
+[INFO] [systemcheck] system default networking IP Leak Test: Connected to Tor.
+dm-whonix-pair: [functional-cli] enable the local apt repo (whonix) in the Workstation
+Ign:1 file:/mnt/shared/aptrepo_local/kicksecure local InRelease
+Ign:2 file:/mnt/shared/aptrepo_local/whonix local InRelease
+Get:3 file:/mnt/shared/aptcache/debian trixie InRelease [140 kB]
+Get:4 file:/mnt/shared/aptcache/debian trixie-updates InRelease [47.3 kB]
+Get:5 file:/mnt/shared/aptcache/debian-security trixie-security InRelease [43.4 kB]
+Get:6 file:/mnt/shared/aptrepo_local/kicksecure local Release [57.5 kB]
+Get:7 file:/mnt/shared/aptrepo_local/whonix local Release [56.7 kB]
+Get:3 file:/mnt/shared/aptcache/debian trixie InRelease [140 kB]
+Get:4 file:/mnt/shared/aptcache/debian trixie-updates InRelease [47.3 kB]
+Get:5 file:/mnt/shared/aptcache/debian-security trixie-security InRelease [43.4 kB]
+Get:6 file:/mnt/shared/aptrepo_local/kicksecure local Release [57.5 kB]
+Get:7 file:/mnt/shared/aptrepo_local/whonix local Release [56.7 kB]
+Ign:8 file:/mnt/shared/aptrepo_local/kicksecure local Release.gpg
+Get:9 file:/mnt/shared/aptrepo_local/kicksecure local/non-free amd64 Packages [1,549 B]
+Ign:10 file:/mnt/shared/aptrepo_local/whonix local Release.gpg
+Get:11 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 Packages [38.5 kB]
+Get:12 file:/mnt/shared/aptrepo_local/kicksecure local/contrib amd64 Packages [501 B]
+Get:13 file:/mnt/shared/aptrepo_local/whonix local/main amd64 Packages [14.2 kB]
+Get:14 file:/mnt/shared/aptcache/debian trixie/main amd64 Packages [9,678 kB]
+Get:15 file:/mnt/shared/aptcache/debian trixie/contrib amd64 Packages [53.9 kB]
+Get:16 file:/mnt/shared/aptcache/debian trixie/non-free amd64 Packages [100 kB]
+Get:17 file:/mnt/shared/aptcache/debian trixie/non-free-firmware amd64 Packages [6,884 B]
+Get:18 file:/mnt/shared/aptcache/debian trixie-updates/main amd64 Packages [1,108 B]
+Get:19 file:/mnt/shared/aptcache/debian-security trixie-security/contrib amd64 Packages [3,152 B]
+Get:20 file:/mnt/shared/aptcache/debian-security trixie-security/main amd64 Packages [305 kB]
+Get:21 file:/mnt/shared/aptcache/debian-security trixie-security/non-free-firmware amd64 Packages [544 B]
+Reading package lists...
+dm-whonix-pair: [functional-cli] verify the local build payloads are installed in the Workstation
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+dm-whonix-pair: [functional-cli] check 8: console login + systemcheck (real logind session)
+dm-whonix-pair: check 8 PASS (systemcheck --cli --ci via real console login as user)
+dm-whonix-pair: [functional-cli] run the release-check battery over guestcontrol (no OCR)
+dm-whonix-pair: check 1 PASS
+dm-whonix-pair: check 5 PASS
+dm-whonix-pair: check 6 (GUI login) SKIPPED in this gate -- CLI edition has no graphical session (no labwc compositor)
+dm-whonix-pair: check 4 PASS
+dm-whonix-pair: check 8 (systemcheck) SKIPPED in this gate -- run separately via a real console login (ws_cli_console_systemcheck); guestcontrol has no logind user manager
+dm-whonix-pair: check 2 (sysmaint session boot) SKIPPED in this gate -- CLI edition has no user/sysmaint boot-role split (wiki/sysmaint)
+dm-whonix-pair: check 3 PASS (apt-get full-upgrade from local repo, detached over guestcontrol)
+dm-whonix-pair: [functional-cli] PASS -- Workstation passed the CLI release-check battery + console-login systemcheck
+</pre><p><strong>pair-defined</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Whonix pair under test (pre-boot)
+
+Gateway VM: Whonix-Gateway-CLI
+memory=768
+vram=16
+firmware=&quot;BIOS&quot;
+VMState=&quot;poweroff&quot;
+nic1=&quot;nat&quot;
+
+Workstation VM: Whonix-Workstation-CLI
+memory=768
+vram=16
+firmware=&quot;BIOS&quot;
+VMState=&quot;poweroff&quot;
+nic1=&quot;intnet&quot;
+</pre><p><span class="chip st-pass">pass</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>gateway-booted</strong></p><a href="whonix-cli-inst-bios__whonix-func__gateway-booted.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__gateway-booted.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/gateway-booted"></a><p><span class="chip st-pass">pass</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>workstation-booted</strong></p><a href="whonix-cli-inst-bios__whonix-func__workstation-booted.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__workstation-booted.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/workstation-booted"></a><p><strong>gateway-tor-bootstrap</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Gateway Tor bootstrapped
+
+Workstation systemcheck confirmed the Gateway&#x27;s Tor SocksPort + TransPort are up (positive control). The egress path Workstation -&gt; Gateway -&gt; Tor is live; the battery runs only now.
+</pre><p><span class="chip st-pass">pass</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>workstation-tor-confirmed</strong></p><a href="whonix-cli-inst-bios__whonix-func__workstation-tor-confirmed.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__workstation-tor-confirmed.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/workstation-tor-confirmed"></a><p><strong>local-repo-enabled</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Local apt repo enabled in the Workstation
+
+The derivative &#x27;local&#x27; apt sources (kicksecure whonix) plus the Debian base suites (trixie trixie-updates trixie-security) are live. Check 3 upgrades offline from these file: sources, no Tor.
+
+--- apt-cache policy: local repo origins ---
+ 500 file:/mnt/shared/aptrepo_local/kicksecure local/contrib amd64 Packages
+ 500 file:/mnt/shared/aptrepo_local/kicksecure local/main amd64 Packages
+ 500 file:/mnt/shared/aptrepo_local/kicksecure local/non-free amd64 Packages
+ 500 file:/mnt/shared/aptrepo_local/whonix local/main amd64 Packages
+</pre><p><strong>local-build-installed</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Local build payloads installed
+
+Every locally-built package already installed (except the guest-additions installer and dkms packages, whose reinstall would tear down the test transport or rebuild kernel modules) was reinstalled from the local repo; each installed version matches the local build, so check 3&#x27;s verdict applies to THIS build, not the image&#x27;s same-version payload.
+
+--- installed version == local build (per package) ---
+OK: apparmor-profile-thunderbird = 3:6.3-1 (matches local build 3:6.3-1)
+OK: apparmor-profile-torbrowser = 3:10.0-1 (matches local build 3:10.0-1)
+OK: apparmor-profiles-kicksecure = 3:37.9-1 (matches local build 3:37.9-1)
+OK: bindp = 3:4.8-1 (matches local build 3:4.8-1)
+OK: bootclockrandomization = 3:8.3-1 (matches local build 3:8.3-1)
+OK: damngpl = 3:4.9-1 (matches local build 3:4.9-1)
+OK: dist-base-files = 3:16.6-1 (matches local build 3:16.6-1)
+OK: dist-general-cli = 3:37.9-1 (matches local build 3:37.9-1)
+OK: dist-general-server = 3:37.9-1 (matches local build 3:37.9-1)
+OK: dist-nonqubes-cli = 3:37.9-1 (matches local build 3:37.9-1)
+OK: dist-system-metadata = 3:1.1-1 (matches local build 3:1.1-1)
+OK: dummy-dependency-mta = 3:37.9-1 (matches local build 3:37.9-1)
+OK: grub-live = 3:11.5-1 (matches local build 3:11.5-1)
+OK: grub-live-dracut = 3:11.5-1 (matches local build 3:11.5-1)
+OK: helper-scripts = 3:55.6-1 (matches local build 3:55.6-1)
+OK: initializer-dist = 3:9.6-1 (matches local build 3:9.6-1)
+OK: legacy-dist = 3:21.7-1 (matches local build 3:21.7-1)
+OK: msgcollector = 3:18.1-1 (matches local build 3:18.1-1)
+OK: privleap = 3:7.1-1 (matches local build 3:7.1-1)
+OK: repository-dist = 3:14.1-1 (matches local build 3:14.1-1)
+OK: sdwdate = 3:29.6-1 (matches local build 3:29.6-1)
+OK: security-misc-server = 3:54.2-1 (matches local build 3:54.2-1)
+OK: security-misc-shared = 3:54.2-1 (matches local build 3:54.2-1)
+OK: setup-dist = 3:12.6-1 (matches local build 3:12.6-1)
+OK: swap-file-creator = 3:9.7-1 (matches local build 3:9.7-1)
+OK: systemcheck = 3:53.3-1 (matches local build 3:53.3-1)
+OK: timesanitycheck = 3:10.6-1 (matches local build 3:10.6-1)
+OK: tirdad = 0.3.5-1 (matches local build 0:0.3.5-1)
+OK: tor-ctrl = 3:7.4-1 (matches local build 3:7.4-1)
+OK: usability-misc = 3:42.1-1 (matches local build 3:42.1-1)
+OK: uwt = 3:10.4-1 (matches local build 3:10.4-1)
+OK: whonix-base-files = 3:12.3-1 (matches local build 3:12.3-1)
+OK: whonix-firewall = 3:19.5-1 (matches local build 3:19.5-1)
+OK: whonix-general-cli = 3:27.4-1 (matches local build 3:27.4-1)
+OK: whonix-workstation-general-cli = 3:27.4-1 (matches local build 3:27.4-1)
+OK: whonix-workstation-nonqubes-cli = 3:27.4-1 (matches local build 3:27.4-1)
+OK: whonix-workstation-packages-dependencies-pre = 3:27.4-1 (matches local build 3:27.4-1)
+OK: whonix-workstation-vm-cli = 3:27.4-1 (matches local build 3:27.4-1)
+OK: whonix-workstation-vm-server = 3:27.4-1 (matches local build 3:27.4-1)
+OK: whonix-ws-network-conf = 3:5.1-1 (matches local build 3:5.1-1)
+</pre><p><span class="chip st-pass">pass</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>console-login</strong></p><a href="whonix-cli-inst-bios__whonix-func__console-login.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__console-login.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/console-login"></a><p><strong>check8-systemcheck</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 8: systemcheck (pass)
+
+PASS -- command: systemcheck --cli --ci (ran in a real getty logind session as &#x27;user&#x27; and exited 0; a CLI edition has no logind user manager over guestcontrol, so it is driven via a genuine console login, not the headless battery).
+
+--- systemcheck output (last lines) ---
+
+You can adjust these settings using &quot;Manage Passwords&quot; and &quot;Manage GUI Autologin&quot;
+in the System Maintenance Panel.
+See also: Physical Security[3].
+
+Links:
+[1] https://www.kicksecure.com/wiki/Login
+[2] https://www.kicksecure.com/wiki/Systemcheck#Login_Security_Check_-_Meaning_of_Colors
+[3] https://www.kicksecure.com/wiki/Systemcheck#Physical_Security_Check
+[INFO] [systemcheck] Whonix APT Repository: Enabled.
+When the Whonix team releases TRIXIE updates,
+they will be AUTOMATICALLY installed (when you run apt-get dist-upgrade)
+along with updated packages from the Debian team. Please read https://www.whonix.org/wiki/Trust to understand the risk.
+If you want to change this, use:
+    sudo repository-dist
+[INFO] [systemcheck] Debian Package Update Check: Checking for software updates via apt-get... ( Documentation: https://www.whonix.org/wiki/Update )
+[WARNING] [systemcheck] Debian Package Update[1] Check Result: apt-get reports that packages can be updated.
+Please update this machine:
+(Open a terminal, Start Menu - System - Terminal.)
+upgrade-nonroot
+
+Links:
+[1] https://www.whonix.org/wiki/Update
+[INFO] [systemcheck] Please donate!
+   See: https://www.whonix.org/wiki/Donate
+</pre><p><strong>check1-user-session-boot</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 1: user session boot (pass)
+
+PASS -- command: ! grep -q boot-role=sysmaint /proc/cmdline
+</pre><p><strong>check5-CLI-login</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 5: CLI login (pass)
+
+PASS -- command: whoami
+
+--- check output (last lines) ---
+user
+</pre><p><strong>check6-GUI-login</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 6: GUI login (routed)
+
+ROUTED -- not run over this gate&#x27;s transport: CLI edition has no graphical session (no labwc compositor)
+</pre><p><strong>check4-networking</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 4: networking (pass)
+
+PASS -- command: curl --silent --fail --max-time 30 --output /dev/null https://deb.debian.org
+
+--- check output (last lines) ---
+tr: write error: Broken pipe
+</pre><p><strong>check8-systemcheck</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 8: systemcheck (routed)
+
+ROUTED -- not run over this gate&#x27;s transport: run separately via a real console login (ws_cli_console_systemcheck); guestcontrol has no logind user manager
+</pre><p><strong>check2-sysmaint-session-boot</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 2: sysmaint session boot (routed)
+
+ROUTED -- not run over this gate&#x27;s transport: CLI edition has no user/sysmaint boot-role split (wiki/sysmaint)
+</pre><p><strong>check3-upgrade-nonroot</strong> <span class="stage">(post-boot checks)</span></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Release check 3: upgrade-nonroot (pass)
+
+PASS -- command: dsudo apt-get -o Dir::Etc::sourceparts=/etc/apt/sources.list.d.localtest -o Dir::Etc::sourcelist=/dev/null -o APT::Sandbox::User=root --update full-upgrade --yes
+
+--- check output (last lines) ---
+Setting up linux-headers-6.12.117+deb13-common (6.12.117-1) ...
+Setting up linux-image-amd64 (6.12.117-1) ...
+Setting up linux-headers-6.12.117+deb13-amd64 (6.12.117-1) ...
+Setting up linux-headers-amd64 (6.12.117-1) ...
+Processing triggers for security-misc-shared (3:54.2-1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+INFO: triggered security-misc-shared: &#x27;security-misc-shared&#x27; security-misc-shared DPKG_MAINTSCRIPT_NAME: &#x27;postinst&#x27; $\*: &#x27;triggered /usr&#x27; 2: &#x27;/usr&#x27;
+/usr/libexec/security-misc/mmap-rnd-bits: INFO: Successfully written ASLR map config file:
+/etc/sysctl.d/30_security-misc_aslr-mmap.conf
+Running SUID Disabler and Permission Hardener... See also:
+https://www.kicksecure.com/wiki/SUID_Disabler_and_Permission_Hardener
+/var/lib/dpkg/info/security-misc-shared.postinst: INFO: running: permission-hardener enable
+permission-hardener [NOTICE]: Executing: setcap -r /bin/ping
+permission-hardener [NOTICE]: To compare the current and previous permission modes, install &#x27;meld&#x27; (or preferred diff tool) for comparison of file mode changes:
+    sudo apt install --no-install-recommends meld
+    meld /var/lib/permission-hardener-v2/existing_mode/statoverride /var/lib/permission-hardener-v2/new_mode/statoverride
+/var/lib/dpkg/info/security-misc-shared.postinst: INFO: Permission hardening success.
+</pre><p><strong>functional-verdict</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+PASS -- CLI release-check battery + console systemcheck
+
+The Workstation passed the CLI numbered release-check battery over the Gateway&#x27;s Tor, plus systemcheck via a real console login (check 8). Per-check cards above carry each result.
+</pre><p><span class="chip st-pass">pass</span> <span class="chip st-inconclusive">content: UNVALIDATED (no golden)</span> <strong>workstation-final</strong></p><a href="whonix-cli-inst-bios__whonix-func__workstation-final.webp"><img loading="lazy" width="1280" height="800" src="whonix-cli-inst-bios__whonix-func__workstation-final.webp" alt="screenshot whonix-cli-inst-bios/whonix-func/workstation-final"></a><p><strong>pair-poweroff</strong></p><pre class="steplog" tabindex="0">[state card -- rendered text, not a screenshot]
+Pair teardown (final VM states below)
+
+Gateway Whonix-Gateway-CLI: poweroff
+Workstation Whonix-Workstation-CLI: poweroff
+</pre></div></div></div></section>
+</main>
+<footer>
+  <div class="ftop">
+    <div class="fbrand">
+      <span class="ftag"><img class="brandmark" src="/logo-wide.webp" width="729" height="77" alt="org-ai-assisted"></span>
+      <p>Code, not discussion. Go upstream.</p>
+    </div>
+    <nav class="fcols" aria-label="Footer">
+      <div class="fcol">
+        <h3>Navigate</h3>
+        <a href="/">Home</a>
+        <a href="/automated-test-results/">Test results</a>
+        <a href="/css-vs-popover/">CSS vs Popover API</a>
+      </div>
+      <div class="fcol">
+        <h3>Source</h3>
+        <a href="https://github.com/org-ai-assisted">organisation</a>
+        <a href="https://github.com/org-ai-assisted/org-ai-assisted.github.io">this page</a>
+        <a href="https://github.com/org-ai-assisted/.github">org profile</a>
+      </div>
+      <div class="fcol">
+        <h3>Policy &amp; references</h3>
+        <a href="https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence">Kicksecure AI policy</a><a class="arch" href="https://web.archive.org/web/20260418141613/https://www.kicksecure.com/wiki/Policy_On_Artificial_Intelligence" title="Archived copy of the Kicksecure AI policy page (Wayback Machine)" aria-label="Archived copy of the Kicksecure AI policy page"></a>
+        <a href="https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence">Whonix AI policy</a><a class="arch" href="https://web.archive.org/web/20260604004341/https://www.whonix.org/wiki/Policy_On_Artificial_Intelligence" title="Archived copy of the Whonix AI policy page (Wayback Machine)" aria-label="Archived copy of the Whonix AI policy page"></a>
+        <a href="https://forums.whonix.org/t/is-whonix-vibecoded-now/23405">Forum discussion</a><a class="arch" href="https://web.archive.org/web/20260715060626/https://forums.whonix.org/t/is-whonix-vibecoded-now/23405" title="Archived copy of the Whonix forums thread (Wayback Machine)" aria-label="Archived copy of the Whonix forums thread"></a>
+        <a href="https://www.kicksecure.com/wiki/Dev/Build_Documentation">Build documentation</a><a class="arch" href="https://web.archive.org/web/20260515195725/https://www.kicksecure.com/wiki/Dev/Build_Documentation" title="Archived copy of the Kicksecure build documentation (Wayback Machine)" aria-label="Archived copy of the Kicksecure build documentation"></a>
+      </div>
+      <div class="fcol">
+        <h3>Family</h3>
+        <a href="https://output-lies.github.io">output lies</a>
+        <a href="https://secure-terminal.github.io">secure-terminal</a>
+        <a class="self" href="https://org-ai-assisted.github.io" aria-current="page">org-ai-assisted</a>
+      </div>
+    </nav>
+  </div>
+  <div class="fshare">
+    <span class="fshare-l">Share:</span>
+    <a class="sh" data-net="x" href="#" rel="nofollow noopener">X</a>
+    <a class="sh" data-net="facebook" href="#" rel="nofollow noopener">Facebook</a>
+    <a class="sh" data-net="telegram" href="#" rel="nofollow noopener">Telegram</a>
+    <a class="sh" data-net="reddit" href="#" rel="nofollow noopener">Reddit</a>
+    <a class="sh" data-net="whatsapp" href="#" rel="nofollow noopener">WhatsApp</a>
+    <a class="sh" data-net="linkedin" href="#" rel="nofollow noopener">LinkedIn</a>
+    <a class="sh" data-net="hn" href="#" rel="nofollow noopener">Hacker News</a>
+    <a class="sh" data-net="mastodon" href="#" rel="nofollow noopener">Mastodon</a>
+    <a class="sh" data-net="email" href="#">Email</a>
+    <button class="sh" data-net="copy" type="button">Copy link</button>
+    <button class="sh" data-net="md" type="button">Copy as Markdown</button>
+    <span class="sh-msg" aria-live="polite"></span>
+  </div>
+  <script src="/share.js"></script>
+  <div class="fbot">
+    <span class="fcopy">&copy; 2026 <a href="https://www.encrypted-support.com">ENCRYPTED SUPPORT LLC</a></span>
+    <span class="fcopy sp"><a href="/#trust">Built with AI assistance</a></span>
+  </div>
+</footer>
+</html>
